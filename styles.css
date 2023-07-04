@@ -48,7 +48,7 @@
 }
 
 section {
-    padding: var(--p-xl);
+    padding: 100px;
 }
 
 body {
@@ -221,13 +221,10 @@ nav {
 .dev__intro {
     position: relative;
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
 }
 
 .dev__intro::after {
@@ -254,7 +251,8 @@ nav {
 }
 
 .dev__content {
-    width: 50%;
+    max-width: 50%;
+    margin: auto;
 }
 
 .dev__content h3 {
@@ -282,16 +280,15 @@ nav {
 /*Skills section*/
 
 .skills {
-    width: 100%;
     position: relative;
-    height: 70vh;
+    width: 100%;
 }
 
 .skills .skill__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: calc(2.5 * var(--m-xl));
+    padding-top: calc(1.5 * var(--m-xl));
     gap: 50px;
 }
 
@@ -336,6 +333,7 @@ nav {
     text-align: center;
     color: var(--font-color);
     width: 100%;
+    text-transform: uppercase;
 }
 
 .skills .skill__item::before {
@@ -390,8 +388,6 @@ nav {
 /*Services Container*/
 .services__section {
     position: relative;
-    height: 100vh;
-    padding-top: calc(2.8 * var(--m-xl));
 }
 
 .services__section .heading  {
@@ -408,43 +404,108 @@ nav {
     font-size: var(--f-lg);
 }
 
+/*Cards*/
+
 .services__wrapper {
     position: relative;
-    width: auto;
-    height: inherit;
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
     gap: 50px;
+    margin: calc(1.5 * var(--m-xl));
 }
 
-.services,
-.services {
+.services__wrapper::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: var(--gradient);
+    left: -200px;
+    z-index: -1;
+    border-radius: 50%;
+    box-shadow: 0px 40px 50px 0px rgba(123, 263, 122, 1);
+    filter: blur(100px);
+}
+
+.services__wrapper .card__body {
     position: relative;
-    width: 400px;
-    height: 350px;
+    max-width: 500px;
+    height: auto;
+    border: 2px solid var(--primary-color);
     border-radius: 10px;
+    padding: var(--p-lg);
+    text-align: center;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: var(--shadow);
     z-index: 1;
 }
 
-.services__wrapper .services .card__body .s__img {
-    width: inherit; 
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    padding: var(--p-lg);
+.services__wrapper .card__body:hover {
+    background: var(--font-color);
+    transform: scale(110%);
 }
 
-.services__wrapper .services .card__body .s__img img {
+.services__wrapper .card__body .card__img {
+    width: 300px;
+    height: 200px;
+    margin: var(--m-lg);
+}
+
+.services__wrapper .card__body .card__img img {
     width: inherit;
     height: inherit;
 }
 
-.services__wrapper .services .card__body .development__content p {
-    text-align: center;
-    padding-top: var(--p-xl);
+.services__wrapper .card__body .card__text p a {
     font-size: var(--f-xl);
+    text-transform: capitalize;
     font-weight: 500;
+    color: var(--secondary-color);
+    padding-top: var(--p-lg);
+}
+
+/*Offers*/
+
+.services__offers {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    z-index: 1;
+    padding-top: calc(1.8 * var(--p-xl));
+}
+
+.services__offers .offer {
+    width: 50px;
+    position: relative;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+}
+
+.services__offers .offer p a {
+    font-size: var(--f-lg);
+    font-weight: 600;
+    color: var(--font-color);
+}
+
+.services__offers .offer p a:hover {
     color: var(--secondary-color);
 }
 
+.services__offers .offer::before {
+    content: attr(data-title);
+    position: absolute;
+    top: -50px;
+    left: -20px;
+    color: var(--secondary-color);
+    text-align: center;
+    text-transform: capitalize;
+}

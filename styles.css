@@ -6,7 +6,7 @@
     --primary-color: rgba(88, 157, 245, 1);
     --font-color: rgba(242, 242, 242, 0.8);
     --secondary-color: rgba(154, 127, 40, 1);
-    --gradient: linear-gradient(212deg, rgba(255, 255, 255, 1) 0%, rgba(3, 80, 110, 1) 0%, rgba(88, 157, 245, 1) 100%);
+    --gradient: linear-gradient(45deg, hsla(192, 80%, 51%, 1) 0%, hsla(355, 70%, 63%, 1) 100%);
     --shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.75);
     /*    spacing*/
     --spacing-unit: 1rem;
@@ -144,18 +144,24 @@ nav {
 }
 
 .banner__text {
-    display: flex;
-    flex-wrap: wrap;
-    width: 600px;
-    justify-content: center;
-    align-items: center;
+    position: relative;
     text-align: center;
 }
 .banner__text h1 {
-    font-size: calc(2 * var(--f-xl));
+    font-size: calc(2.5 * var(--f-xl));
     color: var(--font-color);
     line-height: 1.2;
-    filter: drop-shadow(0px 2px 30px var(--primary-color));
+    font-weight: 700;
+}
+
+.banner__text h1 span {
+    background: var(--gradient);
+    background: linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
 }
 
 .banner__text h1::before {
@@ -165,7 +171,14 @@ nav {
     color: var(--secondary-color);
     text-transform: capitalize;
     font-size: var(--f-xl);
-    line-height: 0.5;
+    line-height: 1;
+    background: var(--gradient);
+    background: linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
 }
 
 /*Banner social link*/
@@ -205,14 +218,14 @@ nav {
     background: var(--gradient);
     border-radius: 10px;
     border: none;
-    color: var(--base-color);
+    color: var(--font-color);
     cursor: pointer;
     transition: .3s;
 }
 
 .banner__text .btn button:hover {
     margin: -10px 0 0 10px;
-    background: var(--secondary-color);
+    opacity: 0.7;
     transition: .3s;
 }
 
@@ -433,7 +446,7 @@ nav {
 
 .services__section .model__wrapper {
     position: absolute;
-    display: block;
+    display: none;
     width: 80%;
     margin: auto;
     height: 100vh;
@@ -445,6 +458,14 @@ nav {
     -webkit-box-shadow: var(--shadow);
     box-shadow: var(--shadow);
     padding: var(--p-lg);
+}
+
+.services__section .hidden__content {
+    display: none;
+}
+
+.services__section .hidden__content.active {
+    display: block;
 }
 
 .services__section .model__wrapper .model__content {

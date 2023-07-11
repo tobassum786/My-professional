@@ -325,8 +325,15 @@ nav {
     text-transform: uppercase;
 }
 
+.skills h1::after {
+    content: attr(data-title);
+    display: block;
+    font-size: var(--f-lg);
+    color: var(--font-color);
+}
+
 .skills .skill__items {
-    width: 250px;
+    width: 300px;
     z-index: 1;
 }
 
@@ -402,7 +409,6 @@ nav {
 .services__section {
     position: relative;
     display: block;
-    margin: 0 auto;
 }
 
 .services__section .heading  {
@@ -444,107 +450,7 @@ nav {
     filter: blur(100px);
 }
 
-.services__section .model__wrapper {
-    position: absolute;
-    display: none;
-    width: 80%;
-    margin: auto;
-    height: 100vh;
-    background: linear-gradient(to right, rgba(242, 242, 242, 0.9), rgba(242, 242, 242, 1)), url(Images/web__assest/front%20end%20development%20services.png);
-    z-index: 1;
-    top: 0;
-    left: 135px;
-    border-radius: 20px;
-    -webkit-box-shadow: var(--shadow);
-    box-shadow: var(--shadow);
-    padding: var(--p-lg);
-}
-
-.services__section .hidden__content {
-    display: none;
-}
-
-.services__section .hidden__content.active {
-    display: block;
-}
-
-.services__section .model__wrapper .model__content {
-    position: relative;
-    padding: var(--p-lg);
-}
-
-.services__section .model__wrapper .model__content .model__text {
-    color: var(--base-color);
-}
-
-.services__section .model__wrapper .model__content .model__text .m_title  h1 {
-    font-size: var(--f-xl);
-    text-transform: capitalize;
-    color: var(--secondary-color);
-}
-
-.services__section .model__wrapper .model__content .model__text .m_title  p {
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.services__section .model__wrapper .model__content .model__text .offer__list {
-    margin: var(--m-lg);
-}
-
-.services__section .model__wrapper .model__content .model__text .offer__list ul li {
-    list-style:url(Images/web__assest/check.svg);
-    padding-top: var(--p-lg);
-    margin: var(-m-lg);
-}
-
-.services__section .model__wrapper .model__content .model__text .offer__list ul li strong {
-    color: var(--primary-color);
-    text-transform: capitalize;
-}
-
-.services__section .model__wrapper .model__content .model__text .quote {
-    height: 50px;
-    margin-top: 20px;
-    transition: .3s;
-}
-
-.model__text .quote button {
-    width: 120px;
-    height: inherit;
-    font-size: var(--f-lg);
-    letter-spacing: 1.2px;
-    font-weight: 500;
-    background: var(--gradient);
-    border-radius: 10px;
-    border: none;
-    color: var(--font-color);
-    cursor: pointer;
-    transition: .3s;
-}
-
-.model__text .quote button:hover {
-    margin: -10px 0 0 10px;
-    background: var(--secondary-color);
-    transition: .3s;
-}
-
-.services__section .model__wrapper .model__content .close__btn {
-    position: absolute;
-    color: var(--base-color);
-    right: 30px;
-    cursor: pointer;
-}
-
-.services__section .model__wrapper .model__content .close__btn:hover {
-    color: var(--secondary-color);
-    transform: scale(105%);
-}
-
-.services__section .model__wrapper .model__content .close__btn span {
-    font-size: var(--f-xl);
-}
-
+/*On page service card content*/
 
 .services__wrapper .card__body {
     position: relative;
@@ -554,6 +460,7 @@ nav {
     border-radius: 10px;
     padding: var(--p-lg);
     text-align: center;
+    overflow: hidden;
     cursor: pointer;
     transition: .3s;
     box-shadow: var(--shadow);
@@ -575,12 +482,74 @@ nav {
     height: inherit;
 }
 
-.services__wrapper .card__body .card__text p a {
+.services__wrapper .card__body .card__text p {
     font-size: var(--f-xl);
     text-transform: capitalize;
     font-weight: 500;
     color: var(--secondary-color);
     padding-top: var(--p-lg);
+}
+
+.card__body .service__detail {
+    display: none;
+}
+
+/*Popup model wrapper and insside content*/
+
+.services__section .model__wrapper {
+    position: absolute;
+    width: 950px;
+    height: 400px;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid var(--primary-color);
+    background: var(--base-color);
+    z-index: 1;
+    border-radius: 20px;
+    -webkit-box-shadow: var(--shadow);
+    box-shadow: var(--shadow);
+    padding: var(--p-lg);
+}
+
+.services__section #hidden__content {
+    display: none;
+}
+
+.services__section #hidden__content.active {
+    display: block;
+}
+
+.services__section .model__wrapper .close__btn {
+    position: absolute;
+    color: var(--font-color);
+    right: 30px;
+    cursor: pointer;
+}
+
+.services__section .model__wrapper .close__btn:hover {
+    color: var(--secondary-color);
+    transform: scale(105%);
+}
+
+.services__section .model__wrapper .close__btn span {
+    font-size: var(--f-xl);
+}
+
+.services__section .model__wrapper .pp__img {
+    width: 300px;
+    height: 200px;
+    margin: var(--m-lg);
+}
+
+.services__section .model__wrapper .pp__img img {
+    width: inherit;
+    height: inherit;
+}
+
+.services__section .model__wrapper .model__content {
+    display: flex;
 }
 
 /*Offers*/

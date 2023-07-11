@@ -1,13 +1,18 @@
-const revealBtn = document.querySelector("#reveal__btn");
-const hiddenContent = document.querySelector("#hidden__content");
-const closeBtn = document.getElementsByClassName("close__btn");
+//Responsive toggle menu
 
-function revealContent() {
-    if(hiddenContent.classList.contains('active')) {
-       hiddenContent.classList.remove('active')
-       } else {
-           hiddenContent.classList.add('active')
-       }
+////Model popup
+const revealBtn = document.querySelector('.card__body');
+const hiddenContent = document.querySelector('#hidden__content');
+
+revealBtn.onclick = function() {
+    hiddenContent.style.display = "block";
 }
 
-revealBtn.addEventListener('click', revealContent)
+const closeBtn = document.querySelector('.close__btn');
+
+closeBtn.onclick = function() {
+    hiddenContent.style.display = "none";
+    return true;
+}
+
+///Intersection animation

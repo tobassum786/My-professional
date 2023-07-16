@@ -454,16 +454,15 @@ nav {
 
 .services__wrapper .card__body {
     position: relative;
-    max-width: 500px;
+    max-width: 440px;
     height: auto;
     border: 2px solid var(--primary-color);
     border-radius: 10px;
-    padding: var(--p-lg);
     text-align: center;
-    overflow: hidden;
     cursor: pointer;
     transition: .3s;
     box-shadow: var(--shadow);
+    padding: var(--p);
 }
 
 .services__wrapper .card__body:hover {
@@ -471,19 +470,16 @@ nav {
     transform: scale(110%);
 }
 
-.services__wrapper .card__body .card__img {
-    width: 300px;
-    height: 200px;
-    margin: var(--m-lg);
+.services__wrapper .card__body img {
+    max-width: 100%;
+    height: 330px;
+    padding: var(--p);
 }
 
-.services__wrapper .card__body .card__img img {
-    width: inherit;
-    height: inherit;
-}
 
-.services__wrapper .card__body .card__text p {
+.services__wrapper .card__body .service__btn {
     font-size: var(--f-xl);
+    position: relative;
     text-transform: capitalize;
     font-weight: 500;
     color: var(--secondary-color);
@@ -494,13 +490,42 @@ nav {
     display: none;
 }
 
-/*Popup model wrapper and insside content*/
+.card__body .service__detail {
+    padding: var(--p);
+}
+
+.model__details .model__btn {
+    width: 100%;
+    height: 50px;
+    transition: .3s;
+}
+
+.model__details .model__btn button {
+    width: 120px;
+    height: inherit;
+    font-size: var(--f-lg);
+    font-weight: 500;
+    background: var(--gradient);
+    border-radius: 10px;
+    border: none;
+    color: var(--font-color);
+    cursor: pointer;
+    transition: .3s;
+    text-transform: uppercase;
+    padding: var(--p);
+}
+
+.model__details .model__btn button:hover {
+    margin: -10px 0 0 10px;
+    opacity: 0.7;
+    transition: .3s;
+}
+
+/*Popup model wrapper and inside content*/
 
 .services__section .model__wrapper {
     position: absolute;
-    width: 950px;
-    height: 400px;
-    margin: 0 auto;
+    width: 75%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -511,14 +536,12 @@ nav {
     -webkit-box-shadow: var(--shadow);
     box-shadow: var(--shadow);
     padding: var(--p-lg);
+    visibility: hidden;
 }
 
-.services__section #hidden__content {
-    display: none;
-}
 
-.services__section #hidden__content.active {
-    display: block;
+.services__section .model__wrapper.open {
+    visibility: visible;
 }
 
 .services__section .model__wrapper .close__btn {
@@ -537,60 +560,87 @@ nav {
     font-size: var(--f-xl);
 }
 
-.services__section .model__wrapper .pp__img {
-    width: 300px;
-    height: 200px;
+.services__section .model__wrapper .model__inner .model__content .model__thumbnail {
+    max-width: 100%;
+    height: 250px;
     margin: var(--m-lg);
 }
 
-.services__section .model__wrapper .pp__img img {
+
+.services__section .model__wrapper .model__inner .model__content .model__thumbnail img {
     width: inherit;
     height: inherit;
 }
 
+.services__section .model__wrapper .model__inner {
+    padding: var(--p-lg);
+}
+
 .services__section .model__wrapper .model__content {
     display: flex;
+    padding: var(--p);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.model__details .service__description {
+    padding: 0 20px 20px 0;
+}
+
+.model__details .service__items li {
+    list-style-image: url(Images/web__assest/check-all.svg);
+    list-style-position: inside;
+    padding-bottom: var(--p-lg);
 }
 
 /*Offers*/
-.services__offers {
+
+.service__offers {
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
-    z-index: -1;
-    padding-top: calc(1.8 * var(--p-xl));
+    width: 100%;
 }
 
-.services__offers .offer {
-    width: 50px;
-    position: relative;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid var(--primary-color);
-    border-radius: 10px;
-}
-
-.services__offers .offer p a {
-    font-size: var(--f-lg);
-    font-weight: 600;
-    color: var(--font-color);
-}
-
-.services__offers .offer p a:hover {
-    color: var(--secondary-color);
-}
-
-.services__offers .offer::before {
-    content: attr(data-title);
-    position: absolute;
-    top: -50px;
-    left: -20px;
-    color: var(--secondary-color);
+.service__offers p {
     text-align: center;
-    text-transform: capitalize;
+    font-size: calc(0.9 * var(--f-xl));
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: var(--m-lg);
+}
+
+.service__offers .offer__inner {
+    display: inline-flex;
+    justify-content: center;
+    width: inherit;
+    gap: 20px;
+}
+
+.service__offers .offer__inner .offer {
+    width: 180px;
+    text-align: center;
+    padding: var(--p);
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    line-height: 1.6;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.service__offers .offer__inner .offer:hover {
+    background-color: var(--font-color);
+    color: var(--base-color);
+    transform: scale(110%);
+}
+
+.service__offers .offer__inner .offer span {
+    font-size: calc(0.8 * var(--f-lg));
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px
+}
+
+.service__offers .offer__inner .offer span:nth-child(1) {
+    color: var(--secondary-color);
 }

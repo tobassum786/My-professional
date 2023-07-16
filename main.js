@@ -1,18 +1,21 @@
 //Responsive toggle menu
 
 ////Model popup
-const revealBtn = document.querySelector('.card__body');
-const hiddenContent = document.querySelector('#hidden__content');
+document.addEventListener('click', (e)=> {
+    if(e.target.classList.contains('service__btn')) {
+        toggleModelPopup();
+        popupDetails(e.target.parentElement);
+    }
+})
 
-revealBtn.onclick = function() {
-    hiddenContent.style.display = "block";
+function toggleModelPopup() {
+    document.querySelector('.model__wrapper').classList.toggle('open');
 }
 
-const closeBtn = document.querySelector('.close__btn');
+document.querySelector('.close__btn').addEventListener('click', toggleModelPopup);
 
-closeBtn.onclick = function() {
-    hiddenContent.style.display = "none";
-    return true;
+function popupDetails(modelItems) {
+    document.querySelector(".model__thumbnail img").src = modelItems.querySelector(".service__img").src;
+    document.querySelector(".model__details").innerHTML = modelItems.querySelector(".service__detail").innerHTML;
 }
-
 ///Intersection animation

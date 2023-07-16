@@ -6,4 +6,6 @@ business because I need more presence in the market to engage more clients.
 
 ## Which languages are used on the website?
 
-I will use HTML and Custom CSS coding, and for Animations and transitions, I will use JavaScript. Or for the backend, I will use the Flask Pyton framework.
+I will use HTML and Custom CSS coding, and I will use JavaScript for Animations and transitions. Or, for the backend, I will use the Flask Pyton framework.
+
+## Services 

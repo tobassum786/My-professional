@@ -5,307 +5,91 @@
     <meta charset="UTF-8">
     <title>Tobassum Munir | Front-end developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--    Favicon-->
     <link rel="icon" type="image/png" href="/Images/favicon/favicon.png" />
+    <!--    Custom CSS-->
     <link rel="stylesheet" href="./styles.css" type="text/css">
-    <!--    bootstrap CDN-->
+    <!--    bootstrap-Icons CDN-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
 <body>
-    <!--    navigation-->
+    <!--Navigation--->
     <nav class="nav__bar">
-        <div class="logo">
+        <a href="#" class="logo">
             <img src="./Images/web__assest/logo.png" alt="Logo">
-        </div>
-        <ul class="nav__bar-items">
-            <li><a href="#" class="nav__bar-link">Home</a></li>
-            <li><a href="#" class="nav__bar-link">Skills</a></li>
-            <li><a href="#" class="nav__bar-link">Services</a></li>
-            <li><a href="#" class="nav__bar-link">About Me</a></li>
+        </a>
+        <ul class="nav__items" id="menu">
+            <li><a href="#" class="nav__links current">Home</a></li>
+            <li><a href="#" class="nav__links">Services</a></li>
+            <li><a href="#" class="nav__links">Projects</a></li>
+            <li><a href="#" class="nav__links">About Me</a></li>
+            <li><a href="#" class="nav__links">Blog</a></li>
+            <li><a href="#" class="nav__links btn d-md-none">Get a Quote</a></li>
         </ul>
-        <div class="email">
-            <a href="#" class="bi bi-envelope-at">
+        <div class="nav__right">
+            <a href="#">
+                <i class="bi bi-envelope"></i>
             </a>
         </div>
+        <div class="toggle__menu d-md-none">
+            <button class="items-center toggle__icons" id="toggle__btn">
+                <i class="bi bi-list open__menu"></i>
+                <i class="bi bi-x close__menu"></i>
+            </button>
+        </div>
     </nav>
-    <!--    banner-->
+    <!--Banner--->
     <section class="banner">
-        <div class="banner__text">
-            <h1 data-heading="i'm tobassum Munir">Experienced <br> Front-end <span>Developer</span></h1>
-            <!--            social links-->
-            <div class="banner__links">
-                <a href="#">
-                    <i class="bi bi-facebook"></i>
-                </a>
-                <a href="#">
-                    <i class="bi bi-instagram"></i>
-                </a>
-                <a href="#">
-                    <i class="bi bi-linkedin"></i>
-                </a>
-                <a href="#">
-                    <i class="bi bi-github"></i>
-                </a>
-                <a href="#">
-                    <i class="bi bi-pinterest"></i>
-                </a>
-                <a href="#">
-                    <i class="bi bi-whatsapp"></i>
-                </a>
-                <div class="btn">
-                    <button>Learn More</button>
+        <div class="banner__container container items-center">
+            <div class="banner__content">
+                <h1 class="banner__title" data-heading="I'm Tobassum Munir">Experienced <br> front-end <span>developer</span></h1>
+                <div class="b__social-icons">
+                    <a href="#"><i class="bi bi-github"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-pinterest"></i></a>
+                    <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                </div>
+                <div class="banner__btn">
+                    <a href="#" class="btn">learn More</a>
                 </div>
             </div>
+        </div>
+    </section>
+    <!--About Me--->
+    <section class="about__me container">
+        <div class="heading">
+            <h1 class="gradient__heading">about me</h1>
+        </div>
+        <div class="about__me-content items-center">
+            <div class="dev__img">
+                <img src="./Images/web__assest/front-end%20developer.png" alt="developer">
+            </div>
+            <div class="about__me-description">
+                <p>I am a highly skilled and experienced front-end developer with a proven track record of success in developing and delivering high-quality, user-friendly web applications. I am proficient in a wide range of front-end technologies, including <a href="#">HTML, CSS, and JavaScript.</a></p>
+                <p>I am also experienced in working with a variety of design tools and frameworks, such as <a href="#">Figma</a>, <a href="#">Adobe Photoshop</a>, <a href="#">TailwindCSS</a>, and <a href="#">Bootstrap.</a> I am a highly motivated and results-oriented individual with a strong work ethic. I am also a team player and have excellent communication and problem-solving skills.</p>
+                <p>I am confident that I can be a valuable asset to your team and help you achieve your goals. If you have a project that you think I would be a good fit for, please don't hesitate to contact me on freelance marketplaces <a href="#">Fiverr</a>, <a href="#">Upwork</a>, and <a href="#">Kwork.</a> I would be happy to discuss your project in more detail and provide you with a quote.
+                </p>
+                <div class="btn about__btn">
+                    <a href="#">Get a Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Skills--->
 
-        </div>
-    </section>
-    <!--Indroduction---->
-    <section class="dev__intro">
-        <div class="dev__image">
-            <img src="./Images/web__assest/front-end%20developer.png" alt="front-end developer profile image">
-        </div>
-        <div class="dev__content">
-            <h3>About Me</h3>
-            <p>
-                I am a highly skilled and experienced front-end developer with a proven track record of success in developing and delivering high-quality, user-friendly web applications. I am proficient in a wide range of front-end technologies, including <a href="https://html.com/">HTML</a>, <a href="https://css-tricks.com/">CSS</a>, and <a href="https://www.javascript.com/">JavaScript</a>. I am also experienced in working with a variety of design tools and frameworks, such as <a href="https://www.figma.com/">Figma</a>, <a href="https://www.adobe.com/">Adobe Photoshop</a>, <a href="https://tailwindcss.com/">TailwindCSS</a>, and <a href="https://getbootstrap.com/">Bootstrap</a>.</p>
-            <p>
-                I am a highly motivated and results-oriented individual with a strong work ethic. I am also a team player and have excellent communication and problem-solving skills. I am confident that I can be a valuable asset to your team and help you achieve your goals.</p>
-            <p>
-                If you have a project that you think I would be a good fit for, please don't hesitate to contact me on freelance marketplaces <a href="https://fiverr.com/tobassumm">Fiverr</a>, <a href="https://www.upwork.com/fl/tobassummunir3?s=1110580755057594368">Upwork</a>, and <a href="https://kwork.com/user/frontenddev0">Kwork</a>. I would be happy to discuss your project in more detail and provide you with a quote.</p>
-        </div>
-    </section>
-    <!--Skills Container--->
-    <section class="skills">
-        <h1 data-title="Proven ability to create user-friendly and responsive web applications.">Skills</h1>
-        <div class="skill__container">
-            <div class="skill__items">
-                <div class="skill__item">
-                    <div class="skill__content">
-                        <p>HTML</p>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="bar" style="width:90%">
-                            <p>90%</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill__item">
-                    <div class="skill__content">
-                        <p>CSS</p>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="bar" style="width:90%">
-                            <p>90%</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill__item">
-                    <div class="skill__content">
-                        <p>JavaScript</p>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="bar" style="width:50%">
-                            <p>50%</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="skill__items">
-                <div class="skill__item">
-                    <div class="skill__content">
-                        <p>Bootstrap</p>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="bar" style="width:90%">
-                            <p>90%</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill__item">
-                    <div class="skill__content">
-                        <p>TailwindCSS</p>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="bar" style="width:75%">
-                            <p>75%</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill__item">
-                    <div class="skill__content">
-                        <p>Github</p>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="bar" style="width:75%">
-                            <p>75%</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="skill__items">
-                <div class="skill__item">
-                    <div class="skill__content">
-                        <p>Adobe Photoshop</p>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="bar" style="width:90%">
-                            <p>90%</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill__item">
-                    <div class="skill__content">
-                        <p>Figma</p>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="bar" style="width:80%">
-                            <p>80%</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--Services Container---->
-    <section class="services__section">
-        <h1 class="heading" data-heading="I'm proficient in this niches.">Services</h1>
-        <div class="services__wrapper">
-            <div class="card__body">
-                <img src="./Images/web__assest/front-end-development.png" alt="Front-end development services" class="service__img">
-                <span class="service__btn">Front-end Development</span>
-                <div class="service__detail">
-                    <p class="service__description">
-                        Front end development is the process of creating the user interface (UI) of a website or web application. It involves using HTML, CSS, and JavaScript to create the visual elements that users see and interact with. Front end developers also work with other developers to ensure that the UI is consistent with the overall design of the website or application.
-                    </p>
-                    <ul class="service__items">
-                        <li>
-                            Creating the layout and design of web pages
-                        </li>
-                        <li>
-                            Coding the visual elements of web pages, such as buttons, menus, and forms
-                        </li>
-                        <li>
-                            Using JavaScript to add interactivity to web pages
-                        </li>
-                        <li>
-                            Optimizing web pages for performance and accessibility
-                        </li>
-                        <li>
-                            Working with back end developers to ensure that the UI is consistent with the overall design of the website or application
-                        </li>
-                        <li>
-                            Convert Designs into Responsive landing page and website.
-                        </li>
-                    </ul>
-                    <div class="model__btn">
-                        <button>Get a qoute</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card__body">
-                <img src="./Images/web__assest/graphics-design.png" alt="Front-end development and graphics designing" class="service__img">
-                <span class="service__btn sub-title">Adobe Photoshop</span>
-                <div class="service__detail">
-                    <p class="service__description">
-                        Looking for a professional Photoshop editor to help you improve your photos? I can help you with all your Photoshop needs, from basic retouching to complex photo manipulation. I have over 10 years of experience in Photoshop, and I am confident that I can deliver high-quality results.
-                    </p>
-                    <ul class="service__items">
-                        <li>
-                            Photo retouching
-                        </li>
-                        <li>
-                            Background removal
-                        </li>
-                        <li>
-                            Photo restoration
-                        </li>
-                        <li>
-                            Photo manipulation
-                        </li>
-                        <li>
-                            Image resizing
-                        </li>
-                        <li>
-                            Photo compositing
-                        </li>
-                    </ul>
-                    <div class="model__btn">
-                        <button>Get a qoute</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!--Services--->
 
-<!--        Popup model-->
-        <div class="model__wrapper">
-            <div class="close__btn">
-                <span>&times;</span>
-            </div>
-            <div class="model__inner">
-                <div class="model__content">
-                    <div class="model__thumbnail">
-                        <img src="./Images/web__assest/front%20end%20desing.png" alt="" class="pop__image">
-                    </div>
-                    <div class="model__details">
-                        <p class="model__description">
-                            Front end development is the process of creating the user interface (UI) of a website or web application. It involves using HTML, CSS, and JavaScript to create the visual elements that users see and interact with. Front end developers also work with other developers to ensure that the UI is consistent with the overall design of the website or application.
-                        </p>
-                        <ul class="model__items">
-                        <li>
-                            Creating the layout and design of web pages
-                        </li>
-                        <li>
-                            Coding the visual elements of web pages, such as buttons, menus, and forms
-                        </li>
-                        <li>
-                            Using JavaScript to add interactivity to web pages
-                        </li>
-                        <li>
-                            Optimizing web pages for performance and accessibility
-                        </li>
-                        <li>
-                            Working with back end developers to ensure that the UI is consistent with the overall design of the website or application
-                        </li>
-                        <li>
-                            Convert Designs into Responsive landing page and website.
-                        </li>
-                    </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--        offers-->
-        <div class="service__offers">
-           <p class="title">Offers</p>
-            <div class="offer__inner">
-                <div class="offer">
-                    <span>Change Background</span><br>
-                    <span>10$</span>
-                </div>
-                <div class="offer">
-                    <span>photo manipulation</span><br>
-                    <span>10$</span>
-                </div>
-                <div class="offer">
-                    <span>figma design</span><br>
-                    <span>150$</span>
-                </div>
-                <div class="offer">
-                    <span>design into website</span><br>
-                    <span>85$</span>
-                </div>
-                <div class="offer">
-                    <span>web development</span><br>
-                    <span>200$</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!----Projects container------->
-    <section class="projects">
+    <!--Projeects--->
 
-    </section>
+    <!--Testimonials-->
+
+    <!--Contact Me--->
+
+    <!--Footer--->
     <!------------JavaScript---------->
-    <script src="main.js"></script>
-    </body>
-    </html>
+    <script src=" main.js"></script>
+</body></html>

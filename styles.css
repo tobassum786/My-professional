@@ -335,6 +335,7 @@ section {
 
 .fancy__border {
     position: relative;
+    overflow: hidden;
 }
 
 .fancy__border::after {
@@ -369,39 +370,35 @@ section {
 }
 
 .services .services__container {
-    padding: var(--margin-md);
     gap: var(--gap);
     flex-wrap: wrap;
+    margin-top: var(--margin-sm);
 }
 
-.services__container .service__card-body {
+.services .services__container .service__card-body {
+    position: relative;
     max-width: 30rem;
-    max-height: 25rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    overflow: hidden;
 }
 
 .services__container .service__card-body img {
+    object-fit: cover;
     width: 80%;
+    margin: 1rem;
 }
 
-.services__container .service__card-body a {
-    background-color: rgba(217, 217, 217, 0.31);
-    padding: 1rem;
-    width: 100%;
-    text-transform: capitalize;
-    font-weight: 700;
-    letter-spacing: 1.2px;
+.service__card-body .card__content {
     text-align: center;
     font-size: var(--font-sm);
-    cursor: pointer;
-}
-
-.services__container .service__card-body a:hover {
-    color: var(--light-color-alt);
+    width: 100%;
+    padding: 1rem;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    border-radius: 0 0 10px 10px;
+    background-color: rgba(217, 217, 217, 0.31);
 }
 
 /*Services Model js Effectis and styling*/

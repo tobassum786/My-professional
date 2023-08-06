@@ -335,7 +335,6 @@ section {
 
 .fancy__border {
     position: relative;
-    overflow: hidden;
 }
 
 .fancy__border::after {
@@ -399,12 +398,84 @@ section {
     text-transform: uppercase;
     border-radius: 0 0 10px 10px;
     background-color: rgba(217, 217, 217, 0.31);
+    z-index: 1;
+}
+
+.service__card-body .card__content a:hover {
+    color: var(--light-color-alt);
+    cursor: pointer;
 }
 
 /*Services Model js Effectis and styling*/
 
 .service__card-detail {
     display: none;
+}
+
+.services .model {
+    position: absolute;
+    display: none;
+    max-width: 950px;
+    height: 500px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    z-index: 2;
+    border: 2px solid #FD77F1;
+}
+
+.model .close_btn {
+    float: right;
+    padding: .8rem;
+
+}
+
+.model .close_btn i {
+    font-size: var(--font-sm);
+    cursor: pointer;
+}
+
+.model .close_btn i:hover {
+    color: #FD77F1;
+}
+
+.model .model__content {
+    padding: var(--margin-sm);
+    text-align: center;
+}
+
+.model .model__content h4 {
+    font-size: calc(1.2 * var(--font-sm));
+    text-transform: uppercase;
+    color: #FD77F1;
+
+}
+
+.model .model__content p {
+    font-size: calc(0.6 * var(--font-sm));
+    padding: 0.5rem 0;
+    font-weight: 200;
+}
+
+.model .model__content .service__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--margin-sm);
+    gap: var(--gap-sm);
+}
+
+.model .model__content .service__icons .icons {
+    width: 60px;
+    height: 60px;
+}
+
+.model__content .service__icons .icons img {
+    width: inherit;
+    height: inherit;
+}
+
+.model.open {
+    display: block;
 }
 
 /*Testimonials*/

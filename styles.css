@@ -12,10 +12,10 @@
     --banner-text: linear-gradient(117deg, #39F0F0 0%, #3052CA 35.94%, #8F22BA 79.17%);
     --font-family: 'Poppins', sans-serif;
     /*fonts sizes*/
-    --font-xsm: 1.25rem;
-    --font-sm: 1.6rem;
+    --font-xsm: 0.875rem;
+    --font-sm: 1.5rem;
     --font-lg: 2.5rem;
-    --font-xl: 5.25rem;
+    --font-xl: 3.75rem;
     /*spacing*/
     --gap: 3rem;
     --gap-sm: 1.6rem;
@@ -271,12 +271,12 @@ section {
 }
 
 .about__me-content .dev__img {
-    width: 35.0625rem;
+    width: 33.0625rem;
 }
 
 .about__me-content .about__me-description {
     flex: 1 0 35rem;
-    font-size: var(--font-xsm);
+    font-size: calc(1.4 * var(--font-xsm));
     padding: var(--margin-sm);
 }
 
@@ -293,14 +293,14 @@ section {
 }
 
 .about__me-content .about__me-description .about__btn {
-    width: 160px;
+    width: 150px;
     padding: 8px 16px;
     margin: 10px auto;
 }
 
 .about__me-content .about__me-description .about__btn a {
     color: var(--primary-color);
-    font-size: var(--font-xsm);
+    font-size: calc(1.4 * var(--font-xsm));
 }
 
 /*Skills*/
@@ -403,6 +403,9 @@ section {
 
 /*Services Model js Effectis and styling*/
 
+.service__card-detail {
+    display: none;
+}
 
 /*Testimonials*/
 

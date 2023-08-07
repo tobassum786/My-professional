@@ -22,7 +22,7 @@
         <ul class="nav__items" id="menu">
             <li><a href="#" class="nav__links current">Home</a></li>
             <li><a href="#" class="nav__links">Services</a></li>
-            <li><a href="#" class="nav__links">Projects</a></li>
+            <li><a href="#" class="nav__links">My Work</a></li>
             <li><a href="#" class="nav__links">About Me</a></li>
             <li><a href="#" class="nav__links">Blog</a></li>
             <li><a href="#" class="nav__links btn d-md-none">Get a Quote</a></li>
@@ -162,7 +162,7 @@
                     </a>
                 </div>
                 <div class="service__card-detail">
-                    <h4>Front-end development</h4>
+                    <h4 class="service__title">Front-end development</h4>
                     <p>
                         I am a front-end developer with 3+ years of experience in HTML, CSS, JavaScript, Bootstrap, TailwindCSS, and Figma. I can create visually appealing and user-friendly websites and applications that are responsive and accessible on all devices. I am passionate about creating user-centered experiences and I am always up-to-date on the latest trends in front-end development.
                     </p>
@@ -204,7 +204,7 @@
                 </div>
                 <!--service card end--->
                 <div class="service__card-detail">
-                    <h4>Graphics Designing</h4>
+                    <h4 class="service__title">Graphics Designing</h4>
                     <p>
                         I will edit your images in Adobe Photoshop to your specifications. I can remove unwanted objects, add text or graphics, change colors, and perform other edits to improve your images. I am experienced in a variety of image editing techniques, and I am confident that I can meet your needs.
                     </p>
@@ -218,52 +218,93 @@
             </div>
             <!--Popup Model for services--->
             <div class="model">
-                <div class="close_btn">
-                    <i class="bi bi-x"></i>
-                </div>
-                <div class="model__content">
-                    <h4>Front-end development</h4>
-                    <p>
-                        I am a front-end developer with 3+ years of experience in HTML, CSS, JavaScript, Bootstrap, TailwindCSS, and Figma. I can create visually appealing and user-friendly websites and applications that are responsive and accessible on all devices. I am passionate about creating user-centered experiences and I am always up-to-date on the latest trends in front-end development
-                    </p>
-                    <p>
-                        If you are looking for a front-end developer who can create beautiful, functional, and accessible websites and applications, I would be happy to discuss your project with you.
-                    </p>
+                <div class="model__inner">
+                    <div class="close_btn">
+                        <i class="bi bi-x"></i>
+                    </div>
+                    <div class="model__content">
+                        <h4 class="pop__title">Front-end development</h4>
+                        <p>
+                            I am a front-end developer with 3+ years of experience in HTML, CSS, JavaScript, Bootstrap, TailwindCSS, and Figma. I can create visually appealing and user-friendly websites and applications that are responsive and accessible on all devices. I am passionate about creating user-centered experiences and I am always up-to-date on the latest trends in front-end development
+                        </p>
+                        <p>
+                            If you are looking for a front-end developer who can create beautiful, functional, and accessible websites and applications, I would be happy to discuss your project with you.
+                        </p>
 
-                    <div class="service__icons">
-                        <div class="icons">
-                            <img src="./Images/web__assest/icons/Html%205.png" alt="HTML5">
-                        </div>
-                        <div class="icons">
-                            <img src="./Images/web__assest/icons/CSS3.png" alt="CSS3">
-                        </div>
-                        <div class="icons">
-                            <img src="./Images/web__assest/icons/JavaScript.png" alt="JavaScript">
-                        </div>
-                        <div class="icons">
-                            <img src="./Images/web__assest/icons/Bootstrap_color.png" alt="Bootstrap 5">
-                        </div>
-                        <div class="icons">
-                            <img src="./Images/web__assest/icons/Tailwindcss_color.png" alt="TailwindCSS">
-                        </div>
-                        <div class="icons">
-                            <img src="./Images/web__assest/icons/web_development.png" alt="Custom web development">
+                        <div class="service__icons">
+                            <div class="icons">
+                                <img src="./Images/web__assest/icons/Html%205.png" alt="HTML5">
+                            </div>
+                            <div class="icons">
+                                <img src="./Images/web__assest/icons/CSS3.png" alt="CSS3">
+                            </div>
+                            <div class="icons">
+                                <img src="./Images/web__assest/icons/JavaScript.png" alt="JavaScript">
+                            </div>
+                            <div class="icons">
+                                <img src="./Images/web__assest/icons/Bootstrap_color.png" alt="Bootstrap 5">
+                            </div>
+                            <div class="icons">
+                                <img src="./Images/web__assest/icons/Tailwindcss_color.png" alt="TailwindCSS">
+                            </div>
+                            <div class="icons">
+                                <img src="./Images/web__assest/icons/web_development.png" alt="Custom web development">
+                            </div>
                         </div>
                     </div>
-
                 </div>
             </div>
     </section>
     <!--Projeects--->
     <section class="projects">
         <div class="heading">
-            <h1 class="gradient__heading">Projects</h1>
+            <h1 class="gradient__heading">My work</h1>
         </div>
-        <div class="projects__container container">
+        <div class="projects__container container items-center">
+            <!---Project card start--->
             <div class="project__card-body fancy__border">
-
-
+                <div class="pp__img">
+                    <img src="./Images/projects/ablton%20landing%20page.png" alt="Ablton landing page">
+                </div>
+                <div class="pp__content">
+                    <p>Ablton Landing Page</p>
+                    <a href="#">view source</a>
+                </div>
             </div>
+            <!--card end--->
+            <!---Project card start--->
+            <div class="project__card-body fancy__border">
+                <div class="pp__img">
+                    <img src="./Images/projects/Nfative%20landing%20page.png" alt="Nftive landing page">
+                </div>
+                <div class="pp__content">
+                    <p>NFT Landing Page</p>
+                    <a href="#">view source</a>
+                </div>
+            </div>
+            <!--card end--->
+            <!---Project card start--->
+            <div class="project__card-body fancy__border">
+                <div class="pp__img">
+                    <img src="./Images/projects/Oh-studio%20landing%20page.png" alt="Oh studio landing page">
+                </div>
+                <div class="pp__content">
+                    <p>Oh-Studio Landing Page</p>
+                    <a href="#">view source</a>
+                </div>
+            </div>
+            <!--card end--->
+            <!---Project card start--->
+            <div class="project__card-body fancy__border">
+                <div class="pp__img">
+                    <img src="./Images/projects/treedialog%20blog.png" alt="Treedailog blog post listing landing page">
+                </div>
+                <div class="pp__content">
+                    <p>Treedailog blog</p>
+                    <a href="#">view source</a>
+                </div>
+            </div>
+            <!--card end--->
         </div>
     </section>
     <!--Testimonials-->

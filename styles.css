@@ -412,10 +412,11 @@ section {
     display: none;
 }
 
-.services .model {
+.model {
     position: absolute;
     display: none;
     max-width: 950px;
+    bottom: 70px;
     height: 500px;
     background-color: var(--primary-color);
     border-radius: 10px;
@@ -476,6 +477,55 @@ section {
 
 .model.open {
     display: block;
+}
+
+/*my work*/
+
+.projects {
+    position: relative;
+}
+
+.projects__container {
+    flex-wrap: wrap;
+    gap: var(--gap);
+    margin-top: var(--margin-md);
+}
+
+.project__card-body {
+    position: relative;
+    display: block;
+    max-width: 500px;
+    height: auto;
+}
+
+.project__card-body .pp__img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project__card-body .pp__img img {
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    min-height: 100%;
+}
+
+.pp__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    border-radius: 0 0 10px 10px;
+}
+
+.pp__content a,
+.pp__content p {
+    font-size: var(--font-xsm);
+    z-index: 1;
+    text-transform: capitalize;
+}
+
+.pp__content a:hover {
+    text-decoration: underline;
 }
 
 /*Testimonials*/

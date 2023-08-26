@@ -547,21 +547,37 @@ section {
     align-items: center;
 }
 
+.bi-quote {
+    font-size: var(--font-sm);
+}
+
 .client__fb {
     font-size: clamp(16px, 4vw, 24px);
     padding-bottom: var(--margin-sm);
 }
 
 .client__detail {
+    display: flex;
+    flex-direction: column;
     margin: var(--margin-sm);
-    gap: 10px;
+    line-height: 1;
 }
 
 .client__detail > span,
 .client__detail i {
     font-size: var(--font-xsm);
+    text-transform: capitalize;
 }
 
+.client__detail i {
+    padding-bottom: 8px;
+    font-size: 20px;
+}
+
+.client__detail > span:last-child {
+    text-transform: uppercase;
+    font-weight: 600;
+}
 /*Contact Me*/
 
 

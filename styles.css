@@ -402,7 +402,7 @@ section {
 }
 
 .service__card-body .card__content a:hover {
-    color: var(--light-color-alt);
+    text-decoration: underline;
     cursor: pointer;
 }
 

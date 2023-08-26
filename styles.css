@@ -496,6 +496,7 @@ section {
     display: block;
     max-width: 500px;
     height: auto;
+    transition: .3s;
 }
 
 .project__card-body .pp__img {
@@ -526,6 +527,11 @@ section {
 
 .pp__content a:hover {
     text-decoration: underline;
+}
+
+.project__card-body:hover {
+    transform: scale(105%);
+    transition: .3s;
 }
 
 /*Testimonials*/

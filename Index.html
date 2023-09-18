@@ -332,11 +332,11 @@
                     dddd
                 </div>
             </div>
-            <!---Swiper Pagination--->
-            <div class="swiper-pagination"></div>
             <!---Swiper buttons---->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
+            <!---Swiper Pagination--->
+            <div class="swiper-pagination"></div>
         </div>
     </section>
     <!--Contact Me--->
@@ -345,5 +345,18 @@
     <!------------JavaScript---------->
     <script src=" main.js"></script>
     <!-----SwiperJs CDN script----->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
+
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 1,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            },
+            pagination: {
+                el: '.swiper-pagination'
+            }
+        });
+    </script>
 </body></html>

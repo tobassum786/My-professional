@@ -34,15 +34,3 @@ function popupDetails(modelItems) {
     selectElement(".model__content").innerHTML = modelItems.querySelector(".service__card-detail").innerHTML;
 }
 ///Intersection animation
-
-///SwiperJs
-const swiper = new Swiper('.swiper', {
-    slidesPerView: 1,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-    },
-    pagination: {
-        el: '.swiper-pagination'
-    }
-});

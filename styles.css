@@ -194,6 +194,7 @@ section {
     border-radius: 50%;
     width: 47.9375rem;
     height: 45.3125rem;
+    opacity: .55;
     background: var(--after-effect);
     z-index: -1;
 }
@@ -329,6 +330,13 @@ section {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    transition: .3s;
+    background-color: var(--primary-color);
+}
+
+.skills__container .card__body:hover {
+    cursor: pointer;
+    filter: invert(1);
 }
 
 /*Gradient border*/
@@ -351,6 +359,7 @@ section {
 
 /*End gradient border*/
 
+
 .skills__container .card__body .icons {
     width: 30%;
 }
@@ -361,6 +370,7 @@ section {
     padding-top: 1rem;
     text-transform: uppercase;
 }
+
 
 /*Services*/
 .services {
@@ -483,12 +493,39 @@ section {
 
 .projects {
     position: relative;
+    overflow: hidden;
 }
 
 .projects__container {
     flex-wrap: wrap;
     gap: var(--gap);
     margin-top: var(--margin-md);
+}
+
+.projects::before {
+    content: '';
+    width: 400px;
+    height: 400px;
+    background: var(--gradient-color);
+    position: absolute;
+    left: -100px;
+    filter: blur(110px);
+    opacity: .55;
+    border-radius: 50%;
+}
+
+.projects::after {
+    content: '';
+    width: 400px;
+    height: 400px;
+    background: var(--gradient-color);
+    position: absolute;
+    right: -100px;
+    bottom: 50px;
+    z-index: -1;
+    opacity: .55;
+    filter: blur(110px);
+    border-radius: 50%;
 }
 
 .project__card-body {

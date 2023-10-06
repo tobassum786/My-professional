@@ -644,7 +644,8 @@ section {
 
 .faqs .faqs__clients .heading__data {
     font-size: var(--font-lg);
-    font-weight: 200;
+    font-weight: 400;
+    max-width: 750px;
 }
 
 .faqs .faqs__clients .heading__data::after {
@@ -653,8 +654,97 @@ section {
     height: 1px;
     background: var(--light-color);
     display: block;
+    margin-top: var(--margin-sm);
+}
+
+.faqs__list {
+    position: relative;
+    max-width: 400px;
+    margin-top: var(--margin-sm);
+}
+
+.faqs__dropdown {
+    padding-bottom: var(--margin-sm);
+}
+
+.faqs__list button {
+    font-size: var(--font-xsm);
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.faqs__list h4 {
+    font-size: var(--font-xsm);
+    font-weight: 400;
+    text-transform: capitalize;
+    padding-bottom: calc( 0.2 * var(--margin-sm));
+}
+
+.faqs__list .faq__items p {
+    font-size: var(--font-xsm);
+    font-weight: 200;
+    color: var(--light-color-alt);
+}
+
+.faq__items {
+    display: none;
+}
+
+.faqs__dropdown.show .faq__items {
+    display: block;
+}
+
+/*Contact Me*/
+.contact__me {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+}
+.contact__me .text__data {
+    position: relative;
+    max-width: 750px;
+    font-size: var(--font-lg);
+    border-left: 2px solid var(--light-color);
+    padding: 0 var(--margin-sm);
+    margin-bottom: var(--margin-sm);
+}
+
+.contact__me form {
+    position: relative;
+    max-width: 587px;
+    display: flex;
+    flex-direction: column;
+    padding: var(--margin-sm);
+    line-height: 4;
+}
+
+.contact__me form input {
+    padding: 5px;
+    width: 580px;
+    margin-bottom: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;s
+}
+
+.contact__me form textarea {
+    resize: none;
+    background: none;
+    outline: none;
+    width: 580px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+::placeholder {
+    font-size: var(--font-xsm);
+    text-transform: capitalize;
 }
 /*Footer*/
+
 
 
 /*Responsive md screen sizes*/

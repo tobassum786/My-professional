@@ -33,4 +33,17 @@ selectElement('.close_btn').addEventListener('click', toggleModelPopup);
 function popupDetails(modelItems) {
     selectElement(".model__content").innerHTML = modelItems.querySelector(".service__card-detail").innerHTML;
 }
+
+//FAQs sections
+const faqBtn = document.querySelectorAll('.add__btn');
+
+faqBtn.forEach((evant) => {
+    evant.addEventListener('click', () => {
+        if (evant.classList.contains("show")) {
+            evant.classList.remove("show");
+        } else {
+            evant.classList.add("show");
+        }
+    });
+});
 ///Intersection animation

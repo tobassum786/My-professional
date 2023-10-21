@@ -101,19 +101,23 @@ section {
 }
 
 .btn {
-    color: var(--primary-color);
-    background: var(--gradient-color);
-    border-radius: 10px;
-    font-size: var(--font-sm);
-    padding: 16px 32px;
+    width: 180px;
+    height: 50px;
+    background: none;
     outline: none;
-    border: none;
+    border: 2px solid var(--light-color);
+    box-shadow: 8px -8px 0 var(--light-color-alt);
+    color: var(--light-color);
+    font-size: var(--font-sm);
+    font-weight: 300;
     cursor: pointer;
-    font-weight: 600;
+    transition: .3s;
 }
 
 .btn:hover {
-    margin: -10px 0 10px 0;
+    background: var(--light-color);
+    color: var(--primary-color);
+    box-shadow: none;
 }
 
 .gradient__heading {
@@ -184,6 +188,8 @@ section {
 .banner {
     position: relative;
     height: 100vh;
+    background: url(./Images/web__assest/banner.svg) no-repeat center center;
+    background-size: 100% auto;
 }
 
 .banner::before {
@@ -194,15 +200,18 @@ section {
     border-radius: 50%;
     width: 47.9375rem;
     height: 45.3125rem;
-    opacity: .55;
-    background: var(--after-effect);
+    opacity: .7;
+    background: var(--light-color-alt);
     z-index: -1;
 }
 
 .banner__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     text-align: center;
-    height: 80vh;
+    height: inherit;
 }
 
 .container .banner__content h1 {
@@ -230,6 +239,7 @@ section {
 .banner__content .b__social-icons {
     display: flex;
     max-width: 25rem;
+    flex-wrap: wrap;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
@@ -256,8 +266,7 @@ section {
 /*ABout Me*/
 .about__me {
     position: relative;
-    background: url(Images/web__assest/Ellipse%202.png) no-repeat bottom right;
-    background-size: contain;
+    padding: 100px 0;
 }
 
 .about__me-content {
@@ -293,15 +302,67 @@ section {
     -webkit-text-fill-color: transparent;
 }
 
-.about__me-content .about__me-description .about__btn {
-    width: 150px;
-    padding: 8px 16px;
-    margin: 10px auto;
+.about__me-content .about__btn {
+    margin-top: 1.5rem;
+    text-align: center;
 }
 
-.about__me-content .about__me-description .about__btn a {
-    color: var(--primary-color);
-    font-size: calc(1.4 * var(--font-xsm));
+.about__me-content .about__btn .btn-1{
+    padding: 0.6rem 1.2rem;
+}
+
+
+/*About Me actions*/
+.about__me-action {
+    position: relative;
+    padding: 50px 30px;
+}
+
+.about__me-action .heading__data {
+    max-width: 500px;
+    margin-bottom: var(--margin-sm);
+}
+
+.about__me-action .heading__data::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 700px;
+    height: 2px;
+    background: var(--light-color);
+    right: 0;
+    top: 100px;
+}
+
+.about__me-action .heading__data p {
+    font-size: var(--font-lg);
+    font-weight: 500;
+}
+
+.action__list .list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+    justify-content: center;
+    gap: 50px;
+}
+
+.list div {
+    padding: 10px;
+}
+
+.list div li {
+    list-style: decimal;
+    list-style-position: inside;
+    font-size: var(--font-sm);
+    text-transform: capitalize;
+    padding-bottom: var(--gap-sm);
+    font-weight: 500;
+}
+
+.list div p {
+    font-size: var(--font-xsm);
+    font-weight: 200;
+    color: var(--light-color-alt);
 }
 
 /*Skills*/
@@ -510,7 +571,7 @@ section {
     position: absolute;
     left: -100px;
     filter: blur(110px);
-    opacity: .55;
+    opacity: .3;
     border-radius: 50%;
 }
 
@@ -523,7 +584,7 @@ section {
     right: -100px;
     bottom: 50px;
     z-index: -1;
-    opacity: .55;
+    opacity: .3;
     filter: blur(110px);
     border-radius: 50%;
 }
@@ -584,6 +645,10 @@ section {
     align-items: center;
 }
 
+.testinomials .testinomials__slides .slide__width {
+    max-width: 100%;
+}
+
 .bi-quote {
     font-size: var(--font-sm);
 }
@@ -617,26 +682,36 @@ section {
 }
 
 /*Actions*/
+.actions {
+    position: relative;
+    padding: 50px 100px;
+}
+
+.actions .action {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: var(--gap-sm);
+}
 
 .side__divder {
-    width: 500px;
+    width: 550px;
     height: 2px;
     background-color: var(--light-color);
-    position: absolute;
-    left: 0;
 }
 
 .action .text__data {
-    position: absolute;
-    left: 510px;
     font-size: var(--font-sm);
     color: var(--light-color-alt);
     text-transform: uppercase;
     font-weight: 100;
-    padding: 0 var(--margin-sm);
 }
 
 /*FAQs*/
+
+.faqs {
+    padding: 50px 100px;
+}
 
 .faqs .faqs__clients {
     position: relative;
@@ -695,12 +770,30 @@ section {
     display: block;
 }
 
+.faqs__dropdown .faq__menu {
+    display: block;
+}
+
+.faq__toggle.show .add__btn{
+    display: none;
+}
+
+.faq__toggle.show .minimize__btn{
+    display: block;
+}
+
+.faqs__dropdown .minimize__btn {
+    display: none;
+}
+
+
 /*Contact Me*/
 .contact__me {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
     justify-items: center;
+    padding: 100px;
 }
 .contact__me .text__data {
     position: relative;
@@ -821,6 +914,9 @@ section {
     .banner__container .banner__content h1 {
         font-size: var(--font-lg);
     }
+
+    .about__me-action .heading__data::after {
+        top: 200px;
+    }
 }
 
-}

@@ -57,7 +57,7 @@
                     <a href="#"><i class="bi bi-instagram"></i></a>
                 </div>
                 <div class="banner__btn">
-                    <a href="#" class="btn">learn More</a>
+                    <button href="#" class="btn">learn More</button>
                 </div>
             </div>
         </div>
@@ -76,9 +76,26 @@
                 <p>I am also experienced in working with a variety of design tools and frameworks, such as <a href="#">Figma</a>, <a href="#">Adobe Photoshop</a>, <a href="#">TailwindCSS</a>, and <a href="#">Bootstrap.</a> I am a highly motivated and results-oriented individual with a strong work ethic. I am also a team player and have excellent communication and problem-solving skills.</p>
                 <p>I am confident that I can be a valuable asset to your team and help you achieve your goals. If you have a project that you think I would be a good fit for, please don't hesitate to contact me on freelance marketplaces <a href="#">Fiverr</a>, <a href="#">Upwork</a>, and <a href="#">Kwork.</a> I would be happy to discuss your project in more detail and provide you with a quote.
                 </p>
-                <div class="btn about__btn">
-                    <a href="#">Get a Quote</a>
+                <div class="about__btn">
+                    <a href="#do__it" class="btn btn-1">Get a Quote</a>
                 </div>
+            </div>
+        </div>
+        <div class="about__me-action">
+            <div class="heading__data">
+                <p>Regardless of project size, you will always get:</p>
+            </div>
+            <div class="action__list">
+                <ul class="list">
+                    <div>
+                        <li>On-time delivery</li>
+                        <p>I know time is money so I don’t want to waste yours. Or mine. So I guarantee that I will always deliver what you pay for as promised.</p>
+                    </div>
+                    <div>
+                        <li>quality</li>
+                        <p>I don’t want to put my name on something subpar so my first concern is always quality. No matter what, you will love the end result.</p>
+                    </div>
+                </ul>
             </div>
         </div>
     </section>
@@ -315,7 +332,7 @@
         <div class="testinomials__slides swiper">
             <div class="swiper-wrapper">
                <!---Swiper Slides--->
-                <div class="swiper-slide">
+                <div class="swiper-slide slide__width">
                    <i class="bi bi-quote"></i>
                     <span class="client__fb">I am very appreciate for your work. <br> I am very satisfied with the results and I working with you again next week.</span>
                     <div class="client__detail">
@@ -333,6 +350,16 @@
                         <span>abramovalex0</span>
                         <br>
                         <span class="gradient__heading">from Israel on Kwork</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                   <i class="bi bi-quote"></i>
+                    <span class="client__fb">The seller was communicating actively from the time order was accepted right until delivery. <br>Also flexible in making adjustments that were required post delivery. Very good experience.</span>
+                    <div class="client__detail">
+                        <i class="bi bi-person-circle"></i>
+                        <span>Vinitadur Bhatkar</span>
+                        <br>
+                        <span class="gradient__heading">from India on Kwork</span>
                     </div>
                 </div>
             </div>
@@ -363,8 +390,12 @@
             <div class="faqs__list">
 <!--               FAQ01-->
                 <div class="faqs__dropdown">
-                    <button class="bi bi-plus add__btn"></button>
-                    <button class="bi bi-dash close__btn"></button>
+                   <div class="faq__menu">
+                       <button class="items-center faq__toggle">
+                           <i class="bi bi-plus add__btn"></i>
+                           <i class="bi bi-dash minimize__btn"></i>
+                       </button>
+                   </div>
                     <h4>what timezone are you in?</h4>
                     <div class="faq__items">
                         <p>However, I can access and process information from all over the world, regardless of the time zone. So, I can help you with your projects no matter where you are located.</p>
@@ -372,8 +403,12 @@
                 </div>
                 <!--FAQ02---->
                 <div class="faqs__dropdown">
-                    <button class="bi bi-plus add__btn"></button>
-                    <button class="bi bi-dash close__btn"></button>
+                     <div class="faq__menu">
+                       <button class="items-center faq__toggle">
+                           <i class="bi bi-plus add__btn"></i>
+                           <i class="bi bi-dash minimize__btn"></i>
+                       </button>
+                   </div>
                     <h4>How much do you charge for a website?</h4>
                     <div class="faq__items">
                         <p>However, I can access and process information from all over the world, regardless of the time zone. So, I can help you with your projects no matter where you are located.</p>
@@ -381,8 +416,12 @@
                 </div>
                 <!--FAQ03---->
                 <div class="faqs__dropdown">
-                    <button class="bi bi-plus add__btn"></button>
-                    <button class="bi bi-dash close__btn"></button>
+                     <div class="faq__menu">
+                       <button class="items-center faq__toggle">
+                           <i class="bi bi-plus add__btn"></i>
+                           <i class="bi bi-dash minimize__btn"></i>
+                       </button>
+                   </div>
                     <h4>Do you charge by the hour?</h4>
                     <div class="faq__items">
                         <p>However, I can access and process information from all over the world, regardless of the time zone. So, I can help you with your projects no matter where you are located.</p>
@@ -390,8 +429,12 @@
                 </div>
                 <!--FAQ04---->
                 <div class="faqs__dropdown">
-                    <button class="bi bi-plus add__btn"></button>
-                    <button class="bi bi-dash close__btn"></button>
+                     <div class="faq__menu">
+                       <button class="items-center faq__toggle">
+                           <i class="bi bi-plus add__btn"></i>
+                           <i class="bi bi-dash minimize__btn"></i>
+                       </button>
+                   </div>
                     <h4>Are you working with a team?</h4>
                     <div class="faq__items">
                         <p>However, I can access and process information from all over the world, regardless of the time zone. So, I can help you with your projects no matter where you are located.</p>
@@ -401,7 +444,7 @@
         </div>
     </section>
     <!---Contact Me---->
-    <section class="contact__me container">
+    <section class="contact__me container" id="do__it">
        <div class="text__data">
            <p>Got a project in mind? Use the form to give me as much detail as possible and I’ll get back to you as soon as I can.</p>
        </div>

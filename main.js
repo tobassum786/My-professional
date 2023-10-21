@@ -35,15 +35,12 @@ function popupDetails(modelItems) {
 }
 
 //FAQs sections
-const faqBtn = document.querySelectorAll('.add__btn');
+const faqBtn = document.querySelectorAll('.faq__menu');
 
-faqBtn.forEach((evant) => {
-    evant.addEventListener('click', () => {
-        if (evant.classList.contains("show")) {
-            evant.classList.remove("show");
-        } else {
-            evant.classList.add("show");
-        }
+faqBtn.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+        toggle.parentNode.classList.toggle('show')
+        toggle.classList.toggle('show')
     });
 });
 ///Intersection animation

@@ -23,10 +23,10 @@
             <img src="./Images/web__assest/logo.png" alt="Logo">
         </a>
         <ul class="nav__items" id="menu">
-            <li><a href="#" class="nav__links current">Home</a></li>
-            <li><a href="#" class="nav__links">Services</a></li>
-            <li><a href="#" class="nav__links">My Work</a></li>
-            <li><a href="#" class="nav__links">About Me</a></li>
+            <li><a href="#home" class="nav__links current">Home</a></li>
+            <li><a href="#services" class="nav__links">Services</a></li>
+            <li><a href="#work" class="nav__links">My Work</a></li>
+            <li><a href="#about__me" class="nav__links">About Me</a></li>
             <li><a href="#" class="nav__links">Blog</a></li>
             <li><a href="#" class="nav__links btn d-md-none">Get a Quote</a></li>
         </ul>
@@ -43,38 +43,34 @@
         </div>
     </nav>
     <!--Banner--->
-    <section class="banner">
-        <div class="banner__container container items-center">
-            <div class="banner__content">
-                <h1 class="banner__title" data-heading="I'm Tobassum Munir">Experienced <br> front-end <span>developer</span></h1>
-                <div class="b__social-icons">
-                    <a href="#"><i class="bi bi-github"></i></a>
-                    <a href="#"><i class="bi bi-facebook"></i></a>
-                    <a href="#"><i class="bi bi-twitter"></i></a>
-                    <a href="#"><i class="bi bi-linkedin"></i></a>
-                    <a href="#"><i class="bi bi-pinterest"></i></a>
-                    <a href="#"><i class="bi bi-whatsapp"></i></a>
-                    <a href="#"><i class="bi bi-instagram"></i></a>
+    <section class="banner" id="home">
+        <div class="banner__container">
+                <div class="dev__img items-center">
+                    <img src="./Images/web__assest/front-end%20developer.jpeg" alt="developer">
                 </div>
-                <div class="banner__btn">
-                    <button href="#" class="btn">learn More</button>
-                </div>
+                <div class="content__desc">
+                   <p class="b__heading" data-heading="I'm">Tobassum Munir</p>
+                    <p class="tag__line">front-end <span class="text-gradient">developer</span></p>
+                    <div class="b__social-icons">
+                <a href="#"><i class="bi bi-github"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-whatsapp"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
             </div>
+                </div>
         </div>
     </section>
     <!--About Me--->
-    <section class="about__me container">
+    <section class="about__me container" id="about__me">
         <div class="heading">
             <h1 class="gradient__heading">about me</h1>
         </div>
         <div class="about__me-content items-center">
-            <div class="dev__img items-center">
-                <img src="./Images/web__assest/front-end%20developer.png" alt="developer">
-            </div>
             <div class="about__me-description">
-                <p>I am a highly skilled and experienced front-end developer with a proven track record of success in developing and delivering high-quality, user-friendly web applications. I am proficient in a wide range of front-end technologies, including <a href="#">HTML, CSS, and JavaScript.</a></p>
-                <p>I am also experienced in working with a variety of design tools and frameworks, such as <a href="#">Figma</a>, <a href="#">Adobe Photoshop</a>, <a href="#">TailwindCSS</a>, and <a href="#">Bootstrap.</a> I am a highly motivated and results-oriented individual with a strong work ethic. I am also a team player and have excellent communication and problem-solving skills.</p>
-                <p>I am confident that I can be a valuable asset to your team and help you achieve your goals. If you have a project that you think I would be a good fit for, please don't hesitate to contact me on freelance marketplaces <a href="#">Fiverr</a>, <a href="#">Upwork</a>, and <a href="#">Kwork.</a> I would be happy to discuss your project in more detail and provide you with a quote.
+                <p>I am a highly skilled and experienced front-end developer with a proven track record of success in developing and delivering high-quality, user-friendly web applications. I am proficient in a wide range of front-end technologies, including <a href="#">HTML, CSS, and JavaScript.</a>And also experienced in working with a variety of design tools and frameworks, such as <a href="#">Figma</a>, <a href="#">Adobe Photoshop</a>, <a href="#">TailwindCSS</a>, and <a href="#">Bootstrap.</a></p>
+                <p>I can be a valuable asset to your team and help you achieve your goals. If you have a project that you think  would be a good fit for, please don't hesitate to contact me on freelance marketplaces <a href="#">Fiverr</a>, <a href="#">Upwork</a>, and <a href="#">Kwork.</a> I would be happy to discuss your project in more detail and provide you with a quote.
                 </p>
                 <div class="about__btn">
                     <a href="#do__it" class="btn btn-1">Get a Quote</a>
@@ -100,7 +96,7 @@
         </div>
     </section>
     <!--Skills--->
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="heading">
             <h1 class="gradient__heading">Skills</h1>
         </div>
@@ -168,7 +164,7 @@
         </div>
     </section>
     <!--Services--->
-    <section class="services">
+    <section class="services" id="services">
         <div class="heading">
             <h1 class="gradient__heading">Services</h1>
         </div>
@@ -276,7 +272,7 @@
             </div>
     </section>
     <!--Projeects--->
-    <section class="projects">
+    <section class="projects" id="work">
         <div class="heading">
             <h1 class="gradient__heading">My work</h1>
         </div>
@@ -342,7 +338,7 @@
                         <span class="gradient__heading">from USA on Fiverr</span>
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide slide__width">
                    <i class="bi bi-quote"></i>
                     <span class="client__fb">The work was done in time, after small fixes, <br>the work was received perfectly.</span>
                     <div class="client__detail">
@@ -352,7 +348,7 @@
                         <span class="gradient__heading">from Israel on Kwork</span>
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide slide__width">
                    <i class="bi bi-quote"></i>
                     <span class="client__fb">The seller was communicating actively from the time order was accepted right until delivery. <br>Also flexible in making adjustments that were required post delivery. Very good experience.</span>
                     <div class="client__detail">
@@ -363,9 +359,6 @@
                     </div>
                 </div>
             </div>
-            <!---Swiper buttons---->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
             <!---Swiper Pagination--->
             <div class="swiper-pagination"></div>
         </div>
@@ -411,7 +404,7 @@
                    </div>
                     <h4>How much do you charge for a website?</h4>
                     <div class="faq__items">
-                        <p>However, I can access and process information from all over the world, regardless of the time zone. So, I can help you with your projects no matter where you are located.</p>
+                        <p>The cost of a website varies depending on the size, complexity, and features of the website. Contact me for discussing your project cost and deadline. </p>
                     </div>
                 </div>
                 <!--FAQ03---->
@@ -424,7 +417,7 @@
                    </div>
                     <h4>Do you charge by the hour?</h4>
                     <div class="faq__items">
-                        <p>However, I can access and process information from all over the world, regardless of the time zone. So, I can help you with your projects no matter where you are located.</p>
+                        <p>Yes, I can charge by the hour. For complex or time-consuming tasks, this may be the most efficient billing structure. My hourly rate is <strong>$50</strong> per hour,</p>
                     </div>
                 </div>
                 <!--FAQ04---->
@@ -437,7 +430,7 @@
                    </div>
                     <h4>Are you working with a team?</h4>
                     <div class="faq__items">
-                        <p>However, I can access and process information from all over the world, regardless of the time zone. So, I can help you with your projects no matter where you are located.</p>
+                        <p>Yes, The team is responsible for my creation and ongoing development. They are constantly working to improve my abilities and make me more helpful to users.</p>
                     </div>
                 </div>
             </div>

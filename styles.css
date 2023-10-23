@@ -15,7 +15,7 @@
     --font-xsm: 0.875rem;
     --font-sm: 1.5rem;
     --font-lg: 2.5rem;
-    --font-xl: 3.75rem;
+    --font-xl: clamp(1rem, 4vw, 3.75rem);
     /*spacing*/
     --gap: 3rem;
     --gap-sm: 1.6rem;
@@ -34,12 +34,14 @@
     box-sizing: border-box;
     font-family: var(--font-family);
     color: var(--light-color);
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: var(--primary-color);
     font-size: 62.5%;
     box-sizing: inherit;
+    scroll-behavior: smooth;
 }
 
 ul,
@@ -165,6 +167,7 @@ section {
     text-transform: capitalize;
     font-size: var(--font-xsm);
     color: var(--light-color-alt);
+    transition: .3s;
 }
 
 .nav__bar .nav__items .nav__links:hover {
@@ -185,84 +188,80 @@ section {
 }
 
 /*Banner*/
+
 .banner {
-    position: relative;
-    height: 100vh;
-    background: url(./Images/web__assest/banner.svg) no-repeat center center;
-    background-size: 100% auto;
+    background-color: var(--light-color-alt);
+    padding: 0 50px;
 }
 
-.banner::before {
-    content: '';
-    position: absolute;
-    top: -520px;
-    filter: blur(75px);
-    border-radius: 50%;
-    width: 47.9375rem;
-    height: 45.3125rem;
-    opacity: .7;
-    background: var(--light-color-alt);
-    z-index: -1;
-}
-
-.banner__container {
-    display: flex;
+.banner .banner__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
     justify-content: center;
     align-items: center;
-    position: relative;
-    text-align: center;
-    height: inherit;
 }
 
-.container .banner__content h1 {
+.banner .banner__container .dev__img {
+    max-width: 80%;
+}
+
+.banner .banner__container .content__desc {
+    flex-direction: column;
     position: relative;
+    padding: 10px;
+}
+
+.banner .banner__container .content__desc::before {
+    content: '';
+    width: 2px;
+    height: 290px;
+    background: var(--primary-color);
+    display: block;
+    position: absolute;
+    left: -10px;
+}
+
+.banner .banner__container .content__desc p {
     font-size: var(--font-xl);
     text-transform: capitalize;
-    padding: 1rem;
-    line-height: 1.1;
+    color: var(--primary-color);
+    font-weight: 700;
+    line-height: 1.2;
 }
 
-.container .banner__content h1::before {
+.banner .banner__container .content__desc .b__heading::before {
     content: attr(data-heading);
     display: block;
-    font-size: var(--font-sm);
-    text-transform: uppercase;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    line-height: 1;
 }
 
-.container .banner__content h1 span {
-    background: var(--banner-text);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.banner .banner__container .dev__img img {
+    width: 100%;
 }
 
-.banner__content .b__social-icons {
-    display: flex;
-    max-width: 25rem;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
+.banner .b__social-icons {
     position: relative;
-    gap: var(--gap-sm);
+    left: 5px;
+    display: flex;
+    margin-top: var(--gap-sm);
+    background-color: var(--primary-color);
+    gap: 10px;
+    max-width: 330px;
+    padding: 8px;
 }
 
-.banner__content .b__social-icons a {
-    font-size: calc(1.45 * var(--font-sm));
+.banner .banner__container .b__social-icons a {
+    font-size: var(--font-sm);
+    padding: 8px 10px;
     transition: .3s;
 }
 
-.banner__content .b__social-icons a:hover {
+.banner .banner__container .b__social-icons a:hover {
     margin-top: -8px;
 }
-
-.banner__content .banner__btn {
-    position: relative;
-    padding: var(--margin-sm);
-    margin-top: var(--items-height-sm);
-    text-transform: capitalize;
-}
-
 /*ABout Me*/
 .about__me {
     position: relative;
@@ -280,13 +279,9 @@ section {
     margin: 0 auto;
 }
 
-.about__me-content .dev__img {
-    width: 33.0625rem;
-}
-
 .about__me-content .about__me-description {
     flex: 1 0 35rem;
-    font-size: calc(1.4 * var(--font-xsm));
+    font-size: calc(1 * var(--font-xsm));
     padding: var(--margin-sm);
 }
 
@@ -647,6 +642,8 @@ section {
 
 .testinomials .testinomials__slides .slide__width {
     max-width: 100%;
+    margin: 0 auto;
+    cursor: grab;
 }
 
 .bi-quote {

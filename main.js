@@ -17,22 +17,6 @@ const toggleMenu = () => {
 menuToggleIcon.addEventListener('click', toggleMenu);
 
 ////Model popup
-document.addEventListener('click', (e) => {
-    if (e.target.classList.contains('open__model')) {
-        toggleModelPopup();
-        popupDetails(e.target.parentElement);
-    }
-})
-
-function toggleModelPopup() {
-    selectElement('.model').classList.toggle('open');
-}
-
-selectElement('.close_btn').addEventListener('click', toggleModelPopup);
-
-function popupDetails(modelItems) {
-    selectElement(".model__content").innerHTML = modelItems.querySelector(".service__card-detail").innerHTML;
-}
 
 //FAQs sections
 const faqBtn = document.querySelectorAll('.faq__menu');

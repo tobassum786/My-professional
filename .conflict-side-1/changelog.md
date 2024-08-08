@@ -1,11 +1,10 @@
 ### New version recreation
 
-In this version I redesign the whole website in new look with HTML css and JavaScript. 
+Recreate new look the whole website with modern web-standard. And full interactive forms and update buttom states.
 
-##### Branch Name is re-creation on github
+##### Development Branch Name
 
-In head tag add google FAQs schema for better SEO.
-
+`re-creation` 
 
 ### About
 
@@ -15,7 +14,6 @@ utilizing HTML, CSS, and JavaScript to create contemporary, web-standard webpage
 
 
 Utilizing Figma, Pixso, and Lunacy as UI/UX design tools. building cutting-edge, pixel-perfect apps and websites. 
-
 
 
 ### Services 
@@ -30,5 +28,8 @@ The most reasonable offers in development.
 ## Porfolio
 
 ### contact me
+tobassum@msn.com
++966538975722
++923356223323
 
 ### Faqs

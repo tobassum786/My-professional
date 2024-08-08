@@ -25,7 +25,7 @@ delivering exceptional and top-notch work to my clients worldwide.
 
 
 ### offers
-Best affordable price in development.
+The most reasonable offers in development.
 
 ## Porfolio
 

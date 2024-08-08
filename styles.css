@@ -6,7 +6,7 @@
 
 :root {
 /*    colorgraphy*/
-    --base-clr: #414141; !important
+    --base-clr: #1b222b; !important
     --primary-clr: #ffffff;
     --secondary-clr: #F7FF9A;
     --gradient: linear-gradient(150deg, rgba(249,46,220,1) 0%, rgba(129,31,238,1) 47%, rgba(0,26,245,1) 100%);
@@ -46,14 +46,13 @@ img {
 }
 
 button {
-    border: none;
-    outline: none;
-    background: none;
+    all: none;
 }
 
 a, ul, li {
     list-style: none;
     text-decoration: none;
+    color: var(--secondary-clr);
 }
 
 
@@ -79,4 +78,18 @@ section {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+}
+
+/*Nav__bar styling*/
+
+header {
+    position: relative;
+    width: 100%;
+}
+
+.nav_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }

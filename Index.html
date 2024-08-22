@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/styles.css" rel="text/stylesheet">
+    <!-- Resets CSS---->
+    <link rel="stylesheet" href="/reset.css" rel="text/stylesheet">
     <!-- Bootstrap CDN for ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Animation CSS-->
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>Tobassum Portfolio</title>
 </head>
 <body>
@@ -14,7 +21,7 @@
     <header>
         <nav class="nav_bar">
             <div class="logo">
-                <img src="./Images/web__assest/logo.png" alt="portfolio logo">
+                <a href="#"><img src="./Images/web__assest/logo.png" alt="portfolio logo"></a>
             </div>
             <ul class="nav_items">
                 <li class="nav_link"><a href="#">Home</a></li>
@@ -23,7 +30,7 @@
                 <li class="nav_link"><a href="#">projects</a></li>
                 <li class="nav_link"><a href="#">contact me</a></li>
             </ul>
-            <div class="toggle__menu">
+            <div class="toggle__menu d-md-none">
                 <button class="toggle__btn">
                     <i class="bi bi-x-circle close_menu"></i>
                     <i class="bi bi-list open_menu"></i>
@@ -31,5 +38,41 @@
             </div>
         </nav>
     </header>
+    <main>
+        <!--Hero Section-->
+        <section class="hero_container container">
+            <div class="hero_content">
+                <div class="hero_text">
+                <p class="text" data-text= "i'm">Tobassum Munir <br><span class="text_gradient">Front-end web developer</span></p>
+                </div>
+                <div class="hero_btn">
+                    <button class="cv_btn">download cv</button>
+                    <button class="more_btn">read more <i class="bi bi-box-arrow-down-right"></i></button>
+                </div>
+            </div>
+        </section>
+        <!--About Section-->
+        <section class="about_container container">
+            <div class="about_text">
+                <p class="about_heading">
+                    about me
+                </p>
+                <div class="about_description">
+                    <p>
+                        I'm an experienced front-end developer with a strong passion for building execptional user experiences. With <strong>HTML, CSS, and JavaScript</strong> and various front-end frameworks. I'm able at converting abstract design into modern web and responsive digital experiences.</p>
+
+                        <p>
+                        What sets me apart is my ability to balance technical expertise with a creative mindset. I approach each project collaboratively, working closely with designers, back-end developers, and clients to ensure the final product not only looks great but also compatible with all browsers and devices.
+                        </p>
+                        <p>
+                        Driven by a constant desire to learn and stay up-to date with the latest trends, I'm skilled problem-solver and communicator, and thrive on delivering high-quality, user-engaged solutions that exceed expectations. </p>
+                        <p>
+                        I'm excited to bring my expertise to your next project and contribute to the creation of something truly remarkable.
+                    </p>
+                </div>
+            </div>
+            
+        </section>
+    </main>
 </body>
 </html>

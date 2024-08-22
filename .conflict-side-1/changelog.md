@@ -8,12 +8,13 @@ Recreate new look the whole website with modern web-standard. And full interacti
 
 ### About
 
-Welcome to Tobassum Munir, an independent freelance front-end developer and designer with over five years of experience delivering excellent work all around the world.
+I'm an experienced front-end developer with a strong passion for building execptional user experiences. With `HTML, CSS, and JavaScript` and various front-end frameworks. I'm able at converting abstract design into modern web and responsive digital experiences.
 
-utilizing HTML, CSS, and JavaScript to create contemporary, web-standard webpages. I'm also familiar with modern front-end frameworks such as VUEjs and React. making reusable components and much more. 
+What sets me apart is my ability to balance technical expertise with a creative mindset. I approach each project collaboratively, working closely with designers, back-end developers, and clients to ensure the final product not only looks great but also compatible with all browsers and devices.
 
+Driven by a constant desire to learn and stay up-to date with the latest trends, I'm skilled problem-solver and communicator, and thrive on delivering high-quality, user-engaged solutions that exceed expectations. 
 
-Utilizing Figma, Pixso, and Lunacy as UI/UX design tools. building cutting-edge, pixel-perfect apps and websites. 
+`I'm excited to bring my expertise to your next project and contribute to the creation of something truly remarkable.`
 
 
 ### Services 

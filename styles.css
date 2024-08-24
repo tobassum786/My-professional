@@ -130,11 +130,14 @@ header .nav_bar .nav_items a:hover:before{
 
 /*Hero section*/
 
+main {
+    position: relative;
+}
+
 .hero_container {
     position: relative;
     background: url(./images/web__assest/hero-bg.png) no-repeat right;
-    background-size: 500px 500px;
-    }
+    background-size: 500px 450px;
 
     & .hero_content {
         display: grid;
@@ -220,64 +223,52 @@ header .nav_bar .nav_items a:hover:before{
 
 .about_container {
     position: relative;
-}
-
-.about_container .about_text {
-    max-width: 550px;
-
-    &::after {
-        content: '';
-        position: absolute;
-        display: block;
-        width: 250px;
-        height: 100px;
-        right: 0;
-        background: var(--gradient);
-        border-radius: 50%;
-        filter: blur(120px);
-        opacity: 0.6;
-    }
 
     & .about_heading {
         font-size: clamp(1.2rem, 4.5vw, 2rem);
         text-transform: capitalize;
         color: var(--secondary-clr);
-        padding: 8px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            min-width: 250px;
+            height: 2.5px;
+            background-color: var(--secondary-clr);
+            display: block;
+            left: 0;
+        }
     }
 
-    & .about_heading::after {
-        content: '';
-        display: block;
-        position: absolute;
-        min-width: 21%;
-        height: 2px;
-        left: 0;
-        background-color: #fff;
-    }
+    & .about_content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
 
-    & .about_description {
-        padding: 20px;
-    }
+        & .about_description {
+            font-size: clamp(0.5rem, -1.5rem + 7.273vw, 1rem);
+            line-height: 1.2;
 
-    & .about_description p {
-        margin-bottom: 10px;
-        font-size: var(--f-lg);
-        font-weight:200;
-        line-height: 1.2;
-        color: hsl(from #fff h s l / 70%);
+            & :is(p) {
+                margin-bottom: 8px;
+            }
 
-        & strong {
-            color: var(--secondary-clr);
-            font-style: italic;
+            & strong {
+                color: var(--secondary-clr);
+            }
+
+            & :last-child {
+                color: var(--secondary-clr);
+                font-style: italic; !important
+            }
         }
 
-        &:last-child {
-            color: var(--secondary-clr);
-            font-style: italic;
+        & .about_profile {
+            justify-self: self-end;
+            width: 90%;
         }
-
     }
-
 }
-
 

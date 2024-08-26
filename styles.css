@@ -10,6 +10,7 @@
 /*    colorgraphy*/
     --base-clr: #141115; !important
     --primary-clr: #fff;
+    --light-clr: hsl(from #fff h s l / 50%);
     --secondary-clr: #C6F91F;
     --acsent-clr: #8D6346;
     --gradient: linear-gradient(90deg, hsla(175, 79%, 63%, 1) 0%, hsla(82, 96%, 57%, 1) 100%);
@@ -136,8 +137,6 @@ main {
 
 .hero_container {
     position: relative;
-    background: url(./images/web__assest/hero-bg.png) no-repeat right;
-    background-size: 500px 450px;
 
     & .hero_content {
         display: grid;
@@ -250,6 +249,7 @@ main {
         & .about_description {
             font-size: clamp(0.5rem, -1.5rem + 7.273vw, 1rem);
             line-height: 1.2;
+            color: var(--light-clr);
 
             & :is(p) {
                 margin-bottom: 8px;
@@ -269,6 +269,45 @@ main {
             justify-self: self-end;
             width: 90%;
         }
+
+        & .freelance_work {
+            padding: 4rem;
+
+            & .freelance_content {
+                position: relative;
+                border-left: 3px solid var(--secondary-clr);
+                padding: 1rem;
+
+                & .requirement {
+                    font-size: var(--f-lg);
+                    margin-bottom: 1.5rem;
+                }
+
+                & ::after {
+                    content: attr(data-freelance);
+                    position: absolute;
+                    display: block;
+                    font-size: clamp(var(--f-xsm), 4.5vw, var(--sm));
+                    top: -30px;
+                    font-style: italic;
+                    color: var(--light-clr);
+                }
+
+                & a {
+                    text-transform: uppercase;
+                    color: var(--primary-clr);
+                    transition: .5s;
+
+                    &:hover {
+                        color: var(--secondary-clr);
+                }
+            }
+        }
+
+        & .contact_data {
+            
+        }
     }
 }
 
+/*Skills-set and services*/

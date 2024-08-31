@@ -268,7 +268,7 @@ main {
 
         & .freelance_work {
             position: relative;
-            padding: 4rem;
+            padding: 0 4rem;
 
             & .freelance_content {
                 position: relative;
@@ -383,12 +383,12 @@ main {
                 border-radius: 8px;
                 border: 2px solid transparent;
                 border-image-slice: 1;
-                border-image: linear-gradient(225deg, hsla(300, 2%, 9%, 1) 0%, hsla(340, 2%, 25%, 1) 100%);;
+                border-image: linear-gradient(225deg, hsla(300, 2%, 9%, 1) 20%, hsla(340, 2%, 25%, 1) 80%);;
                 background: linear-gradient(135deg, hsla(300, 2%, 9%, 1) 0%, hsla(340, 2%, 25%, 1) 100%);
                 cursor: pointer;
                 transition: transform 0.5s ease-in-out;
 
-                &:hover::after {
+                &::after {
                     content: '';
                     width: inherit;
                     height: inherit;
@@ -398,7 +398,13 @@ main {
                     display: block;
                     z-index: -1;
                     border-radius: inherit;
-                    transform: rotate(185deg);
+                    transition: transform 0.5s ease-in-out;
+                }
+
+                &:hover::after {
+                    transform: rotate(8deg);
+                    transition: transform 0.5s ease-in-out;
+
                 }
 
                 & .card_content {

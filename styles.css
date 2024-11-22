@@ -218,12 +218,12 @@ section {
     grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
     justify-content: center;
     align-items: center;
+    overflow-y: clip;
 }
 
 .banner .banner__container .dev__img {
     max-width: 80%;
     transform: scale(120%);
-    overflow: clip;
 }
 
 .banner .banner__container .content__desc {

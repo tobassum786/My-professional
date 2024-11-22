@@ -209,7 +209,7 @@ section {
 /*Banner*/
 
 .banner {
-    background-color: var(--light-color-alt);
+    background-color: var(--primary-color);
     padding: 0 50px;
 }
 

@@ -244,7 +244,7 @@ section {
 .banner .banner__container .content__desc p {
     font-size: var(--font-xl);
     text-transform: capitalize;
-    color: var(--primary-color);
+    color: var(--light-color-alt);
     font-weight: 700;
     line-height: 1.2;
 }
@@ -254,7 +254,7 @@ section {
     display: block;
     font-weight: 400;
     text-transform: capitalize;
-    color: var(--primary-color);
+    color: var(--light-color-alt);
     line-height: 1;
 }
 

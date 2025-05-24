@@ -1,3 +1,3 @@
-ancestorEntries = []
-ourEntries = ["styles.css"]
-theirEntries = ["styles.css"]
+ancestorEntries = ["Index.html"]
+ourEntries = ["Index.html", "styles/styles.css"]
+theirEntries = ["Index.html", "styles/styles.css"]

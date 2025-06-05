@@ -14,7 +14,7 @@
 
 /* Document */
 html {
-    font-size: 62.5%;
+    font-size: clamp(0.25rem, -0.377rem + 2.28vw, 4rem);
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
 }

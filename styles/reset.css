@@ -19,13 +19,17 @@ html {
     -webkit-text-size-adjust: 100%;
 }
 
+section {
+    padding: 100px 100px;
+}
+
 body {
     box-sizing: inherit;
     font-family: var(--font-family);
-    background-color: var(--primary-color);
+    background-color: var(--primary-clr);
     font-size: var(--font-size-base);
     line-height: var(--line-height-normal);
-    color: #ffffff;
+    color: var(--secondary-clr);
     min-height: 100vh;
     text-rendering: optimizeSpeed;
 }

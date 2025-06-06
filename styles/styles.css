@@ -11,6 +11,7 @@
 :root {
     --primary-clr: #ffffff;
     --secondary-clr: #2B3137;
+    --tertiary-clr: #070707;
     --accent-clr: #2DBA4E;
     --text-clr: var(--primary-clr);
     --text-clr-alt: var(--primary-clr);
@@ -43,19 +44,20 @@ header {
     background-color: transparent;
     inset: 0;
     z-index: 1000;
-    & .logo span {
-        font-size: var(--font-size-lg);
-        text-transform: uppercase;
-        font-weight: 600;
-        letter-spacing: 2px;
-        & span {
-            color: var(--accent-clr);
-        }
-    }
     & .nav-bar {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        & .logo span a {
+            font-size: var(--font-size-lg);
+            text-transform: uppercase;
+            font-weight: 600;
+            color: var(--primary-clr);
+            letter-spacing: 2px;
+            & span {
+                color: var(--accent-clr);
+            }
+        }
         & .nav-items {
             display: inline-flex;
             align-items: center;
@@ -63,10 +65,13 @@ header {
             text-transform: uppercase;
             font-size: var(--font-size-md);
             transition: .5s;
-
+            & .nav-links a {
+                color: var(--primary-clr);
+            }
             & .nav-links a:hover {
                 color: var(--accent-clr);
                 transition: .5s;
+                border-bottom: 2px solid var(--accent-clr);
             }
         }
 
@@ -74,6 +79,25 @@ header {
             display: inline-flex;
             gap: var(--spacing-3xl);
             font-size: var(--font-size-lg);
+            transition: .5s linear;
+            & a {
+                color: var(--primary-clr);
+            }
+            & a:hover {
+                margin-top: -5px;
+                transition: .5s;
+                color: var(--accent-clr);
+            }
         }
+    }
+}
+
+/*hero section css*/
+
+main {
+    /*add main content code here...*/
+    & .hero-section {
+        height: 100vh;
+        background-color: var(--tertiary-clr);
     }
 }

@@ -1030,3 +1030,10 @@ footer .copyrights {
     
 }
 
+        & .social-links {
+            display: inline-flex;
+            gap: var(--spacing-3xl);
+            font-size: var(--font-size-lg);
+        }
+    }
+}

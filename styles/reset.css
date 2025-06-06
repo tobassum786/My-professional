@@ -14,13 +14,13 @@
 
 /* Document */
 html {
-    font-size: clamp(0.25rem, -0.377rem + 2.28vw, 4rem);
+    font-size: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
 }
 
 section {
-    padding: 100px 100px;
+    padding: 100px;
 }
 
 body {

@@ -9,10 +9,10 @@
 
 /* Root variables */
 :root {
-    --primary-clr: #FAFBFC;
+    --primary-clr: #ffffff;
     --secondary-clr: #2B3137;
     --accent-clr: #2DBA4E;
-    --text-clr: var(--secondary-clr);
+    --text-clr: var(--primary-clr);
     --text-clr-alt: var(--primary-clr);
     --link-clr: var(--accent-clr);
     --button-clr: var(--secondary-clr);
@@ -36,43 +36,44 @@
 }
 
 /* add css for header */
+
 header {
-    background-color: transparent;
     padding: 50px 100px;
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    background-color: transparent;
+    inset: 0;
     z-index: 1000;
-    & .nav_bar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 var(--spacing-lg);
+    & .logo span {
+        font-size: var(--font-size-lg);
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 2px;
+        & span {
+            color: var(--accent-clr);
+        }
     }
-    & .nav_links {
+    & .nav-bar {
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        list-style: none;
-        gap: var(--spacing-lg);
-        font-size: var(--font-size-xs);
-        font-weight: 200;
-        color: var(--text-clr);
-        text-decoration: none;
+        justify-content: space-between;
+        & .nav-items {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--spacing-3xl);
+            text-transform: uppercase;
+            font-size: var(--font-size-md);
+            transition: .5s;
+
+            & .nav-links a:hover {
+                color: var(--accent-clr);
+                transition: .5s;
+            }
+        }
+
+        & .social-links {
+            display: inline-flex;
+            gap: var(--spacing-3xl);
+            font-size: var(--font-size-lg);
+        }
     }
 }
-
-/* add css for hero section */
-.hero_section {
-    background-color: #000;
-    padding: 100px 100px;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    & .hero_content {
-        text-align: center;
-    }
-}
-

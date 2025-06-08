@@ -64,6 +64,7 @@ header {
             gap: var(--spacing-3xl);
             text-transform: uppercase;
             font-size: var(--font-size-md);
+            font-weight: 400;
             transition: .5s;
             & .nav-links a {
                 color: var(--primary-clr);
@@ -74,7 +75,6 @@ header {
                 border-bottom: 2px solid var(--accent-clr);
             }
         }
-
         & .social-links {
             display: inline-flex;
             gap: var(--spacing-3xl);
@@ -89,6 +89,12 @@ header {
                 color: var(--accent-clr);
             }
         }
+        & .toggle_menu {
+            display: none;
+            & .toggle-btn {
+                cursor: pointer;
+            }
+        }
     }
 }
 
@@ -99,5 +105,71 @@ main {
     & .hero-section {
         height: 100vh;
         background-color: var(--tertiary-clr);
+    }
+}
+
+
+/*Responsive Design*/
+@media screen and (max-width: 992px) {
+    header {
+        padding: 20px;
+    }
+
+    .nav-bar {
+        position: relative;
+    }
+
+    .nav-items {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--secondary-clr);
+        flex-direction: column;
+        justify-content: center;
+        gap: var(--spacing-xl) !important;
+        transition: 0.5s ease;
+        z-index: 1000;
+    }
+
+    .nav-items.active {
+        right: 0;
+        display: block
+    }
+
+    .nav-links a {
+        font-size: var(--font-size-lg);
+    }
+
+    .nav-items .social-links {
+        margin-top: var(--spacing-xl);
+        justify-content: center;
+    }
+
+    .toggle_menu {
+        display: block !important;
+        z-index: 1001;
+    }
+
+    .toggle-icons {
+        color: var(--primary-clr);
+        font-size: var(--font-size-xl);
+    }
+
+    .close-menu {
+        display: none;
+    }
+
+    .toggle_menu.active .open-menu {
+        display: none;
+    }
+
+    .toggle_menu.active .close-menu {
+        display: block;
+    }
+
+    .nav-bar .close-menu {
+        display: none;
     }
 }

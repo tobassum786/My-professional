@@ -1034,6 +1034,25 @@ footer .copyrights {
             display: inline-flex;
             gap: var(--spacing-3xl);
             font-size: var(--font-size-lg);
+            transition: .5s linear;
+            & a {
+                color: var(--primary-clr);
+            }
+            & a:hover {
+                margin-top: -5px;
+                transition: .5s;
+                color: var(--accent-clr);
+            }
         }
+    }
+}
+
+/*hero section css*/
+
+main {
+    /*add main content code here...*/
+    & .hero-section {
+        height: 100vh;
+        background-color: var(--tertiary-clr);
     }
 }

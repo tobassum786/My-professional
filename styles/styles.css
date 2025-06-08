@@ -130,6 +130,7 @@ main {
         justify-content: center;
         gap: var(--spacing-xl) !important;
         transition: 0.5s ease;
+        display: none;
         z-index: 1000;
     }
 
@@ -161,15 +162,15 @@ main {
         display: none;
     }
 
-    .toggle_menu.active .open-menu {
+    .toggle-icons.active .open-menu {
         display: none;
     }
 
-    .toggle_menu.active .close-menu {
+    .toggle-icons.active .close-menu {
         display: block;
     }
 
-    .nav-bar .close-menu {
-        display: none;
+    .social-links {
+        display: none !important;
     }
 }

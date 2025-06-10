@@ -108,9 +108,38 @@ main {
         background-color: var(--tertiary-clr);
         height: 100vh;
         & .hero-container {
+            position: relative;
             --container-width: 1200px;
             min-width: var(--container-width);
-            
+            border: 1px solid #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: var(--spacing-2xl);
+            margin-top: var(--spacing-3xl);
+            & .hero-content {
+                min-width: cal((var(--container-width) / 2) - 50px);
+                & .hero-title {
+                    font-size: var(--font-size-4xl);
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    color: var(--primary-clr);
+                    line-height: var(--line-height-tight);
+                    padding: calc(2 * var(--spacing-3xl)) 0;
+                    &::after {
+                        content: attr(data-title);
+                        display: block;
+                        position: absolute;
+                        color: var(--primary-clr);
+                        margin-top: 8px;
+                        background: linear-gradient(30deg, var(--accent-clr) 0%, var(--primary-clr) 100%);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        font-size: var(--font-size-4xl);
+                    }
+                }
+            }
         }
     }
 }

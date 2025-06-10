@@ -20,6 +20,7 @@ html {
 }
 
 section {
+    margin: 0 auto;
     padding: 100px;
 }
 
@@ -33,6 +34,7 @@ body {
     color: var(--secondary-clr);
     min-height: 100vh;
     text-rendering: optimizeSpeed;
+    user-select: none;
 }
 
 /* Media */
@@ -63,6 +65,7 @@ button {
     transition: all 0.3s ease;
     border-radius: 0.5rem;
     padding: 1rem 2rem;
+    color: var(--primary-clr);
     outline: none;
 }
 

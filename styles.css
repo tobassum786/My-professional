@@ -928,5 +928,11 @@ footer .copyrights {
     .about__me-action .heading__data::after {
         top: 200px;
     }
+    
+    
+    .about__me-action .heading__data::after { 
+        top: 50px;
+    }
+    
 }
 

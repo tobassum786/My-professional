@@ -1032,7 +1032,7 @@ footer .copyrights {
 }
         & .social-links {
             display: inline-flex;
-            gap: var(--spacing-3xl);
+            gap: var(--space-xl);
             font-size: var(--font-size-lg);
             transition: all 0.25s linear;
             & a {
@@ -1055,59 +1055,12 @@ footer .copyrights {
 
 /*hero section css*/
 
-main {
-    /*main code here...*/
-    .hero-section {
-        background: url("../images/web__assets/banner.svg") no-repeat center/cover;
-        height: 100vh;
-        & .hero-container {
-            position: relative;
-            --container-width: minmax(275px, 1200px);
-            min-width: var(--container-width);
-            border: 1px solid #fff;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            padding: var(--spacing-2xl);
-            margin-top: var(--spacing-3xl);
-            & .hero-content {
-                min-width: calc((var(--container-width) / 2) - 50px);
-                & .hero-title {
-                    font-size: var(--font-size-4xl);
-                    font-weight: 800;
-                    text-transform: uppercase;
-                    color: var(--primary-clr);
-                    line-height: var(--line-height-tight);
-                    padding: calc(2 * var(--spacing-3xl)) 0;
-                    &::after {
-                        content: attr(data-title);
-                        display: block;
-                        position: absolute;
-                        color: var(--primary-clr);
-                        margin-top: 8px;
-                        background: linear-gradient(30deg, var(--accent-clr) 0%, var(--primary-clr) 100%);
-                        background-clip: text;
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                        font-size: var(--font-size-4xl);
-                    }
-                }
-
-                & .hero-cta {
-                    position: relative;
-                    display: flex;
-                    align-items: center;
-                }
-            }
-        }
-    }
-}
 
 
 /*Responsive Design*/
 @media screen and (width < 992px) {
     header {
-        padding: 20px;
+        padding: var(--space-sm) var(--space-lg);
     }
 
     .nav-bar {
@@ -1147,7 +1100,7 @@ main {
         background-color: var(--secondary-clr);
         flex-direction: column;
         justify-content: center;
-        gap: var(--spacing-xl) !important;
+        gap: var(--space-lg) !important;
         transition: 0.5s ease;
         display: none;
         z-index: 1000;

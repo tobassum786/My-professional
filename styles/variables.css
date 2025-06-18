@@ -1,0 +1,52 @@
+:root {
+
+ /* Fluid Spacing System */
+    /* Base spacing unit - scales from 4px to 8px */
+    --space-unit: clamp(0.25rem, 0.2rem + 0.25vw, 0.5rem);
+    
+    /* Extra small spacing - scales from 4px to 8px */
+    --space-2xs: calc(var(--space-unit) * 0.5);
+    
+    /* Extra small spacing - scales from 8px to 16px */
+    --space-xs: var(--space-unit);
+    
+    /* Small spacing - scales from 12px to 24px */
+    --space-sm: calc(var(--space-unit) * 1.5);
+    
+    /* Medium spacing - scales from 16px to 32px */
+    --space-md: calc(var(--space-unit) * 2);
+    
+    /* Large spacing - scales from 24px to 48px */
+    --space-lg: calc(var(--space-unit) * 3);
+    
+    /* Extra large spacing - scales from 32px to 64px */
+    --space-xl: calc(var(--space-unit) * 4);
+    
+    /* 2X large spacing - scales from 48px to 96px */
+    --space-2xl: calc(var(--space-unit) * 6);
+    
+    /* 3X large spacing - scales from 64px to 128px */
+    --space-3xl: calc(var(--space-unit) * 8);
+    
+    /* 4X large spacing - scales from 96px to 192px */
+    --space-4xl: calc(var(--space-unit) * 12);
+
+    /* Container padding - scales from 16px to 32px */
+    --container-padding: clamp(1rem, 0.5rem + 2vw, 6rem);
+    
+    /* Section padding - scales from 32px to 64px */
+    --section-padding: clamp(2rem, 1rem + 4vw, 2rem);
+    
+    /* Border radius - scales from 4px to 8px */
+    --radius-sm: clamp(0.25rem, 0.2rem + 0.25vw, 0.5rem);
+    
+    /* Medium border radius - scales from 8px to 16px */
+    --radius-md: clamp(0.5rem, 0.4rem + 0.5vw, 1rem);
+    
+    /* Large border radius - scales from 16px to 32px */
+    --radius-lg: clamp(1rem, 0.8rem + 1vw, 2rem);
+    
+    /* Full border radius */
+    --radius-full: 9999px;
+
+}

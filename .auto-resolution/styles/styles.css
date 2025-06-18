@@ -1033,7 +1033,7 @@ footer .copyrights {
         & .social-links {
             display: inline-flex;
             gap: var(--space-xl);
-            font-size: var(--font-size-lg);
+            font-size: var(--font-lg);
             transition: all 0.25s linear;
             & a {
                 color: var(--primary-clr);
@@ -1054,6 +1054,51 @@ footer .copyrights {
 }
 
 /*hero section css*/
+main {
+    --fluid-width: clamp(320px, 100%, 1990px);
+    position: relative;
+    width: var(--fluid-width);
+    border: 2px solid #fff;
+
+    /*Hero Section*/
+    & .hero-section {
+        position: relative;
+        background-color: var(--secondary-clr);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: calc(var(--fluid-width) / 2);
+            height: 200px;
+            background: var(--gradient-bg);
+            top: 0;
+            left: 25%;
+            filter: blur(130px);
+        }
+        /*Hero container*/
+        & .hero-container {
+            width: var(--fluid-width);
+            border: 2px solid #fff;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            place-items: center;
+            & .hero-content {
+                width: var(--fluid-width);
+                place-items: center;
+            }
+
+            & .hero-image {
+                width: var(--fluid-width);
+                object-fit: cover;
+                place-items: center;
+            }
+        }
+    }
+}
 
 
 
@@ -1071,7 +1116,7 @@ footer .copyrights {
 
             & .toggle-icons {
                 color: var(--primary-clr);
-                font-size: var(--font-size-xl);
+                font-size: var(--font-xl);
             }
 
             & .close-menu {
@@ -1112,6 +1157,6 @@ footer .copyrights {
     }
 
     .nav-links a {
-        font-size: var(--font-size-lg);
+        font-size: var(--font-lg);
     }
 }

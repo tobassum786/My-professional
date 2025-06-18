@@ -19,52 +19,36 @@
     --font-family: 'Poppins', sans-serif;
     --font-family-tertiary: 'Playfair Display', serif;
 
-     /* Fluid Spacing System */
-    /* Base spacing unit - scales from 4px to 8px */
+     /* Fluid Spacing System Base spacing unit - scales from 4px to 8px */
     --space-unit: clamp(0.25rem, 0.2rem + 0.25vw, 0.5rem);
-    
     /* Extra small spacing - scales from 4px to 8px */
     --space-2xs: calc(var(--space-unit) * 0.5);
-    
     /* Extra small spacing - scales from 8px to 16px */
     --space-xs: var(--space-unit);
-    
     /* Small spacing - scales from 12px to 24px */
     --space-sm: calc(var(--space-unit) * 1.5);
-    
     /* Medium spacing - scales from 16px to 32px */
-    --space-md: calc(var(--space-unit) * 2);
-    
+    --space-md: calc(var(--space-unit) * 2); 
     /* Large spacing - scales from 24px to 48px */
-    --space-lg: calc(var(--space-unit) * 3);
-    
+    --space-lg: calc(var(--space-unit) * 3);  
     /* Extra large spacing - scales from 32px to 64px */
-    --space-xl: calc(var(--space-unit) * 4);
-    
+    --space-xl: calc(var(--space-unit) * 4);    
     /* 2X large spacing - scales from 48px to 96px */
     --space-2xl: calc(var(--space-unit) * 6);
-    
     /* 3X large spacing - scales from 64px to 128px */
-    --space-3xl: calc(var(--space-unit) * 8);
-    
+    --space-3xl: calc(var(--space-unit) * 8);    
     /* 4X large spacing - scales from 96px to 192px */
     --space-4xl: calc(var(--space-unit) * 12);
-
     /* Container padding - scales from 16px to 100px */
-    --container-padding: clamp(1rem, 0.5rem + 2vw, 6rem);
-    
+    --container-padding: clamp(1rem, 0.5rem + 2vw, 6rem);   
     /* Section padding - scales from 32px to 64px */
-    --section-padding: clamp(2rem, 1rem + 4vw, 2rem);
-    
+    --section-padding: clamp(2rem, 1rem + 4vw, 2rem);    
     /* Border radius - scales from 4px to 8px */
-    --radius-sm: clamp(0.25rem, 0.2rem + 0.25vw, 0.5rem);
-    
+    --radius-sm: clamp(0.25rem, 0.2rem + 0.25vw, 0.5rem);    
     /* Medium border radius - scales from 8px to 16px */
-    --radius-md: clamp(0.5rem, 0.4rem + 0.5vw, 1rem);
-    
+    --radius-md: clamp(0.5rem, 0.4rem + 0.5vw, 1rem);   
     /* Large border radius - scales from 16px to 32px */
     --radius-lg: clamp(1rem, 0.8rem + 1vw, 2rem);
-    
     /* Full border radius */
     --radius-full: 9999px;
 }
@@ -72,7 +56,9 @@
 /* add css for header */
 
 header {
-    padding: var(--section-padding) var(--container-padding);
+    --top-bottom-padding: 3.125rem;
+    --left-right-padding: 6.25rem;
+    padding: var(--top-bottom-padding) var(--left-right-padding);
     position: fixed;
     background-color: transparent;
     inset: 0;
@@ -83,7 +69,7 @@ header {
         align-items: center;
         justify-content: space-between;
         & .logo span a {
-            font-size: var(--font-size-lg);
+            font-size: var(--font-lg);
             text-transform: uppercase;
             font-weight: 600;
             color: var(--primary-clr);
@@ -97,7 +83,7 @@ header {
             align-items: center;
             gap: var(--space-xl);
             text-transform: uppercase;
-            font-size: var(--font-size-sm);
+            font-size: var(--font-sm);
             font-family: var(--font-family);
             font-weight: 400;
             transition: 0.25s;
@@ -113,7 +99,7 @@ header {
         & .social-links {
             display: inline-flex;
             gap: var(--space-xl);
-            font-size: var(--font-size-lg);
+            font-size: var(--font-lg);
             transition: all 0.25s linear;
             & a {
                 color: var(--primary-clr);
@@ -134,6 +120,51 @@ header {
 }
 
 /*hero section css*/
+main {
+    --fluid-width: clamp(320px, 100%, 1990px);
+    position: relative;
+    width: var(--fluid-width);
+    border: 2px solid #fff;
+
+    /*Hero Section*/
+    & .hero-section {
+        position: relative;
+        background-color: var(--secondary-clr);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: calc(var(--fluid-width) / 2);
+            height: 200px;
+            background: var(--gradient-bg);
+            top: 0;
+            left: 25%;
+            filter: blur(130px);
+        }
+        /*Hero container*/
+        & .hero-container {
+            width: var(--fluid-width);
+            border: 2px solid #fff;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            place-items: center;
+            & .hero-content {
+                width: var(--fluid-width);
+                place-items: center;
+            }
+
+            & .hero-image {
+                width: var(--fluid-width);
+                object-fit: cover;
+                place-items: center;
+            }
+        }
+    }
+}
 
 
 
@@ -151,7 +182,7 @@ header {
 
             & .toggle-icons {
                 color: var(--primary-clr);
-                font-size: var(--font-size-xl);
+                font-size: var(--font-xl);
             }
 
             & .close-menu {
@@ -192,6 +223,6 @@ header {
     }
 
     .nav-links a {
-        font-size: var(--font-size-lg);
+        font-size: var(--font-lg);
     }
 }

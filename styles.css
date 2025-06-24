@@ -446,7 +446,7 @@ section {
 .services .offers__container {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     margin-top: 50px;
     gap: 30px;
 }
@@ -461,7 +461,6 @@ section {
     justify-content: center;
     text-align: left;
     background-color: var(--glass-color);
-    backdrop-filter: blur(8px);
 }
 
 .services .offers__container .offer__card .card__title {

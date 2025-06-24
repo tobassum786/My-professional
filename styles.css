@@ -455,7 +455,7 @@ section {
 }
 
 .services .offers__container > .offer__card {
-    min-width: 380px;
+    width: min(380px, 100%);
     padding: 30px;
     border-radius: 10px;
     display: flex;
@@ -487,7 +487,7 @@ section {
 }
 
 .services .offers__container .offer__card .card__body .package__detail > li {
-    color: var(--secondary-color);
+    color: var(--light-color);
     font-weight: 500;
     padding-bottom: 8px;
 }

@@ -397,8 +397,8 @@ section {
 
 .skills__container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    justify-self: center;
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 80%), 1fr));
+    place-items: center;
     gap: var(--gap-sm);
     transition: all .3s;
 }

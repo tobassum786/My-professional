@@ -72,7 +72,8 @@ button {
 }
 
 section {
-    padding: clamp(2rem, 4.5vw, 6.25rem);
+    padding-inline: clamp(2rem, 4.5vw, 6.25rem);
+    padding-block:  clamp(2rem, 4.5vw, 6.25rem);
 }
 
 /*Reused Classes*/
@@ -94,7 +95,6 @@ section {
 .container {
     width: 100%;
     margin: 0 auto;
-    padding: 0 1.5rem;
 }
 
 .items-center {

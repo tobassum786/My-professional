@@ -256,10 +256,15 @@ section {
     line-height: 1;
 }
 
-.banner .banner__container .dev__img img {
-    width: 50%;
+.banner .banner__container .dev__img {
+    width: 100%;
     object-fit: cover;
 }
+
+/* .banner .banner__container .dev__img img {
+    width: 50%;
+    object-fit: cover;
+} */
 
 .banner .b__social-icons {
     position: relative;

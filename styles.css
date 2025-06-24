@@ -221,10 +221,6 @@ section {
     overflow-y: clip;
 }
 
-.banner .banner__container .dev__img {
-    max-width: 100%;
-}
-
 .banner .banner__container .content__desc {
     display: flex;
     justify-content: center;

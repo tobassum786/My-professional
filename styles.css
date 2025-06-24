@@ -430,7 +430,7 @@ section {
 }
 
 .skills__container .card__body .card__content .card__text {
-    font-size: var(--font-sm);
+    font-size: var(--font-xsm);
     font-weight: 500;
     padding-top: 1rem;
     text-transform: uppercase;

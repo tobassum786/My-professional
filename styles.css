@@ -487,8 +487,8 @@ section {
 }
 
 .services .offers__container .offer__card .card__body .package__detail > li {
-    color: var(--light-color);
-    font-weight: 500;
+    color: var(--light-color-alt);
+    font-weight: 300;
     padding-bottom: 8px;
 }
 
@@ -584,9 +584,9 @@ section {
     text-decoration: underline;
 }
 
-.project__card-body:hover {
+.project__card-body:hover .pp__img img {
     transform: scale(105%);
-    transition: .3s;
+    transition: all .3s;
 }
 
 /*Testimonials*/

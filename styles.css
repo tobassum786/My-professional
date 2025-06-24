@@ -505,8 +505,8 @@ section {
 
 .services .offers__container .offer__card .card__btn .btn--secondary:hover {
     background-color: var(--primary-color);
-    color: var(--primary-color);
-    box-shadow: none;
+    color: var(--light-color);
+    box-shadow: var(--light-color);
 }
 /*my work*/
 

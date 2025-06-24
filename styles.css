@@ -447,13 +447,14 @@ section {
 .services .offers__container {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     justify-items: center;
     margin-top: 50px;
-    gap: 30px;
+    gap: 20px;
 }
 
 .services .offers__container > .offer__card {
+    width: 480px;
     padding: 30px;
     border-radius: 10px;
     display: flex;

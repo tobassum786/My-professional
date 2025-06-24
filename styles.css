@@ -450,7 +450,7 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     justify-items: center;
     margin-top: 50px;
-    gap: 20px;
+    gap: 16px;
 }
 
 .services .offers__container > .offer__card {
@@ -500,13 +500,13 @@ section {
 .services .offers__container .offer__card .card__btn .btn--secondary {
     border: 2px solid var(--light-color);
     color: var(--light-color);
-    box-shadow: 8px -8px 0 var(--secondary-color);
+    box-shadow: 8px -8px 0 var(--light-color-alt);
 }
 
 .services .offers__container .offer__card .card__btn .btn--secondary:hover {
     background-color: var(--primary-color);
     color: var(--light-color);
-    box-shadow: var(--light-color);
+    box-shadow: none;
 }
 /*my work*/
 

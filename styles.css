@@ -303,7 +303,7 @@ section {
 }
 
 .about__me-content .about__me-description {
-    width: min(280px, 100%);
+    width: min(380px, 100%);
     font-size: var(--font-xsm);
     padding: var(--margin-sm);
     border-top: 2px solid var(--light-color-alt);
@@ -374,7 +374,7 @@ section {
 .list div li {
     list-style: decimal;
     list-style-position: inside;
-    font-size: var(--font-sm);
+    font-size: var(--font-xsm);
     text-transform: capitalize;
     padding-bottom: var(--gap-sm);
     font-weight: 500;

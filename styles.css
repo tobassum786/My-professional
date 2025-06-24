@@ -16,7 +16,7 @@
     --font-xsm: clamp(0.875rem, 2.50vw, 1.5rem);
     --font-sm: clamp(1.5rem, 2.50vw, 2.5rem);
     --font-lg: clamp(2.5rem, 2.5vw, 3.25rem);
-    --font-xl: clamp(0.625rem, 7.5357rem + -7.6786vw, 6rem);
+    --font-xl: clamp(1rem, 2.5vw, 3.75rem);
     /*spacing*/
     --gap: 3rem;
     --gap-sm: 1.6rem;
@@ -342,17 +342,6 @@ section {
 .about__me-action .heading__data {
     width: min(320px, 100%);
     margin-bottom: var(--margin-sm);
-}
-
-.about__me-action .heading__data::after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 700px;
-    height: 2px;
-    background: var(--light-color);
-    right: 0;
-    top: 0;
 }
 
 .about__me-action .heading__data p {
@@ -759,7 +748,7 @@ section {
 }
 .contact__me .text__data {
     position: relative;
-    width: max(780px, 80%);
+    width: min(1220px, 80%);
     font-size: var(--font-xsm);
     border-left: 2px solid var(--light-color);
     padding: 0 var(--margin-sm);
@@ -776,7 +765,7 @@ section {
 }
 
 .contact__me form input {
-    padding: 5px;
+    padding: 12px;
     width: 580px;
     margin-bottom: 10px;
     border: 1px solid var(--secondary-color);

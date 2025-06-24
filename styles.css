@@ -752,7 +752,7 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
     grid-template-rows: auto;
     justify-items: center;
-    padding: 100px;
+    padding: clamp(2rem, 2.45vw, 40rem);
 }
 .contact__me .text__data {
     position: relative;

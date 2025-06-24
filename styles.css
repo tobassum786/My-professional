@@ -356,13 +356,13 @@ section {
 }
 
 .about__me-action .heading__data p {
-    font-size: var(--font-sm);
+    font-size: var(--font-xsm);
     font-weight: 500;
 }
 
 .action__list .list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     justify-content: center;
     gap: 50px;
 }

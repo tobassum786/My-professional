@@ -13,10 +13,10 @@
     --banner-text: linear-gradient(117deg, #39F0F0 0%, #3052CA 35.94%, #8F22BA 79.17%);
     --font-family: 'Poppins', sans-serif;
     /*fonts sizes*/
-    --font-xsm: clamp(0.875rem, 2.75vw, 1.5rem);
-    --font-sm: clamp(1.5rem, 2.75vw, 2.5rem);
-    --font-lg: clamp(2.5rem, 2.75vw, 3.25rem);
-    --font-xl: clamp(1rem, 4vw, 3.75rem);
+    --font-xsm: clamp(0.875rem, 2.50vw, 1.5rem);
+    --font-sm: clamp(1.5rem, 2.50vw, 2.5rem);
+    --font-lg: clamp(2.5rem, 2.5vw, 3.25rem);
+    --font-xl: clamp(1rem, 2.5vw, 3.75rem);
     /*spacing*/
     --gap: 3rem;
     --gap-sm: 1.6rem;
@@ -72,7 +72,7 @@ button {
 }
 
 section {
-    padding: clamp(2rem, 2.75vw, 6.25rem);
+    padding: clamp(2rem, 2.5vw, 6.25rem);
 }
 
 /*Reused Classes*/
@@ -288,7 +288,6 @@ section {
 /*ABout Me*/
 .about__me {
     position: relative;
-    padding: 100px 0;
 }
 
 .about__me-content {

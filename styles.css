@@ -749,7 +749,7 @@ section {
 /*Contact Me*/
 .contact__me {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+    grid-template-columns: repeat(auto-fit, 1fr);
     grid-template-rows: auto;
     justify-items: center;
     padding: clamp(2rem, 2.45vw, 40rem);

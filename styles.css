@@ -266,7 +266,7 @@ section {
 }
 
 .banner .banner__container .dev__img img {
-    width: 80%;
+    width: 50%;
     object-fit: cover;
 }
 

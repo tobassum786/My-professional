@@ -72,7 +72,7 @@ button {
 }
 
 section {
-    padding: 6.25rem;
+    padding: clamp(2rem, 2.75vw, 6.25rem);
 }
 
 /*Reused Classes*/

@@ -72,8 +72,8 @@ button {
 }
 
 section {
-    padding-inline: clamp(2rem, 4.5vw, 6.25rem);
-    padding-block:  clamp(2rem, 4.5vw, 6.25rem);
+    padding-inline: clamp(1.5rem, 4.5vw, 6.25rem);
+    padding-block:  clamp(1.5rem, 4.5vw, 6.25rem);
 }
 
 /*Reused Classes*/
@@ -261,10 +261,6 @@ section {
     line-height: 1;
 }
 
-.banner .banner__container .dev__img {
-    width: 100%;
-}
-
 .banner .banner__container .dev__img img {
     width: 50%;
     object-fit: cover;
@@ -356,7 +352,7 @@ section {
     height: 2px;
     background: var(--light-color);
     right: 0;
-    top: 0;
+    top: 5%;
 }
 
 .about__me-action .heading__data p {

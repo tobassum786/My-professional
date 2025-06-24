@@ -396,10 +396,10 @@ section {
 
 .skills__container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     justify-self: center;
     gap: var(--gap-sm);
-    transition: .3s;
+    transition: all .3s;
 }
 
 .skills__container .card__body {
@@ -447,6 +447,7 @@ section {
     position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    justify-self: center;
     margin-top: 50px;
     gap: 30px;
 }

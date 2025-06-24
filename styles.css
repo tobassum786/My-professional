@@ -16,7 +16,7 @@
     --font-xsm: clamp(0.875rem, 2.50vw, 1.5rem);
     --font-sm: clamp(1.5rem, 2.50vw, 2.5rem);
     --font-lg: clamp(2.5rem, 2.5vw, 3.25rem);
-    --font-xl: clamp(1rem, 2.5vw, 3.75rem);
+    --font-xl: clamp(0.625rem, 7.5357rem + -7.6786vw, 6rem);
     /*spacing*/
     --gap: 3rem;
     --gap-sm: 1.6rem;

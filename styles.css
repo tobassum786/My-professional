@@ -585,7 +585,7 @@ section {
     text-decoration: underline;
 }
 
-.project__card-body:hover .pp__img img {
+.project__card-body:hover {
     transform: scale(105%);
     transition: all .3s;
 }

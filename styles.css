@@ -216,8 +216,7 @@ section {
 .banner .banner__container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 100%), 1fr);
-    justify-content: center;
-    align-items: center;
+    align-self: center;
     overflow-y: clip;
 }
 

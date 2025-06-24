@@ -227,7 +227,7 @@ section {
 
 .banner .banner__container .content__desc {
     display: flex;
-    jutify-content: center;
+    justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     position: relative;

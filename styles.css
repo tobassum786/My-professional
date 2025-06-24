@@ -210,13 +210,12 @@ section {
 
 .banner {
     background-color: var(--primary-color);
-    padding: 0 50px;
 }
 
 .banner .banner__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    align-self: center;
+    place-items: center;
     gap: var(--sm-gap);
     overflow-y: clip;
 }

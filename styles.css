@@ -405,8 +405,8 @@ section {
 
 .skills__container .card__body {
     text-align: center;
-    width: min(15.93rem, 80%);
-    height: min(15.93rem, 80%);
+    width: min(15.93rem, 100%);
+    height: min(15.93rem, 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;

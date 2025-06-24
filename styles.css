@@ -473,13 +473,13 @@ section {
     font-weight: 700;
     text-transform: capitalize;
     padding-bottom: 12px;
-    color: var(--primary-color);
+    color: var(--light-color);
 }
 
 .services .offers__container .offer__card span {
     font-size: var(--font-xsm);
     font-weight: 700;
-    color: var(--primary-color);
+    color: var(--light-color);
     padding-bottom: 8px;
 }
 
@@ -498,14 +498,14 @@ section {
 }
 
 .services .offers__container .offer__card .card__btn .btn--secondary {
-    border: 2px solid var(--primary-color);
-    color: var(--primary-color);
+    border: 2px solid var(--light-color);
+    color: var(--light-color);
     box-shadow: 8px -8px 0 var(--secondary-color);
 }
 
 .services .offers__container .offer__card .card__btn .btn--secondary:hover {
     background-color: var(--primary-color);
-    color: var(--light-color-alt);
+    color: var(--primary-color);
     box-shadow: none;
 }
 /*my work*/

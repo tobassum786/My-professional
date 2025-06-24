@@ -14,8 +14,8 @@
     --font-family: 'Poppins', sans-serif;
     /*fonts sizes*/
     --font-xsm: clamp(0.875rem, 2.75vw, 1.5rem);
-    --font-sm: clamp(1.5rem, 2.75ve, 2.5rem);
-    --font-lg: clamp(2.5rem, 2.75ve, 3.25rem);
+    --font-sm: clamp(1.5rem, 2.75vw, 2.5rem);
+    --font-lg: clamp(2.5rem, 2.75vw, 3.25rem);
     --font-xl: clamp(1rem, 4vw, 3.75rem);
     /*spacing*/
     --gap: 3rem;

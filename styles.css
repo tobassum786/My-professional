@@ -272,7 +272,7 @@ section {
     margin-top: var(--gap-sm);
     background-color: var(--primary-color);
     gap: 10px;
-    max-width: 330px;
+    width: min(330px, 100%);
     padding: 8px;
 }
 
@@ -293,20 +293,13 @@ section {
 
 .about__me-content {
     position: relative;
-    flex-wrap: wrap;
     padding: var(--margin-sm);
     width: 100%;
-    justify-content: space-around;
 }
 
 .about__me-content .about__img {
     position: relative;
-    width: 480px;
-    float: right;
-}
-
-.about__me-content .about__img img {
-    width: 100%;
+    width: min(480px, 80%);
 }
 
 .heading {

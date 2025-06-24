@@ -396,6 +396,7 @@ section {
 }
 
 .skills__container {
+    width: min(1220px, 100%);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(230px, 100%), 1fr));
     place-items: center;

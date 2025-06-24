@@ -449,13 +449,12 @@ section {
     position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    justify-self: center;
+    justify-items: center;
     margin-top: 50px;
     gap: 30px;
 }
 
 .services .offers__container > .offer__card {
-    width: min(380px, 100%);
     padding: 30px;
     border-radius: 10px;
     display: flex;
@@ -463,12 +462,14 @@ section {
     align-items: center;
     justify-content: center;
     text-align: left;
+    border: 1px solid var(--light-color);
     background-color: var(--glass-color);
     backdrop-filter: blur(8px);
 }
 
 .services .offers__container .offer__card .card__title {
-    font-size: var(--font-sm);
+    font-size: var(--font-xsm);
+    text-align: center;
     font-weight: 700;
     text-transform: capitalize;
     padding-bottom: 12px;
@@ -476,7 +477,7 @@ section {
 }
 
 .services .offers__container .offer__card span {
-    font-size: var(--font-sm);
+    font-size: var(--font-xsm);
     font-weight: 700;
     color: var(--primary-color);
     padding-bottom: 8px;

@@ -217,6 +217,7 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     align-self: center;
+    gap: var(--sm-gap);
     overflow-y: clip;
 }
 
@@ -227,7 +228,7 @@ section {
 .banner .banner__container .content__desc {
     display: flex;
     jutify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     position: relative;
     padding: 10px;

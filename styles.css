@@ -13,7 +13,7 @@
     --banner-text: linear-gradient(117deg, #39F0F0 0%, #3052CA 35.94%, #8F22BA 79.17%);
     --font-family: 'Poppins', sans-serif;
     /*fonts sizes*/
-    --font-xsm: clamp(0.875rem, 2.75vw, 1.5rem;
+    --font-xsm: clamp(0.875rem, 2.75vw, 1.5rem);
     --font-sm: clamp(1.5rem, 2.75ve, 2.5rem);
     --font-lg: clamp(2.5rem, 2.75ve, 3.25rem);
     --font-xl: clamp(1rem, 4vw, 3.75rem);
@@ -773,7 +773,7 @@ section {
     width: 580px;
     margin-bottom: 10px;
     border: 1px solid var(--secondary-color);
-    border-radius: 10px;s
+    border-radius: 10px;
 }
 
 .contact__me form textarea {

@@ -186,7 +186,7 @@ section {
     text-transform: capitalize;
     font-size: var(--font-xsm);
     color: var(--light-color-alt);
-    transition: .3s;
+    transition: all .3s;
 }
 
 .nav__bar .nav__items .nav__links:hover {
@@ -215,15 +215,15 @@ section {
 
 .banner .banner__container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(480px, 100%), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(480px, 100%)));
     justify-content: center;
     align-items: center;
     overflow-y: clip;
 }
 
 .banner .banner__container .dev__img {
-    max-width: 80%;
-    transform: scale(135%);
+    max-width: 100%;
+    transform: scale(3);
 }
 
 .banner .banner__container .content__desc {

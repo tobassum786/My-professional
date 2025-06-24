@@ -333,12 +333,14 @@ section {
 
 /*About Me actions*/
 .about__me-action {
+    --space-top: clamp(1rem, 2.54vw, 2rem);
+    --space-left: clamp(2.5rem, 2.54vw, 3.5rem);
     position: relative;
-    padding: 50px 30px;
+    padding: var(--space-top) var(--space-left);
 }
 
 .about__me-action .heading__data {
-    max-width: 500px;
+    width: min(320px, 100%);
     margin-bottom: var(--margin-sm);
 }
 
@@ -350,7 +352,7 @@ section {
     height: 2px;
     background: var(--light-color);
     right: 0;
-    top: 100px;
+    top: 20%;
 }
 
 .about__me-action .heading__data p {

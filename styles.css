@@ -756,8 +756,8 @@ section {
 }
 .contact__me .text__data {
     position: relative;
-    max-width: 750px;
-    font-size: var(--font-sm);
+    width: max(780px, 80%);
+    font-size: var(--font-xsm);
     border-left: 2px solid var(--light-color);
     padding: 0 var(--margin-sm);
     margin-bottom: var(--margin-sm);

@@ -356,7 +356,7 @@ section {
 }
 
 .about__me-action .heading__data p {
-    font-size: var(--font-lg);
+    font-size: var(--font-sm);
     font-weight: 500;
 }
 

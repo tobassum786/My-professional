@@ -226,6 +226,7 @@ section {
 
 .banner .banner__container .content__desc {
     flex-direction: column;
+    align-items: center;
     position: relative;
     padding: 10px;
 }

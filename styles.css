@@ -225,7 +225,8 @@ section {
 }
 
 .banner .banner__container .content__desc {
-    flex-direction: column;
+    display: flex;
+    jutify-content: center;
     align-items: center;
     position: relative;
     padding: 10px;

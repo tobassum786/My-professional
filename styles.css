@@ -72,7 +72,7 @@ button {
 }
 
 section {
-    padding: clamp(2rem, 2.5vw, 6.25rem);
+    padding: clamp(2rem, 4.5vw, 6.25rem);
 }
 
 /*Reused Classes*/
@@ -261,8 +261,13 @@ section {
     line-height: 1;
 }
 
+.banner .banner__container .dev__img {
+    width: 100%;
+}
+
 .banner .banner__container .dev__img img {
     width: 80%;
+    object-fit: cover;
 }
 
 .banner .b__social-icons {
@@ -273,7 +278,7 @@ section {
     background-color: var(--primary-color);
     gap: 10px;
     width: min(330px, 100%);
-    padding: 8px;
+    padding-right: 8px;
 }
 
 .banner .banner__container .b__social-icons a {

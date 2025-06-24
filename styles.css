@@ -13,9 +13,9 @@
     --banner-text: linear-gradient(117deg, #39F0F0 0%, #3052CA 35.94%, #8F22BA 79.17%);
     --font-family: 'Poppins', sans-serif;
     /*fonts sizes*/
-    --font-xsm: 0.875rem;
-    --font-sm: 1.5rem;
-    --font-lg: 2.5rem;
+    --font-xsm: clamp(0.875rem, 2.75vw, 1.5rem;
+    --font-sm: clamp(1.5rem, 2.75ve, 2.5rem);
+    --font-lg: clamp(2.5rem, 2.75ve, 3.25rem);
     --font-xl: clamp(1rem, 4vw, 3.75rem);
     /*spacing*/
     --gap: 3rem;
@@ -297,19 +297,14 @@ section {
     width: 100%;
 }
 
-.about__me-content .about__img {
-    position: relative;
-    width: min(480px, 80%);
-}
-
 .heading {
     width: 250px;
     margin: 0 auto;
 }
 
 .about__me-content .about__me-description {
-    max-width: 600px;
-    font-size: calc(1.2 * var(--font-xsm));
+    width: min(280px, 100%);
+    font-size: var(--font-xsm);
     padding: var(--margin-sm);
     border-top: 2px solid var(--light-color-alt);
 }

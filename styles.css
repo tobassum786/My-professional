@@ -352,7 +352,7 @@ section {
     height: 2px;
     background: var(--light-color);
     right: 0;
-    top: 35%;
+    top: 50%;
 }
 
 .about__me-action .heading__data p {

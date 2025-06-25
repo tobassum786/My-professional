@@ -921,6 +921,10 @@ footer .copyrights {
     .about__me-action .heading__data::after { 
         top: 50px;
     }
+
+    footer .ft__main {
+        justify-content: flex-start;
+    }
     
 }
 

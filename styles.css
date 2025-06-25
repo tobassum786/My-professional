@@ -375,7 +375,7 @@ button {
 /*Skills*/
 .skills {
     position: relative;
-    padding: clamp(16px, 100%, 100px);
+    padding: clamp(16px, 2.50vw, 100px);
 }
 
 .skills .heading {

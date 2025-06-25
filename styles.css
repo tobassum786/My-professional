@@ -637,7 +637,7 @@ button {
 
 .actions .action {
     display: grid;
-    align-items: center;
+    place-items: center;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: var(--gap-sm);
 }

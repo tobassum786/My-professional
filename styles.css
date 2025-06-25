@@ -434,7 +434,7 @@ button {
 .services .offers__container {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     place-items: center;
     margin-top: 50px;
     gap: 16px;

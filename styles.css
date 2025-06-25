@@ -302,7 +302,7 @@ button {
 .about__me-content .about__me-description {
     width: min(1220px, 80%);
     font-size: var(--font-xsm);
-    padding: var(--margin-sm);
+    padding-block: var(--margin-sm);
     border-top: 2px solid var(--light-color-alt);
 }
 
@@ -633,7 +633,7 @@ button {
 /*Actions*/
 .actions {
     position: relative;
-    padding: clamp(16px, 100%, 100px);
+    padding: clamp(16px, 2.50vw, 100px);
 }
 
 .actions .action {
@@ -659,17 +659,17 @@ button {
 /*FAQs*/
 
 .faqs {
-    padding: clamp(16px, 100%, 100px);
+    padding: clamp(16px, 2.50vw, 100px);
 }
 
 .faqs .faqs__clients {
     position: relative;
+    width: min(750px, 80%);
 }
 
 .faqs .faqs__clients .heading__data {
     font-size: var(--font-sm);
     font-weight: 400;
-    width: min(750px, 80%);
 }
 
 .faqs .faqs__clients .heading__data::after {

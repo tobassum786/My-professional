@@ -352,7 +352,7 @@ section {
 .action__list .list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    justify-content: center;
+    place-items: center;
     gap: 50px;
 }
 

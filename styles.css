@@ -304,7 +304,7 @@ section {
 }
 
 .about__me-content .about__me-description {
-    width: min(1020px, 80%);
+    width: min(1220px, 80%);
     font-size: var(--font-xsm);
     padding: var(--margin-sm);
     border-top: 2px solid var(--light-color-alt);

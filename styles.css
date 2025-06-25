@@ -290,6 +290,7 @@ section {
 .about__me {
     position: relative;
     padding-inline: clamp(16px, 100%, 100px);
+    padding-block: clamp(1rem, 100%, 6.25rem);
 }
 
 .about__me-content {

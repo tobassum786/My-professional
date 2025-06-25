@@ -812,7 +812,7 @@ footer .ft__main .ft__heading {
 
 footer .ft__main .ft__nav li {
     line-height: 2;
-    font-size: calc(0.9 * var(--font-xsm));
+    font-size: var(--font-xsm);
 }
 
 footer .ft__main .ft-social__link {
@@ -822,14 +822,14 @@ footer .ft__main .ft-social__link {
 footer .ft__main .social__link .ft-links {
     display: flex;
     gap: 10px;
-    font-size: var(--font-xsm);
-    font-size: calc(0.9 * var(--font-xsm));
+    font-size: var(--font-sm);
+    font-size: calc(0.9 * var(--font-sm));
 }
 
 footer .ft__main .social__link p {
     display: flex;
     gap: 10px;
-    font-size: calc(0.9 * var(--font-xsm));
+    font-size: calc(0.9 * var(--font-sm));
 }
 
 footer .copyrights {

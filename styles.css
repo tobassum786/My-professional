@@ -583,7 +583,7 @@ button {
 .testinomials {
     position: relative;
     background-color: var(--secondary-color);
-    padding-block: 50vh;
+    padding-block: clamp(1rem, 2.50vw, 6.25rem);
 }
 
 .testinomials .testinomials__slides {

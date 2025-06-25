@@ -741,8 +741,7 @@ button {
 .contact__me {
     display: grid;
     grid-template-columns: repeat(auto-fit, 1fr);
-    grid-template-rows: auto;
-    place-items: center;
+    justify-content: center;
     padding: clamp(1rem, 2.45vw, 6.25rem);
 }
 .contact__me .text__data {

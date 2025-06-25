@@ -71,11 +71,6 @@ button {
     outline: none;
 }
 
-section {
-    padding-inline: clamp(1.5rem, 4.5vw, 6.25rem);
-    padding-block:  clamp(1.5rem, 4.5vw, 6.25rem);
-}
-
 /*Reused Classes*/
 .d-sm-none {
     display: none;

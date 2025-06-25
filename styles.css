@@ -501,6 +501,7 @@ button {
 .projects {
     position: relative;
     overflow: hidden;
+    padding-block: clamp(1rem, 2.50vw, 6.25rem);
 }
 
 .projects__container {

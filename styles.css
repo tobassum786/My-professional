@@ -445,7 +445,7 @@ section {
 }
 
 .services .offers__container > .offer__card {
-    width: 480px;
+    width: min(480px, 95%);
     padding: 30px;
     border-radius: 10px;
     display: flex;
@@ -461,7 +461,7 @@ section {
 .services .offers__container .offer__card .card__title {
     font-size: var(--font-xsm);
     text-align: center;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: capitalize;
     padding-bottom: 12px;
     color: var(--light-color);
@@ -635,7 +635,7 @@ section {
 /*Actions*/
 .actions {
     position: relative;
-    padding: 50px 100px;
+    padding: clamp(16px, 100%, 100px);
 }
 
 .actions .action {
@@ -646,7 +646,7 @@ section {
 }
 
 .side__divder {
-    width: 550px;
+    width: 55%;
     height: 2px;
     background-color: var(--light-color);
 }
@@ -661,7 +661,7 @@ section {
 /*FAQs*/
 
 .faqs {
-    padding: 50px 100px;
+    padding: clamp(16px, 100%, 100px);
 }
 
 .faqs .faqs__clients {
@@ -671,7 +671,7 @@ section {
 .faqs .faqs__clients .heading__data {
     font-size: var(--font-lg);
     font-weight: 400;
-    max-width: 750px;
+    width: min(750px, 100%);
 }
 
 .faqs .faqs__clients .heading__data::after {
@@ -685,7 +685,7 @@ section {
 
 .faqs__list {
     position: relative;
-    max-width: 400px;
+    width: min(400px);
     margin-top: var(--margin-sm);
 }
 
@@ -744,7 +744,7 @@ section {
     grid-template-columns: repeat(auto-fit, 1fr);
     grid-template-rows: auto;
     justify-items: center;
-    padding: clamp(2rem, 2.45vw, 40rem);
+    padding: clamp(2rem, 2.45vw, 6.25rem);
 }
 .contact__me .text__data {
     position: relative;

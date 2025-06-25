@@ -441,7 +441,6 @@ button {
 }
 
 .services .offers__container > .offer__card {
-    width: min(480px, 95%);
     padding: 30px;
     border-radius: 10px;
     display: flex;

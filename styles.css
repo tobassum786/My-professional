@@ -378,7 +378,7 @@ section {
 /*Skills*/
 .skills {
     position: relative;
-    padding: 50px 100px;
+    padding: clamp(16px, 100%, 100px);
 }
 
 .skills .heading {

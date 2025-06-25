@@ -755,7 +755,7 @@ button {
 
 .contact__me form {
     position: relative;
-    width: min(587px, 80%);
+    width: min(max(760px), 50%);
     display: flex;
     flex-direction: column;
     padding: var(--margin-sm);

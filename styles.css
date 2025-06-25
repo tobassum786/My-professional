@@ -816,7 +816,7 @@ footer .ft__main .ft__nav li {
 
 footer .ft__main .ft-social__link {
     line-height: 2;
-    font-size: var(--font-sm);
+    font-size: var(--font-xsm);
 }
 
 footer .ft__main .social__link .ft-links {
@@ -827,7 +827,7 @@ footer .ft__main .social__link .ft-links {
 footer .ft__main .social__link p {
     display: flex;
     gap: 10px;
-    font-size: var(--font-sm);
+    font-size: var(--font-xsm);
 }
 
 footer .copyrights {

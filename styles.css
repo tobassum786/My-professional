@@ -668,7 +668,7 @@ button {
 .faqs .faqs__clients .heading__data {
     font-size: var(--font-sm);
     font-weight: 400;
-    width: min(750px, 100%);
+    width: min(750px, 80%);
 }
 
 .faqs .faqs__clients .heading__data::after {

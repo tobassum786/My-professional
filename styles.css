@@ -427,8 +427,6 @@ button {
 /*Services*/
 .services {
     position: relative;
-/*     background: url(Images/web__assest/services-bg.svg) no-repeat center right; */
-/*     background-size: cover; */
     padding-inline: clamp(16px, 100%, 100px);
     padding-block: clamp(1rem, 100%, 6.25rem);
 }
@@ -444,7 +442,7 @@ button {
 }
 
 .services .offers__container > .offer__card {
-    width: min(320px, 95%);
+    width: min(480px, 95%);
     padding: 30px;
     border-radius: 10px;
     display: flex;

@@ -683,7 +683,7 @@ button {
 
 .faqs__list {
     position: relative;
-    width: min(400px);
+    width: min(400px, 80%);
     margin-top: var(--margin-sm);
 }
 

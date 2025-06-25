@@ -650,7 +650,7 @@ button {
 }
 
 .action .text__data {
-    font-size: var(--font-sm);
+    font-size: var(--font-xsm);
     color: var(--light-color-alt);
     text-transform: uppercase;
     font-weight: 100;

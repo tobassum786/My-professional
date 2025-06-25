@@ -433,7 +433,8 @@ section {
     position: relative;
 /*     background: url(Images/web__assest/services-bg.svg) no-repeat center right; */
 /*     background-size: cover; */
-    padding: 50px 100px;
+    padding-inline: clamp(16px, 100%, 100px);
+    padding-block: clamp(1rem, 100%, 6.25rem);
 }
 
 .services .offers__container {

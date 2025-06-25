@@ -427,8 +427,8 @@ button {
 /*Services*/
 .services {
     position: relative;
-    padding-inline: clamp(16px, 100%, 100px);
-    padding-block: clamp(1rem, 100%, 6.25rem);
+    padding-inline: clamp(16px, 2.50vw, 100px);
+    padding-block: clamp(1rem, 2.50vw, 6.25rem);
 }
 
 .services .offers__container {

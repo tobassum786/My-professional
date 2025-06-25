@@ -870,6 +870,7 @@ footer .copyrights {
         background-color: var(--secondary-color);
         padding: 50px;
         text-align: center;
+        backdrop-filter: blur(8px);
         display: none;
     }
 

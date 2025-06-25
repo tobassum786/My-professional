@@ -747,7 +747,7 @@ button {
 }
 .contact__me .text__data {
     position: relative;
-    width: min(1020px, 50%);
+    width: min(760px, 50%);
     font-size: var(--font-xsm);
     border-left: 2px solid var(--light-color);
     padding: 0 var(--margin-sm);

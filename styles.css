@@ -439,6 +439,7 @@ section {
 }
 
 .services .offers__container {
+    width: min(1220px, 80%);
     position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));

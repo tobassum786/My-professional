@@ -812,6 +812,10 @@ footer .ft__main .ft__heading {
 footer .ft__main .ft__nav li {
     line-height: 2;
     font-size: var(--font-xsm);
+
+    &:hover {
+        color: var(--light-color-alt);
+    }
 }
 
 footer .ft__main .ft-social__link {

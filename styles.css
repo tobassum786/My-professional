@@ -240,7 +240,7 @@ section {
 }
 
 .banner .banner__container .content__desc p {
-    font-size: var(--font-xl);
+    font-size: calc(1.5 * var(--font-xl));
     text-transform: capitalize;
     color: var(--light-color-alt);
     font-weight: 700;

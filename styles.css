@@ -330,8 +330,8 @@ button {
 
 /*About Me actions*/
 .about__me-action {
-    --space-top: clamp(2.5rem, 2.54vw, 4.5rem);
-    --space-left: clamp(2.5rem, 2.54vw, 6.25rem);
+    --space-top: clamp(1rem, 2.54vw, 4.5rem);
+    --space-left: clamp(1rem, 2.54vw, 6.25rem);
     position: relative;
     padding: var(--space-top) var(--space-left);
 }

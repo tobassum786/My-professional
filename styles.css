@@ -441,8 +441,9 @@ button {
 }
 
 .services .offers__container > .offer__card {
-    width: clamp(480px, 50%, 500px);
-    padding: 30px;
+    width: clamp(380px, 50%, 500px);
+    height: 450px;
+    padding: clamp(1rem, 100%, 1.85rem);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -471,7 +472,7 @@ button {
 }
 
 .services .offers__container .offer__card .card__body .package__detail {
-    font-size: var(--font-xsm);
+    font-size: calc(0.82 * var(--font-xsm));
 }
 
 .services .offers__container .offer__card .card__body .package__detail > li {
@@ -668,7 +669,7 @@ button {
 }
 
 .faqs .faqs__clients .heading__data {
-    font-size: var(--font-sm);
+    font-size: var(--font-xsm);
     font-weight: 400;
 }
 

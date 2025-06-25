@@ -1,9 +1,9 @@
-//Grap items
 const selectElement = selector => {
     const element = document.querySelector(selector)
     if (element) return element;
     throw new Error(`Something went wrong, please check ${element} typed correctly`)
 };
+
 
 //Responsive toggle menu
 const menuToggleIcon = selectElement('#toggle__btn');

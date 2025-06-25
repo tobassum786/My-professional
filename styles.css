@@ -845,6 +845,10 @@ footer .copyrights {
         overflow-x: hidden;
     }
 
+    section {
+        padding: 50px 32px;
+    }
+
     .nav__bar {
         padding: 16px;
     }

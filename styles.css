@@ -822,7 +822,7 @@ footer .ft__main .social__link .ft-links {
     display: flex;
     gap: 10px;
     font-size: var(--font-sm);
-    font-size: calc(0.9 * var(--font-sm));
+    font-size: calc(1.25 * var(--font-sm));
 }
 
 footer .ft__main .social__link p {

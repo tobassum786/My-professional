@@ -669,7 +669,7 @@ section {
 }
 
 .faqs .faqs__clients .heading__data {
-    font-size: var(--font-lg);
+    font-size: var(--font-sm);
     font-weight: 400;
     width: min(750px, 100%);
 }

@@ -764,7 +764,7 @@ button {
 
 .contact__me form input {
     padding: 12px;
-    width: 580px;
+    width: 100%;
     margin-bottom: 10px;
     border: 1px solid var(--secondary-color);
     border-radius: 10px;
@@ -774,7 +774,7 @@ button {
     resize: none;
     background: none;
     outline: none;
-    width: 580px;
+    width: 100%;
     border: 1px solid var(--secondary-color);
     border-radius: 10px;
     margin-bottom: 10px;
@@ -782,7 +782,7 @@ button {
 }
 
 ::placeholder {
-    font-size: var(--font-xsm);
+    font-size: calc(0.825 * var(--font-xsm));
     text-transform: capitalize;
 }
 /*Footer*/

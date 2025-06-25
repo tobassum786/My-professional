@@ -797,7 +797,7 @@ footer .ft__main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: clamp(2rem, 2.50vw, 9.375rem);
+    gap: clamp(2rem, 4.50vw, 9.375rem);
 }
 
 footer .ft__main .ft__heading {

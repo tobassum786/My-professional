@@ -130,6 +130,7 @@ button {
 }
 
 section {
+    position: relative;
     height: 100vh;
 }
 

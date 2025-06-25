@@ -804,7 +804,7 @@ footer .ft__main .ft__heading {
     font-size: var(--font-xsm);
     text-transform: capitalize;
     font-weight: 600;
-    color: var(--light-color-alt);
+    color: var(--light-color);
     letter-spacing: 1.5px;
     margin-bottom: 0.5rem;
 }

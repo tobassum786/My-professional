@@ -289,6 +289,7 @@ section {
 /*ABout Me*/
 .about__me {
     position: relative;
+    padding: clamp(16px, 100%, 100px);
 }
 
 .about__me-content {

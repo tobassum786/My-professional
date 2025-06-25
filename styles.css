@@ -284,18 +284,18 @@ button {
 /*ABout Me*/
 .about__me {
     position: relative;
-    padding-inline: clamp(16px, 100%, 100px);
-    padding-block: clamp(1rem, 100%, 6.25rem);
+    padding-inline: clamp(16px, 2.5vw, 100px);
+    padding-block: clamp(1rem, 2.5vw, 6.25rem);
 }
 
 .about__me-content {
     position: relative;
-    padding: var(--margin-sm);
+    padding-block: var(--margin-sm);
     width: 100%;
 }
 
 .heading {
-    width: min(450px,100);
+    width: min(450px,100%);
     margin: 0 auto;
 }
 
@@ -330,7 +330,7 @@ button {
 
 /*About Me actions*/
 .about__me-action {
-    --space-top: clamp(1rem, 2.54vw, 4.5rem);
+    --space-top: clamp(1rem, 2.54vw, 6.25rem);
     --space-left: clamp(1rem, 2.54vw, 6.25rem);
     position: relative;
     padding: var(--space-top) var(--space-left);

@@ -468,11 +468,11 @@ button {
     font-size: var(--font-xsm);
     font-weight: 700;
     color: var(--light-color);
-    padding-bottom: 8px;
+    padding-bottom: 12px;
 }
 
 .services .offers__container .offer__card .card__body .package__detail {
-    font-size: calc(0.82 * var(--font-xsm));
+    font-size: var(--font-xsm);
 }
 
 .services .offers__container .offer__card .card__body .package__detail > li {

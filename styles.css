@@ -441,7 +441,7 @@ button {
 }
 
 .services .offers__container > .offer__card {
-    width: clamp(380px, 50%, 500px);
+    width: clamp(380px, 50%, 400px);
     height: 450px;
     padding: clamp(1rem, 380px, 1.85rem);
     border-radius: 10px;

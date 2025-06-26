@@ -139,6 +139,7 @@ button {
     content: '';
     position: absolute;
     inset: 0;
+    z-index: -1;
     border-radius: 10px;
     padding: 2px;
     background: var(--gradient-color);
@@ -398,6 +399,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 1;
     border-radius: 10px;
     transition: .3s;
     background-color: var(--primary-color);
@@ -541,6 +543,7 @@ button {
     display: block;
     max-width: 500px;
     height: auto;
+    z-index: 1;
     transition: .3s;
 }
 

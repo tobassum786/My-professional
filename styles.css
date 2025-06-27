@@ -341,6 +341,7 @@ button {
 }
 
 .about__me-content .about__btn {
+    position: relative;
     margin-block-start: 6.25rem;
     text-align: center;
     & > a {

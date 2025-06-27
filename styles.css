@@ -208,7 +208,7 @@ button {
 }
 
 .nav__bar .nav__right a i {
-    font-size: var(--font-sm);
+    font-size: var(--font-xsm);
 }
 
 .toggle__menu #toggle__btn {

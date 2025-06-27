@@ -180,7 +180,7 @@ button {
 
 .nav__bar .nav__items .nav__links {
     position: relative;
-    padding: 0.50rem;
+    padding: 0.250rem;
     text-transform: capitalize;
     font-size: var(--font-xsm);
     color: var(--light-color-alt);

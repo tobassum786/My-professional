@@ -99,17 +99,30 @@ button {
 }
 
 .btn {
+    position: relative;
     width: 180px;
     height: 50px;
     background: none;
     outline: none;
     border: 2px solid var(--light-color);
-    box-shadow: 8px -8px 0 var(--light-color-alt);
     color: var(--light-color);
     font-size: var(--font-xsm);
     font-weight: 300;
+    overflow: hidden;
     cursor: pointer;
-    transition: .3s;
+    &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        inset: 0 100% 0 0;
+        background: var(--banner-text);
+        mask: linear-gradient(to top, #0000, #000) center/cover no-repeat;
+        transition: inset 0.3s ease-in-out;
+    }
+
+    &:hove::after {
+        inset-inline: 0;
+    }
 }
 
 .btn:hover {

@@ -507,18 +507,6 @@ button {
 .services .offers__container .offer__card .card__btn {
     margin-top: 35px;
 }
-
-.services .offers__container .offer__card .card__btn .btn--secondary {
-    border: 2px solid var(--light-color);
-    color: var(--light-color);
-    box-shadow: 8px -8px 0 var(--light-color-alt);
-}
-
-.services .offers__container .offer__card .card__btn .btn--secondary:hover {
-    background-color: var(--light-color-alt);
-    color: var(--primary-color);
-    box-shadow: none;
-}
 /*my work*/
 
 .projects {

@@ -123,6 +123,8 @@ button {
     }
     &:hover::after {
         inset-inline: 0;
+    }
+    &:hover {
         border: none;
     }
 }

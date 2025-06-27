@@ -168,6 +168,7 @@ button {
     padding: 16px 100px;
     line-height: 1.6;
     z-index: 999;
+    backdrop-filter: blur(6px);
 }
 
 .nav__bar .logo {

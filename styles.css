@@ -333,6 +333,7 @@ button {
 }
 
 .about__me-content .about__me-description p a {
+    position: relative;
     background: var(--gradient-color);
     font-size: 800;
     background-clip: text;

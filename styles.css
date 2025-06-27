@@ -109,6 +109,7 @@ button {
     font-size: var(--font-xsm);
     font-weight: 300;
     overflow: hidden;
+    z-index: 1;
     cursor: pointer;
     &::after {
         content: '';
@@ -118,6 +119,7 @@ button {
         background: var(--banner-text);
         mask: linear-gradient(to top, #0000, #000) center/cover no-repeat;
         transition: inset 0.3s ease-in-out;
+        z-index: -1;
     }
 
     &:hove::after {

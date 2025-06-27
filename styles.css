@@ -125,13 +125,6 @@ button {
         inset-inline: 0;
     }
 }
-
-.btn:hover {
-    background: var(--light-color);
-    color: var(--primary-color);
-    box-shadow: none;
-}
-
 .gradient__heading {
     text-transform: uppercase;
     text-align: center;

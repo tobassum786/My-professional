@@ -193,7 +193,7 @@ button {
         height: 2px;
         left: 0;
         bottom: 0;
-        background: linear-gradient(117deg, #39F0F0 0%, #3052CA 35.94%, #8F22BA 79.17%);
+        background: #ffff;
         transform: scaleX(0);
         transform-origin: left;
         transition: transform 0.3s ease-in-out;

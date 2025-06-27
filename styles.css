@@ -350,8 +350,7 @@ button {
     margin-block-start: 6.25rem;
     text-align: center;
     & > a {
-        width: 200px;
-        height: 70px;
+        padding: 24px 58px;
     }
 }
 

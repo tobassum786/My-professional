@@ -342,6 +342,9 @@ button {
 .about__me-content .about__btn {
     margin-top: 1.5rem;
     text-align: center;
+    & > a {
+        padding: 16px 32px;
+    }
 }
 
 

@@ -123,6 +123,7 @@ button {
     }
     &:hover::after {
         inset-inline: 0;
+        border: none;
     }
 }
 .gradient__heading {

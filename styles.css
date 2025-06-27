@@ -322,6 +322,7 @@ button {
 }
 
 .about__me-content .about__me-description {
+    position: relative;
     width: min(1220px, 80%);
     font-size: var(--font-xsm);
     padding-block: var(--margin-sm);

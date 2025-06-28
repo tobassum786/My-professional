@@ -235,6 +235,7 @@ button {
 }
 
 .banner .banner__container {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: var(--sm-gap);
@@ -917,6 +918,11 @@ footer .copyrights {
 
     .banner .banner__container {
         placeitems: center;
+    }
+
+    .banner .banner__container .content__desc {
+        position: absolute;
+        padding: 0;
     }
 
     .banner .banner__container .dev__img {

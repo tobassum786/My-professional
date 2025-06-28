@@ -897,7 +897,7 @@ footer .copyrights {
 
     #menu.activated {
         display: block;
-        backdrop-filter: blur(6px);
+        backdrop-filter: blur(8px);
     }
     #menu.activated body {
           filter: blur(6px);
@@ -923,6 +923,9 @@ footer .copyrights {
     .banner .banner__container .content__desc {
         position: absolute;
         padding: 0;
+        bottom: 0;
+        background-color: var(--secondary-color);
+        backdrop-filter: blur(6px);
     }
 
     .banner .banner__container .dev__img {

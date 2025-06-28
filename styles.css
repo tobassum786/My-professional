@@ -916,7 +916,7 @@ footer .copyrights {
         color: var(--primary-color);
     }
     .banner {
-        padding-inline: 8px;
+        padding-inline: 5px;
     }
     .banner .banner__container {
         placeitems: center;

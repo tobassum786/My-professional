@@ -126,7 +126,7 @@ button {
         inset-inline: 0;
     }
     &:hover {
-        border: none;
+        border: 1px solid var(--primary-color);
     }
 }
 .gradient__heading {

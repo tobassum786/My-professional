@@ -872,6 +872,7 @@ footer .copyrights {
 
     section {
         padding: 50px 32px;
+        padding-inline: 5px;
     }
 
     .nav__bar {
@@ -914,9 +915,6 @@ footer .copyrights {
     .nav__links:last-child {
         display: block;
         color: var(--primary-color);
-    }
-    .banner {
-        padding-inline: 5px;
     }
     .banner .banner__container {
         placeitems: center;

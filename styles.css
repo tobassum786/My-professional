@@ -872,7 +872,6 @@ footer .copyrights {
 
     section {
         padding: 50px 32px;
-        padding-inline: 5px;
     }
 
     .nav__bar {
@@ -938,6 +937,7 @@ footer .copyrights {
     .banner .b__social-icons {
         left: 0;
         margin-top: 0.5rem;
+        gap: 5px;
     }
 
     .nav__links {
@@ -960,6 +960,7 @@ footer .copyrights {
 
     .banner {
         padding: 100px 50px;
+        padding-inline: 5px;
     }
 
     .banner__container .banner__content h1 {

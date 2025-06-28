@@ -889,12 +889,13 @@ footer .copyrights {
         background-color: var(--secondary-color);
         padding: 50px;
         text-align: center;
-        backdrop-filter: blur(8px);
+        backdrop-filter: blur(6px);
         display: none;
     }
 
     #menu.activated {
         display: block;
+        backdrop-filter: blur(6px);
     }
 
     /* Navbar Js icons affects*/

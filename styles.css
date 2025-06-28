@@ -897,7 +897,9 @@ footer .copyrights {
         display: block;
         backdrop-filter: blur(6px);
     }
-
+    #menu.activated body {
+          filter: blur(6px);
+    }
     /* Navbar Js icons affects*/
     .toggle__icons.activated .open__menu {
         display: none;

@@ -60,6 +60,7 @@ i {
 
 img {
     max-width: 100%;
+    object-fit: cover;
     display: block;
 }
 
@@ -912,6 +913,14 @@ footer .copyrights {
     .nav__links:last-child {
         display: block;
         color: var(--primary-color);
+    }
+
+    .banner .banner__container {
+        placeitems: center;
+    }
+
+    .banner .banner__container .dev__img {
+        width: 100%;
     }
 
     .nav__links {

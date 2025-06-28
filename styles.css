@@ -915,7 +915,9 @@ footer .copyrights {
         display: block;
         color: var(--primary-color);
     }
-
+    .banner {
+        padding-inline: 8px;
+    }
     .banner .banner__container {
         placeitems: center;
     }
@@ -923,6 +925,9 @@ footer .copyrights {
     .banner .banner__container .content__desc {
         position: absolute;
         padding: 0;
+        width: 100%;
+        padding-inline: 10px;
+        padding-block-start: 10px;
         bottom: 0;
         background-color: var(--secondary-color);
         backdrop-filter: blur(6px);

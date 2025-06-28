@@ -923,6 +923,11 @@ footer .copyrights {
         width: 100%;
     }
 
+    .banner .b__social-icons {
+        left: 0;
+        margin-top: 0.5rem;
+    }
+
     .nav__links {
         padding: 1rem;
     }

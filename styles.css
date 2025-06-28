@@ -181,7 +181,7 @@ button {
 }
 
 .nav__bar .logo img {
-    width: inherit;
+    width: 100%;
     height: inherit;
 }
 

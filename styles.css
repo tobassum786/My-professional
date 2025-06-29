@@ -270,6 +270,11 @@ button {
     line-height: 1.2;
 }
 
+.banner .banner__container .content__desc .sub-heading {
+    font-size: var(--font-xsm);
+    color: var(--light-color-alt);
+}
+
 .banner .banner__container .content__desc .b__heading::before {
     content: attr(data-heading);
     display: block;

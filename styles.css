@@ -182,6 +182,7 @@ button {
 
 .nav__bar .logo img {
     width: 100%;
+    object-fit: contain;
     height: inherit;
 }
 
@@ -938,6 +939,11 @@ footer .copyrights {
         left: 0;
         margin-top: 0.5rem;
         gap: 5px;
+        background: none;
+    }
+
+    .banner .banner__container .b__social-icons a {
+        padding-inline-end: 8px;
     }
 
     .nav__links {

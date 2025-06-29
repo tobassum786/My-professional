@@ -944,6 +944,7 @@ footer .copyrights {
 
     .banner .banner__container .b__social-icons a {
         padding-inline-end: 8px;
+        padding: 0;
     }
 
     .nav__links {

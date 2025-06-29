@@ -273,6 +273,7 @@ button {
 .banner .banner__container .content__desc .sub-heading {
     font-size: var(--font-xsm);
     color: var(--light-color-alt);
+    font-weight: normal;
     padding-block: 1rem;
 }
 

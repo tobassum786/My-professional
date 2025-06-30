@@ -944,14 +944,14 @@ footer .copyrights {
         padding: 0;
         width: 100%;
         padding-inline: 10px;
-        padding-block-start: 10px;
+        padding-block: 16px;
         bottom: 0;
         background-color: var(--secondary-color);
         backdrop-filter: blur(6px);
     }
 
     .banner .banner__container .content__desc .sub-heading {
-        padding-block-start: 1rem;
+        display: none;
     }
 
     .banner .banner__container .dev__img {

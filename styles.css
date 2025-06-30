@@ -267,7 +267,6 @@ button {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    position: relative;
     padding: 10px;
 }
 
@@ -311,13 +310,12 @@ button {
 }
 
 .banner .b__social-icons {
-    position: relative;
-    left: 5px;
+    position: absolute;
+    right: 0.925rem;
     display: flex;
+    flex-direction: column;
     margin-top: var(--gap-sm);
-    background-color: var(--primary-color);
     gap: 10px;
-    width: min(330px, 100%);
     padding-right: 8px;
 }
 
@@ -952,11 +950,17 @@ footer .copyrights {
         backdrop-filter: blur(6px);
     }
 
+    .banner .banner__container .content__desc .sub-heading {
+        padding-block-start: 1rem;
+    }
+
     .banner .banner__container .dev__img {
         width: 100%;
     }
 
     .banner .b__social-icons {
+        position: relative;
+        flex-direction: row;
         left: 0;
         margin-top: 0.5rem;
         gap: 5px;
@@ -990,7 +994,7 @@ footer .copyrights {
     /*banner*/
 
     .banner {
-        padding: 100px 50px;
+        padding: 0;
         padding-inline: 5px;
     }
 

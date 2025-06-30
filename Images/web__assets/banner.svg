@@ -1,0 +1,14 @@
+<svg width="1440.000000" height="1024.000000" viewBox="0 0 1440 1024" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<linearGradient x1="2491.000488" y1="-291.000488" x2="-497.000366" y2="1272.500244" id="paint_linear_4_1_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#08F096"/>
+			<stop offset="0.497197" stop-color="#001414"/>
+			<stop offset="0.728031" stop-color="#001414"/>
+			<stop offset="1.000000" stop-color="#08F096"/>
+		</linearGradient>
+	</defs>
+	<rect id="Desktop" width="1440.000000" height="1024.000000" fill="url(#paint_linear_4_1_0)" fill-opacity="1.000000"/>
+</svg>

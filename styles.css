@@ -43,7 +43,6 @@ body {
     font-size: 62.5%;
     box-sizing: inherit;
     scroll-behavior: smooth;
-    overflow: hidden;
 }
 
 ul,
@@ -184,39 +183,22 @@ button {
 
 .slideLeft {
   animation: slideIn both;
-  animation-timeline: view(95% 10%);
+  animation-timeline: view(50% 30%);
 }
 
 @keyframes slideIn {
   from {
-    transform: translateX(-1000px);
+    transform: translateY(100px);
     opacity: 0.5;
     filter: blur(8px);
   }
   to {
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
     filter: none;
   }
 }
 
-.slideRight {
-  animation: slideIn both;
-  animation-timeline: view(95% 10%);
-}
-
-@keyframes slideIn {
-  from {
-    transform: translateX(1000px);
-    opacity: 0.5;
-    filter: blur(8px);
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-    filter: none;
-  }
-}
 /*Navigation*/
 .nav__bar {
     position: fixed;

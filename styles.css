@@ -266,6 +266,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    margin-inline-start: -10rem;
     flex-direction: column;
     padding: 10px;
 }
@@ -945,6 +946,7 @@ footer .copyrights {
         width: 100%;
         padding-inline: 10px;
         padding-block: 16px;
+        margin-inline-start: 0;
         bottom: 0;
         background-color: var(--secondary-color);
         backdrop-filter: blur(6px);

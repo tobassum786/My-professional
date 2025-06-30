@@ -251,7 +251,7 @@ button {
 /*Banner*/
 
 .banner {
-    background-color: var(--primary-color);
+    background-color: linear-gradient(149.47deg, rgb(0, 0, 0) 28.469%,rgb(73, 12, 88) 109.873%,rgb(145, 24, 177) 115.878%);
 }
 
 .banner .banner__container {
@@ -310,10 +310,10 @@ button {
     object-fit: cover;
 }
 
-/* .banner .banner__container .dev__img img {
+.banner .banner__container .dev__img img {
     width: 50%;
     object-fit: cover;
-} */
+}
 
 .banner .b__social-icons {
     position: relative;

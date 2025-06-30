@@ -873,7 +873,7 @@ footer .ft__main .social__link p {
     font-size: var(--font-xsm);
 }
 
-footer .ft__main .social__link :is(.tel, .email) {
+footer .ft__main .social__link:is(.tel, .email) {
         color: #FE78F0;
         padding-inline-end: 4px;
     }
@@ -1027,7 +1027,7 @@ footer .copyrights {
         gap: 0.825rem;
     }
 
-    footer .ft__main .social__link :is(.tel, .email) {
+    footer .ft__main .social__link:is(.tel, .email) {
         color: #FE78F0;
         padding-inline-end: 4px;
     }

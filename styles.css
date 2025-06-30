@@ -43,6 +43,7 @@ body {
     font-size: 62.5%;
     box-sizing: inherit;
     scroll-behavior: smooth;
+    overflow: hidden;
 }
 
 ul,

@@ -163,7 +163,7 @@ button {
 /* Animation */
 .image-reveal {
   animation: imageReveal both;
-  animation-timeline: view(50% 30%);
+  animation-timeline: view(block 60% 10%);
 }
 
 @keyframes imageReveal {

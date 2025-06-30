@@ -282,11 +282,15 @@ button {
 }
 
 .banner .banner__container .content__desc p {
-    font-size: calc(1.5 * var(--font-xl));
+    font-size: calc(2 * var(--font-xl));
     text-transform: capitalize;
     color: var(--light-color-alt);
     font-weight: 700;
     line-height: 1.2;
+}
+
+.banner .banner__container .content__desc .tag__line {
+    font-size: var(--font-xl);
 }
 
 .banner .banner__container .content__desc .sub-heading {
@@ -294,15 +298,6 @@ button {
     color: var(--light-color-alt);
     font-weight: normal;
     padding-block: 1rem;
-}
-
-.banner .banner__container .content__desc .b__heading::before {
-    content: attr(data-heading);
-    display: block;
-    font-weight: 400;
-    text-transform: capitalize;
-    color: var(--light-color-alt);
-    line-height: 1;
 }
 
 .banner .banner__container .dev__img {

@@ -873,7 +873,7 @@ footer .ft__main .social__link p {
     font-size: var(--font-xsm);
 }
 
-footer .ft__main .social__link :is(.tel > i, .email > i) {
+footer .ft__main .social__link :is(.bi-phone, .bi-envelope) {
         color: #FE78F0;
         padding-inline-end: 4px;
     }

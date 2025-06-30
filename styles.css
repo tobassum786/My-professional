@@ -183,7 +183,7 @@ button {
 
 .slideLeft {
   animation: slideIn both;
-  animation-timeline: view(50% 20%);
+  animation-timeline: view(block 50% 20%);
 }
 
 @keyframes slideIn {

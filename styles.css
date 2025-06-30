@@ -1012,6 +1012,7 @@ footer .copyrights {
 
     footer .ft__main {
         justify-content: flex-start;
+        flex-direction: column;
     }
     
 }

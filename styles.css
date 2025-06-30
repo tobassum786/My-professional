@@ -170,13 +170,13 @@ button {
   from {
     filter: saturate(0) contrast(4) brightness(.1) blur(10px);
     opacity: 0;
-    transform: translate(-100px);
+    transform: translateY(-100px);
     scale: .80;
   }
   to {
     filter: none;
     opacity: 1;
-    transform: translate(0);
+    transform: translateY(0);
     scale: 1;
   }
 }

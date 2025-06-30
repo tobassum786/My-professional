@@ -286,6 +286,8 @@ button {
     text-transform: capitalize;
     color: var(--light-color-alt);
     font-weight: 700;
+    text-transform: capitalize;
+    text-wrap: pretty;
     line-height: 1.2;
 }
 

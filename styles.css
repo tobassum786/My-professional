@@ -161,26 +161,6 @@ button {
 }
 
 /* Animation */
-.image-reveal {
-  animation: imageReveal both;
-  animation-timeline: view(block 50% 20%);
-}
-
-@keyframes imageReveal {
-  from {
-    filter: saturate(0);
-    opacity: 0;
-    transform: translateY(-100px);
-    scale: .80;
-  }
-  to {
-    filter: none;
-    opacity: 1;
-    transform: translateY(0);
-    scale: 1;
-  }
-}
-
 .slideLeft {
   animation: slideIn both;
   animation-timeline: view(block 50% 20%);

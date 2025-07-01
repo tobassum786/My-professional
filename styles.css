@@ -860,10 +860,20 @@ footer .ft__main .ft__nav li {
 footer .ft__main .ft-social__link {
     line-height: 2;
     font-size: var(--font-xsm);
+    & .tel > i {
+        color: #FE78F0;
+        padding-right: 4px;
+    }
+
+    & .email > i {
+        color: #FE78F0;
+        padding-right: 4px;
+    }
 }
 
 footer .ft__main .social__link .ft-links {
     display: flex;
+    align-items: center;
     gap: 10px;
 }
 
@@ -872,11 +882,6 @@ footer .ft__main .social__link p {
     gap: 10px;
     font-size: var(--font-xsm);
 }
-
-footer .ft__main .social__link :is(.bi-phone, .bi-envelope) {
-        color: #FE78F0;
-        padding-inline-end: 4px;
-    }
 
 footer .copyrights {
     font-size: var(--font-xsm);
@@ -1026,11 +1031,5 @@ footer .copyrights {
         align-items: center;
         gap: 0.825rem;
     }
-
-    footer .ft__main .social__link:is(.tel, .email) {
-        color: #FE78F0;
-        padding-inline-end: 4px;
-    }
-    
 }
 

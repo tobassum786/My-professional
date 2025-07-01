@@ -861,12 +861,12 @@ footer .ft__main .ft-social__link {
     line-height: 2;
     font-size: var(--font-xsm);
     & .tel > i {
-        color: #FE78F0;
+        stroke: #FE78F0;
         padding-right: 8px;
     }
 
     & .email > i {
-        color: #FE78F0;
+        stroke: #FE78F0;
         padding-right: 8px;
     }
 }

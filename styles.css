@@ -871,7 +871,7 @@ footer .ft__main .ft-social__link {
     }
 }
 
-footer .ft__main .social__link .ft-links {
+.ft-links {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -1026,7 +1026,7 @@ footer .copyrights {
         flex-direction: column;
     }
 
-    footer .ft__main .social__link .ft-links {
+    .ft-links {
         display: flex;
         align-items: center;
         gap: 0.825rem;

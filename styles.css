@@ -305,7 +305,7 @@ button {
 .banner .banner__container .dev__img {
     width: 70%;
     object-fit: cover;
-    filter: brightness(0.5);
+    filter: brightness(90%);
 }
 
 .banner .b__social-icons {
@@ -945,6 +945,12 @@ footer .copyrights {
         display: block;
         color: var(--primary-color);
     }
+
+    .banner {
+        padding-block-start: 6.25rem;
+        padding-inline: 5px;
+    }
+    
     .banner .banner__container {
         placeitems: center;
     }
@@ -1004,10 +1010,7 @@ footer .copyrights {
 
     /*banner*/
 
-    .banner {
-        padding: 0;
-        padding-inline: 5px;
-    }
+    
 
     .banner__container .banner__content h1 {
         font-size: var(--font-lg);

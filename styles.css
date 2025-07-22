@@ -1033,5 +1033,10 @@ footer .copyrights {
     .skills__container .card__body .card__content .card__text {
         font-size: 12px;
     }
+
+    .skills__container .card__body .icons {
+        width: 30%;
+    }
+    
 }
 

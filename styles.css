@@ -257,7 +257,6 @@ button {
 .banner {
     background: linear-gradient(149.47deg, rgb(0, 0, 0) 28.469%,rgb(73, 12, 88) 109.873%,rgb(145, 24, 177) 115.878%);
     padding: 0 !important;
-    padding-block-start: 6.25rem !important;
 }
 
 .banner .banner__container {

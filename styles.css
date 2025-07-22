@@ -438,6 +438,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
     z-index: 1;
     border-radius: 10px;
     background-color: var(--primary-color);

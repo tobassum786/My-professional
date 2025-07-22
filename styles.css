@@ -108,10 +108,11 @@ button {
     background: none;
     padding: 16px 32px;
     outline: none;
+    letter-spacing: 2px;
     border: 1px solid var(--light-color);
     color: var(--light-color);
     font-size: var(--font-xsm);
-    font-weight: 300;
+    font-weight: 400;
     overflow: hidden;
     z-index: 1;
     cursor: pointer;

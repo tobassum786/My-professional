@@ -64,6 +64,10 @@ img {
     display: block;
 }
 
+section {
+    padding: 6.25rem;
+}
+
 input,
 button {
     font: inherit;

@@ -906,7 +906,7 @@ footer .copyrights {
     }
 
     section {
-        padding: 50px 32px;
+        padding: 50px 32px !important;
     }
 
     .nav__bar {

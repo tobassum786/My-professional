@@ -65,7 +65,7 @@ img {
 }
 
 section {
-    padding: 6.25rem;
+    padding: 6.25rem !important;
 }
 
 input,

@@ -487,7 +487,7 @@ button {
     justify-content: center;
     text-align: left;
     border: 1px solid hsl(from var(--light-color) h s calc(l - 45));
-    background-color: var(--glass-color);
+    background: linear-gradient(136deg, var(--glass-color), #000);
     backdrop-filter: blur(8px);
 }
 

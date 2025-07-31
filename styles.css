@@ -566,13 +566,14 @@ button {
     height: auto;
     z-index: 1;
     transition: .3s;
-    overflow: hidden;
     transition: all 0.3s ease-in-out;
 }
 
 .project__card-body .pp__img {
     width: 100%;
     border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
 }
 
 .project__card-body .pp__img img {
@@ -603,7 +604,6 @@ button {
 
 .project__card-body:hover img {
     transform: scale(105%);
-    transition: all .3s;
 }
 
 /*Testimonials*/

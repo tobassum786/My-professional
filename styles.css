@@ -750,7 +750,7 @@ textarea:focus {
     display: block;
 }
 
-.faqs__dropdown .minimize__btn {
+.minimize__btn {
     display: none;
 }
 

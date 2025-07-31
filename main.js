@@ -24,7 +24,7 @@ const faqBtn = document.querySelectorAll('.faq__menu');
 faqBtn.forEach(toggle => {
     toggle.addEventListener('click', () => {
         toggle.parentNode.classList.toggle('show')
-        toggle.classList.toggle('show')
+        faqBtn.classList.toggle('show')
     });
 });
 ///Intersection animation

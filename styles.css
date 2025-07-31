@@ -548,16 +548,15 @@ button {
 
 .projects::after {
     content: '';
-    width: 400px;
+    width: 200px;
     height: 400px;
     background: var(--gradient-color);
     position: absolute;
-    right: -100px;
+    right: 0;
     bottom: 50px;
-    z-index: -1;
-    opacity: .3;
+    opacity: 0.3;
     filter: blur(110px);
-    border-radius: 50%;
+    border-radius: 100% 0 0 100%;
 }
 
 .project__card-body {

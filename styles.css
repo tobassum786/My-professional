@@ -592,13 +592,14 @@ button {
     font-size: var(--font-xsm);
     z-index: 1;
     text-transform: capitalize;
+    transition: all 0.3s ease;
 }
 
 .pp__content a:hover {
     text-decoration: underline;
 }
 
-.project__card-body:hover {
+.project__card-body:hover img {
     transform: scale(105%);
     transition: all .3s;
 }

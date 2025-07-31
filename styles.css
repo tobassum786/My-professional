@@ -273,14 +273,14 @@ textarea:focus {
     content: '';
     width: 2px;
     height: 290px;
-    background: var(--primary-color);
+    background: var(--light-color);
     display: block;
     position: absolute;
     left: -10px;
 }
 
 .banner .banner__container .content__desc p {
-    font-size: calc(2 * var(--font-xl));
+    font-size: calc(1 * var(--font-xl));
     text-transform: capitalize;
     color: var(--light-color-alt);
     font-weight: 700;
@@ -290,7 +290,8 @@ textarea:focus {
 }
 
 .banner .banner__container .content__desc .tag__line {
-    font-size: var(--font-xl);
+    font-size: calc(1.8 * var(--font-xl));
+    line-height: 1;
 }
 
 .banner .banner__container .content__desc .sub-heading {

@@ -75,6 +75,11 @@ button {
     outline: none;
 }
 
+input:focus,
+textarea:focus {
+    box-shadow: 0 0 2px 1px var(--light-color);
+}
+
 /*Reused Classes*/
 .d-sm-none {
     display: none;

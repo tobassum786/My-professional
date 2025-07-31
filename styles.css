@@ -269,16 +269,6 @@ textarea:focus {
     padding: 10px;
 }
 
-.banner .banner__container .content__desc::before {
-    content: '';
-    width: 2px;
-    height: 290px;
-    background: var(--light-color);
-    display: block;
-    position: absolute;
-    left: -10px;
-}
-
 .banner .banner__container .content__desc p {
     font-size: calc(1 * var(--font-xl));
     text-transform: capitalize;
@@ -312,19 +302,16 @@ textarea:focus {
     right: 0.925rem;
     display: flex;
     flex-direction: column;
-    margin-top: var(--gap-sm);
-    gap: 8px;
-    padding-right: 8px;
 }
 
 .banner .banner__container .b__social-icons a {
     font-size: var(--font-sm);
     padding: 8px 10px;
-    transition: .3s;
+    transition: all 0.3s ease-in-out;
 }
 
 .banner .banner__container .b__social-icons a:hover {
-    margin-top: -8px;
+    transform: translateY(-8px);
 }
 /*ABout Me*/
 .about__me {

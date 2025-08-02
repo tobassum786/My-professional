@@ -117,7 +117,12 @@ textarea:focus {
     overflow: hidden;
     z-index: 1;
     cursor: pointer;
-    transition: all 0.3s ease-in-out
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        box-shadow: 0 0 16px 4px rgb(225, 225, 225);
+        background: rgba(225, 225, 225, 0.8);
+        color: var(--primary-color);
+    }
 }
 .gradient__heading {
     text-transform: uppercase;

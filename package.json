@@ -1,0 +1,55 @@
+{
+  "name": "tobassum-portfolio",
+  "version": "1.0.0",
+  "description": "Tobassum Munir - Front-end Developer Portfolio",
+  "main": "Index.html",
+  "scripts": {
+    "build": "node build.js",
+    "build:simple": "node build-simple.js",
+    "build:css": "purgecss --config purgecss.config.js",
+    "build:js": "terser js/main.js -o dist/js/main.min.js --compress --mangle",
+    "dev": "live-server --port=3000",
+    "optimize-images": "imagemin Images/**/*.{jpg,jpeg,png,svg} --out-dir=Images/optimized",
+    "lint:css": "stylelint styles/*.css",
+    "lint:js": "eslint js/*.js",
+    "format": "prettier --write .",
+    "clean": "rm -rf dist/ && rm -f styles/styles.purged.css",
+    "preview": "npm run build && live-server dist --port=3001",
+    "preview:simple": "npm run build:simple && live-server dist --port=3001"
+  },
+  "keywords": [
+    "portfolio",
+    "frontend",
+    "developer",
+    "web",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Tobassum Munir",
+  "license": "MIT",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "autoprefixer": "^10.4.16",
+    "cssnano": "^6.0.1",
+    "eslint": "^8.55.0",
+    "imagemin": "^8.0.1",
+    "imagemin-cli": "^7.0.0",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "imagemin-svgo": "^3.0.2",
+    "live-server": "^1.2.2",
+    "postcss": "^8.4.32",
+    "postcss-cli": "^10.1.0",
+    "prettier": "^3.1.1",
+    "purgecss": "^5.0.0",
+    "stylelint": "^15.11.0",
+    "stylelint-config-standard": "^34.0.0",
+    "terser": "^5.24.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+} 

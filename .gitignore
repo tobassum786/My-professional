@@ -5,8 +5,11 @@ yarn-debug.log*
 yarn-error.log*
 
 # Build outputs
+# Build outputs
 dist/
-
+build/
+*.min.js
+*.min.css
 styles/styles.purged.css
 
 # Environment variables

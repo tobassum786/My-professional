@@ -95,6 +95,11 @@ try {
   
   console.log('✅ Standalone build completed successfully!');
   console.log('📁 Output files are in the dist/ directory');
+  console.log('🎨 New features added:');
+  console.log('   ✨ Random static tech icons in banner');
+  console.log('   🎯 40+ different tech icons without animations');
+  console.log('   🌈 Color variations and subtle glow effects');
+  console.log('   ⌨️  Toggle with Ctrl+I keyboard shortcut');
   console.log('📊 File size reductions:');
   console.log(`   CSS: ${(originalCssSize / 1024).toFixed(1)}KB → ${(minifiedCssSize / 1024).toFixed(1)}KB (${((1 - minifiedCssSize / originalCssSize) * 100).toFixed(1)}% reduction)`);
   console.log(`   JS: ${(originalJsSize / 1024).toFixed(1)}KB → ${(minifiedJsSize / 1024).toFixed(1)}KB (${((1 - minifiedJsSize / originalJsSize) * 100).toFixed(1)}% reduction)`);

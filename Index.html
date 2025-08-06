@@ -14,8 +14,10 @@
     <link rel="stylesheet" href="./styles/styles.css" type="text/css">
     <!--    Bootstrap-Icons CDN-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preload" as="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!--- Swiper JS CDN------>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" as="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <!--     pinterest claim -->
     <meta name="p:domain_verify" content="4b90ffbd9131536983711d9fa7e663a9" />
     <!-----SwiperJs CDN script----->
@@ -110,7 +112,7 @@
     <!--Navigation--->
     <nav class="nav__bar">
         <a href="#" class="logo">
-            <img src="./Images/web__assest/logo.png" alt="Logo">
+            <img src="./Images/web__assest/logo.png" loading="lazy" alt="Logo">
         </a>
         <ul class="nav__items" id="menu">
             <li class="nav__links current"><a href="#home">Home</a></li>
@@ -135,20 +137,20 @@
     <section class="banner" id="home">
         <div class="banner__container">
             <div class="dev__img">
-                <img src="./Images/web__assest/front-end%20developer.jpg" alt="front-end developer">
+                <img src="./Images/web__assest/front-end%20developer.jpg" alt="front-end developer" loading="lazy">
             </div>
             <div class="content__desc">
                 <p class="b__heading">Tobassum Munir</p>
                 <p class="tag__line"><span class="text-gradient">front-end Web developer</span></p>
                 <p class="sub-heading">⚡Optimized & Future-Ready Frontend Solutions</p>
                 <div class="b__social-icons">
-                    <a href="https://github.com/tobassum786"><i class="bi bi-github"></i></a>
-                    <a href="https://www.facebook.com/tobassum"><i class="bi bi-facebook"></i></a>
-                    <a href="https://www.x.com/code4mind"><i class="bi bi-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/tobassum-munir-86106229/?trk=opento_sprofile_topcard"><i
-                            class="bi bi-linkedin"></i></a>
-                    <a href="https://wa.me/966538975722"><i class="bi bi-whatsapp"></i></a>
-                    <a href="https://www.instagram.com/tobassum07"><i class="bi bi-instagram"></i></a>
+                    <a href="https://github.com/tobassum786" aria-label="front-end developer social media profile"><i class="bi bi-github"></i></a>
+                    <a href="https://www.facebook.com/tobassum" aria-label="front-end developer social media profile"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.x.com/code4mind" aria-label="front-end developer social media profile"><i class="bi bi-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/tobassum-munir-86106229/?trk=opento_sprofile_topcard" aria-label="front-end developer social media profile"><i
+                            class="bi bi-linkedin" aria-label="front-end developer social media profile"></i></a>
+                    <a href="https://wa.me/966538975722" aria-label="front-end developer social media profile"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/tobassum07" aria-label="front-end developer social media profile"><i class="bi bi-instagram"></i></a>
                 </div>
             </div>
         </div>
@@ -180,19 +182,16 @@
                     <div class="about__me-skills-wrapper">
                         <div class="about__list">
                             <ul class="list">
-                                <div>
                                     <li>On-time delivery:</li>
                                     <p>I know time is money so I don't want to waste yours. Or mine. So I guarantee that I
                                         will
                                         always deliver what you pay for as promised.</p>
-                                </div>
-                                <div>
                                     <li>quality:</li>
                                     <p>I don't want to put my name on something subpar so my first concern is always
                                         quality. No
                                         matter what, you will love the end result.</p>
-                                </div>
-                            </ul>
+                                    </li>
+                                </ul>
                         </div>
                         <div class="about__me-skills-container">
                             <ul class="about__me-list">
@@ -230,7 +229,7 @@
             <!--card start--->
             <div class="card__body fancy__border">
                 <div class="icons">
-                    <img src="./Images/web__assest/icons/html5.svg" alt="HTML3">
+                    <img loading="lazy" src="./Images/web__assest/icons/html5.svg" alt="HTML3">
                 </div>
                 <div class="card__content">
                     <p class="card__text">HTML</p>
@@ -240,7 +239,7 @@
             <!--card start--->
             <div class="card__body fancy__border">
                 <div class="icons">
-                    <img src="./Images/web__assest/icons/css.svg" alt="css3">
+                    <img loading="lazy" src="./Images/web__assest/icons/css.svg" alt="css3">
                 </div>
                 <div class="card__content">
                     <p class="card__text">CSS</p>
@@ -250,7 +249,7 @@
             <!--card start--->
             <div class="card__body fancy__border">
                 <div class="icons">
-                    <img src="./Images/web__assest/icons/JavaScript.svg" alt="JavaScript">
+                    <img loading="lazy" src="./Images/web__assest/icons/JavaScript.svg" alt="JavaScript">
                 </div>
                 <div class="card__content">
                     <p class="card__text">JavaScript</p>
@@ -260,7 +259,7 @@
             <!--card start--->
             <div class="card__body fancy__border">
                 <div class="icons">
-                    <img src="./Images/web__assest/icons/tailwindcss.svg" alt="TailwindCSS">
+                    <img loading="lazy" src="./Images/web__assest/icons/tailwindcss.svg" alt="TailwindCSS">
                 </div>
                 <div class="card__content">
                     <p class="card__text">Tailwindcss</p>
@@ -270,7 +269,7 @@
             <!--card start--->
             <div class="card__body fancy__border">
                 <div class="icons">
-                    <img src="./Images/web__assest/icons/bootstrap.svg" alt="Bootstrap">
+                    <img loading="lazy" src="./Images/web__assest/icons/bootstrap.svg" alt="Bootstrap">
                 </div>
                 <div class="card__content">
                     <p class="card__text">Bootstrap</p>
@@ -280,7 +279,7 @@
             <!--card start--->
             <div class="card__body fancy__border">
                 <div class="icons">
-                    <img src="./Images/web__assest/icons/github_dark.svg" alt="Git&Github">
+                    <img loading="lazy" src="./Images/web__assest/icons/github_dark.svg" alt="Git&Github">
                 </div>
                 <div class="card__content">
                     <p class="card__text">GitHub</p>
@@ -290,7 +289,7 @@
             <!--card start--->
             <div class="card__body fancy__border">
                 <div class="icons">
-                    <img src="./Images/web__assest/icons/vue.svg" alt="Vue framework">
+                    <img loading="lazy" src="./Images/web__assest/icons/vue.svg" alt="Vue framework">
                 </div>
                 <div class="card__content">
                     <p class="card__text">VUE</p>
@@ -300,7 +299,7 @@
             <!--card start--->
             <div class="card__body fancy__border">
                 <div class="icons">
-                    <img src="./Images/web__assest/icons/flask-light.svg" alt="Python micro web framework">
+                    <img loading="lazy" src="./Images/web__assest/icons/flask-light.svg" alt="Python micro web framework">
                 </div>
                 <div class="card__content">
                     <p class="card__text">Flask</p>

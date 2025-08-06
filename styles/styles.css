@@ -405,10 +405,7 @@ textarea:focus {
                             position: relative;
                             display: flex;
                             flex-direction: column;
-                            gap: var(--gap-sm);
-
-                            & div {
-                                padding: 0.325rem;
+                            gap: 0.725rem;
 
                                 & li {
                                     font-size: calc(var(--font-xsm) * 0.975);

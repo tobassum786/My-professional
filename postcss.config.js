@@ -1,3 +1,17 @@
+<<<<<<< ours
+import purgecss from '@fullhuman/postcss-purgecss';
+
+export default {
+  plugins: [
+    purgecss({
+      content: ['./Index.html', './Blog/Index.html', './js/main.js'],
+      defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
+      safelist: ['active', 'show', 'hide', /^nav-/] // Keep these classes regardless of usage
+    })
+  ]
+};
+|||||||
+=======
 module.exports = {
   plugins: [
     require('autoprefixer'),
@@ -45,3 +59,4 @@ module.exports = {
     })
   ]
 } 
+>>>>>>> theirs

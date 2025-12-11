@@ -5,6 +5,21 @@ const selectElement = selector => {
     throw new Error(`Something went wrong, please check ${element} typed correctly`)
 };
 
+<<<<<<< HEAD
+<<<<<<< ours
+//Grap items
+const selectElementAll = selector => {
+    const element = document.querySelectorAll(selector)
+    if (element) return element;
+    throw new Error(`Something went wrong, please check ${element} typed correctly`)
+};
+
+||||||| ancestor
+=======
+
+>>>>>>> theirs
+=======
+>>>>>>> 58c83cbba58fc53e225ec78c7cbdb0bc965ff873
 //Responsive toggle menu
 const menuToggleIcon = selectElement('#toggle-btn');
 
@@ -17,7 +32,11 @@ const toggleMenu = () => {
 menuToggleIcon.addEventListener('click', toggleMenu);
 
 // Close menu when menu links are clicked
+<<<<<<< HEAD
+const menuLinks = selectElementAll('.nav-links a');
+=======
 const menuLinks = document.querySelectorAll('.nav-links a');
+>>>>>>> 58c83cbba58fc53e225ec78c7cbdb0bc965ff873
 menuLinks.forEach(link => {
     link.addEventListener('click', () => {
         const mobileMenu = selectElement('#menu');
@@ -27,10 +46,14 @@ menuLinks.forEach(link => {
     });
 });
 
+<<<<<<< HEAD
+//Model popup
+=======
 ////Model popup
+>>>>>>> 58c83cbba58fc53e225ec78c7cbdb0bc965ff873
 
 //FAQs sections
-const faqBtn = document.querySelectorAll('.faq__menu');
+const faqBtn = selectElementAll('.faq__menu');
 
 faqBtn.forEach(toggle => {
     toggle.addEventListener('click', () => {

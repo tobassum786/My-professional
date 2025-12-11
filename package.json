@@ -9,10 +9,12 @@
     "build:css": "purgecss --config purgecss.config.js",
     "build:js": "terser js/main.js -o dist/js/main.min.js --compress --mangle",
     "dev": "live-server --port=3000",
-    "optimize-images": "imagemin Images/**/*.{jpg,jpeg,png,svg} --out-dir=Images/optimized",
+    "optimize-images": "node scripts/optimize-images.js",
     "lint:css": "stylelint styles/*.css",
     "lint:js": "eslint js/*.js",
+    "csslint": "npm run lint:css",
     "format": "prettier --write .",
+    "setup": "npm run csslint && npm run optimize-images",
     "clean": "rm -rf dist/ && rm -f styles/styles.purged.css",
     "preview": "npm run build && live-server dist --port=3001",
     "preview:simple": "npm run build:simple && live-server dist --port=3001"

@@ -57,6 +57,8 @@ This will:
 #### Lint CSS
 ```bash
 npm run lint:css
+# Alias:
+npm run csslint
 ```
 
 #### Lint JavaScript
@@ -73,6 +75,13 @@ npm run format
 ```bash
 npm run optimize-images
 ```
+Optimized copies are written to `Images/optimized/` without altering the originals.
+
+### One-Command Setup
+```bash
+npm run setup
+```
+Runs CSS linting and generates optimized image assets to speed up first-time setup.
 
 ## 📁 Project Structure
 

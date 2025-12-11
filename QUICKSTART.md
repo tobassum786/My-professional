@@ -9,19 +9,24 @@ Get your optimized portfolio website up and running in minutes!
 npm install
 ```
 
-### 2. Start Development Server
+### 2. Lint CSS and Optimize Images (one-time)
+```bash
+npm run setup
+```
+
+### 3. Start Development Server
 ```bash
 npm run dev
 ```
 Your site will be available at `http://localhost:3000`
 
-### 3. Build for Production
+### 4. Build for Production
 ```bash
 npm run build
 ```
 Optimized files will be created in the `dist/` folder.
 
-### 4. Preview Production Build
+### 5. Preview Production Build
 ```bash
 npm run preview
 ```
@@ -53,9 +58,11 @@ My-professional/
 | `npm run preview` | Preview production build |
 | `npm run clean` | Clean build files |
 | `npm run lint:css` | Lint CSS files |
+| `npm run csslint` | Alias for CSS lint |
 | `npm run lint:js` | Lint JavaScript files |
 | `npm run format` | Format code with Prettier |
 | `npm run optimize-images` | Optimize images |
+| `npm run setup` | Lint CSS and optimize images |
 
 ## 🎯 Key Features
 

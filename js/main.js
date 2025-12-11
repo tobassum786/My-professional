@@ -28,3 +28,46 @@ faqBtn.forEach(toggle => {
     });
 });
 ///Intersection animation
+// Light/Dark theme toggle
+const themeToggleBtn = document.querySelectorAll('#toggle__btn');
+const body = document.body;
+
+// Function to set theme
+function setTheme(theme) {
+    if (theme === 'dark') {
+        body.classList.add('dark-theme');
+        localStorage.setItem('theme', 'dark');
+    } else {
+        body.classList.remove('dark-theme');
+        localStorage.setItem('theme', 'light');
+    }
+    // toggle icon classes
+    document.querySelectorAll('.moon__icon').forEach(icon => {
+        icon.style.display = theme === 'dark' ? 'none' : 'inline-block';
+    });
+    document.querySelectorAll('.sun__icon').forEach(icon => {
+        icon.style.display = theme === 'dark' ? 'inline-block' : 'none';
+    });
+}
+
+// Load theme from localStorage
+(function() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        setTheme('dark');
+    } else {
+        setTheme('light');
+    }
+})();
+
+// Add event listeners to the toggle buttons
+themeToggleBtn.forEach(btn => {
+    btn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        if (body.classList.contains('dark-theme')) {
+            setTheme('light');
+        } else {
+            setTheme('dark');
+        }
+    });
+});

@@ -26,10 +26,10 @@
     --tertiary-clr:   rgb(255, 255, 255);  /* White */
 
     /* Accent */
-    --clr-accent: rgb(45, 186, 78);     /* Green accent */
+    --accent-clr: rgb(45, 186, 78);     /* Green accent */
 
     /* Blue Gradient Color */
-    --gradient-blue: linear-gradient(90deg, rgb(80, 153, 227), var(--clr-accent));
+    --gradient-blue: linear-gradient(90deg, rgb(80, 153, 227), var(--accent-clr));
 
 
 
@@ -87,7 +87,7 @@ li, ul, a {
     color: var(--text-clr);
     transition: all var(--transition-duration) var(--transition-timing-function);
     &:hover {
-        color: var(--clr-accent);
+        color: var(--accent-clr);
     }
 }
 
@@ -113,9 +113,9 @@ button {
 }
 
 .btn {
-    background-color: var(--clr-accent);
+    background-color: var(--accent-clr);
     color: var(--text-clr);
-    border: 1px solid var(--clr-accent);
+    border: 1px solid var(--accent-clr);
     border-radius: var(--border-radius-md);
     padding: var(--spacing-sm) var(--spacing-md);
     font-size: var(--font-sm);
@@ -126,7 +126,7 @@ button {
     &:hover {
         background-color: var(--primary-clr);
         color: var(--text-clr);
-        border: 1px solid var(--clr-accent);
+        border: 1px solid var(--accent-clr);
     }
 }
 
@@ -182,7 +182,7 @@ button {
             }
         }
         & li .nav__links.current {
-            color: var(--clr-accent);
+            color: var(--accent-clr);
         }
     }
 
@@ -243,7 +243,7 @@ button {
 
         & .dev__img {
             width: 150px;
-            box-shadow: 2px 2px 2px 2px var(--clr-accent);
+            box-shadow: 2px 2px 2px 2px var(--accent-clr);
             border-radius: var(--border-radius-lg);
             rotate: 0deg;
             transition: .5s;
@@ -306,50 +306,65 @@ button {
                 }
 
                 & a:hover i {
-                    color: var(--clr-accent);
+                    color: var(--accent-clr);
                 }
 
             }
         }
 
         & .skill {
-                position: relative;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-block-start: var(--spacing-md);
-                max-width: 480px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-block-start: var(--spacing-md);
+            max-width: 480px;
                 /*border: 2px solid red;*/
-                flex-wrap: wrap;
-                gap: var(--spacing-sm);
+            flex-wrap: wrap;
+            gap: var(--spacing-xs);
 
-                & .skill__icon {
-                    display: inline-flex;
-                    justify-content: center;
-                    background: var(--primary-clr-light);
-                    padding: var(--spacing-xs);
-                    width: 105px;
-                    border-radius: var(--border-radius-sm);
-                    cursor: pointer;
-                    transition: border-left var(--transition-duration) var(--transition-timing-function);
+            & .skill__icon {
+                display: inline-flex;
+                justify-content: center;
+                background: var(--primary-clr-light);
+                padding: var(--spacing-xs);
+                width: 105px;
+                border-radius: var(--border-radius-sm);
+                cursor: pointer;
+                transition: border-left var(--transition-duration) var(--transition-timing-function);
 
-                    &:hover {
-                        border-left: 1.5px solid var(--clr-accent);
-                    }
-
-                    & i {
-                        width: 50%;
-                        font-size: var(--font-md);
-                        background: transparent;
-                    }
-
-                    & p {
-                        width: calc(100% - 30%);
-                        font-size: var(--font-xs);
-                        background: transparent;
-                    }
+                &:hover {
+                    border-left: 1.5px solid var(--accent-clr);
                 }
-            }
+
+                & i {
+                    width: 50%;
+                    font-size: var(--font-md);
+                    background: transparent;
+                }
+
+                & p {
+                    width: calc(100% - 30%);
+                    font-size: var(--font-xs);
+                    background: transparent;
+                   
+                 }
+            
+            }  
+        
+        }
+    
     }
 
+}
+
+/*ABOUT ME*/
+
+.about__me {
+    position: relative;
+    height: 100vh;
+
+    & .heading__data {
+        
+    }
 }

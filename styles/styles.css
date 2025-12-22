@@ -108,6 +108,10 @@ section {
     display: inline-block;
 }
 
+button {
+    all: unset;
+}
+
 .btn {
     background-color: var(--clr-accent);
     color: var(--text-clr);
@@ -118,6 +122,7 @@ section {
     font-weight: var(--font-medium);
     cursor: pointer;
     transition: all var(--transition-duration) var(--transition-timing-function);
+    cursor: pointer;
     &:hover {
         background-color: var(--primary-clr);
         color: var(--text-clr);
@@ -127,9 +132,9 @@ section {
 
 /* Navigation styles */
 .nav__bar {
-    background-color: var(--primary-clr);
+    background-color: transparent;
     color: var(--text-clr);
-    padding: var(--spacing-md);
+    padding: var(--spacing-md) var(--spacing-xxl);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -140,18 +145,63 @@ section {
     z-index: 1000;
 
     & .nav__items {
-        list-style: none;
+        background: transparent;
         display: flex;
         gap: var(--spacing-lg);
         justify-content: center;
         align-items: center;
         transition: all var(--transition-duration) var(--transition-timing-function);
-        & .nav__links {
-            font-weight: var(--font-bold);
-            letter-spacing: 2px;
+        
+        & li {
+            background: transparent;
         }
-        & .nav__links.current {
+
+        & .nav__links {
+            position: relative;
+            font-weight: var(--font-bold);
+            background: transparent;
+            letter-spacing: 2px;
+            font-size: var(--font-sm);
+            text-transform: uppercase;
+
+            &::after {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 0px;
+                height: 2px;
+                left: 0;
+                bottom: -3px;
+                background: var(--gradient-blue);
+                transition: width 0.3s ease-in-out allow-discrete;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
+        & li .nav__links.current {
             color: var(--clr-accent);
+        }
+    }
+
+    & .toggle__theme {
+        cursor: pointer;
+        & .toggle__icons {
+            padding: var(--spacing-sm);
+            font-size: var(--font-xl);
+
+            & .light__icon {
+                display: none;
+            }
+
+            & .dark__icon.activated .light__icon {
+                display: none;
+            }
+
+            & .light__icon.activated .dark__icon {
+                display: none;
+            }
         }
     }
     
@@ -163,25 +213,42 @@ section {
 .banner {
     position: relative;
     height: 100vh;
+
+    &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 700px;
+        height: 200px;
+        background: var(--gradient-blue);
+        top: 0;
+        left: 0;
+        translate: 85%;
+        border-radius: 0 0 100% 100%;
+        filter: blur(150px);
+        opacity: 0.78;
+    }
+
+
     & .banner__container {
         display: flex;
         height: 80vh;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        position: 80vh;
-        width: 100%;
+        max-width: 100%;
+        z-index: 1;
 
         & .dev__img {
-            width: 250px;
+            width: 150px;
             box-shadow: 2px 2px 2px 2px var(--clr-accent);
             border-radius: var(--border-radius-lg);
-            rotate: -8deg;
+            rotate: 0deg;
             transition: .5s;
             margin-bottom: 16px;
 
             &:hover {
-                rotate: 8deg;
+                rotate: -8deg;
                 scale: 1.2;
             }
 
@@ -200,18 +267,41 @@ section {
             & .b__heading {
                 font-size: var(--font-xl);
                 font-family: var(font-family);
-                font-weight: var(--font-medium);
+                font-weight: var(--font-bold);
             }
 
             & .tag__line span {
-                font-size: var(--font-xxl);
+                font-size: var(--font-xl);
                 font-family: "Rammetto One", sans-serif;
-                text-transform: capitalize;         
+                text-transform: uppercase;         
 
             }
 
             & .sub-heading {
-                font-size: var(--font-md);
+                padding-block: var(--spacing-xxs);
+                font-size: var(--font-xs);
+                letter-spacing: var(--spacing-xxs);
+                text-transform: uppercase;
+            }
+
+            & .b__social-icons {
+                display: inline-flex;
+                margin-top: var(--spacing-xs);
+                gap: var(--spacing-md);
+                transition: .3s;
+
+                & a i {
+                    font-size: var(--font-lg);
+                }
+
+                & a:hover {
+                    margin-top: -4px;
+                }
+
+                & a:hover i {
+                    color: var(--clr-accent);
+                }
+
             }
         }
     }

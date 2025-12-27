@@ -28,6 +28,9 @@
     /* Accent */
     --accent-clr: rgb(45, 186, 78);     /* Green accent */
 
+    /*Heading Color*/
+    --heading-clr: rgb(80, 153, 227);
+
     /* Blue Gradient Color */
     --gradient-blue: linear-gradient(90deg, rgb(80, 153, 227), var(--accent-clr));
 
@@ -54,6 +57,7 @@
     --font-normal: 400;
     --font-medium: 500;
     --font-bold: 700;
+    --font-hard: 900;
 
     /* Border radius */
     --border-radius-sm: 0.25rem;
@@ -129,6 +133,7 @@ button {
         border: 1px solid var(--accent-clr);
     }
 }
+
 
 /* Navigation styles */
 .nav__bar {
@@ -359,12 +364,93 @@ button {
 }
 
 /*ABOUT ME*/
-
 .about__me {
     position: relative;
     height: 100vh;
+    & .heading {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: var(--font-xl);
+        font-family: 'Rammetto One', sans-serif;
+        color: var(--accent-clr);
+        margin-bottom: var(--spacing-xxl);
+    }
 
-    & .heading__data {
-        
+    & .about__me-wrapper {
+        gap: var(--spacing-xl);
+        display: flex;
+        justify-content: center;
+
+        & .about__me-content {
+            position: relative;
+            display: flex;
+            max-width: 1110px;
+            flex-wrap: wrap;
+            gap: var(--spacing-xxl);
+            & .about__me-description {
+                padding: var(--spacing-sm);
+                font-size: var(--font-md);
+                line-height: 1.8;
+                letter-spacing: 1.5px;
+                max-width: 550px;
+            }
+
+            & .about__niche {
+                display: flex;
+                flex-wrap: wrap;
+                padding: var(--spacing-xs);
+                gap: var(--spacing-sm);
+                justify-content: center;
+                width: 500px;
+
+                & .niche__list {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    max-width: 550px;
+                    gap: var(--spacing-md);
+
+                    & li {
+                        max-width: 140px;
+                        text-transform: capitalize;
+                        cursor: pointer;
+                        padding: var(--spacing-md);
+                        background-color: var(--primary-clr-light);
+                        border-radius: var(--border-radius-md);
+                        transition: all .3s;
+
+                        &:hover{
+                            margin-top: -5px;
+                            border-bottom: 1px solid var(--accent-clr);
+                        }
+                    }
+                }
+            }
+
+            & .about__me-cta {
+                max-width: 550px;
+                padding: var(--spacing-sm);
+
+                & h1 {
+                    color: var(--accent-clr);
+                    font-size: var(--font-xl);
+                    font-family: var(--font-family-default);
+                    margin-bottom: var(--spacing-lg);
+                }
+
+                & .points {
+                    h4 {
+                        font-size: var(--font-sm);
+                        color: var(--tertiary-clr);
+                        text-transform: uppercase;
+                        padding-block-end: var(--spacing-sm);
+                    }
+
+                    & p {
+                        padding-block-end: var(--spacing-md);
+                    }
+                }
+            }
+        }
     }
 }

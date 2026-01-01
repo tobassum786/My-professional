@@ -1,5 +1,5 @@
 /* import font from google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Kite+One&family=Rammetto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Rammetto+One&display=swap');
 
 /* reset and base styles */
 * {
@@ -64,7 +64,7 @@
     --border-radius-lg: 1rem;
 
     /*font-family*/
-    --font-family-default: 'Kite One', sans-serif;
+    --font-family-default: 'Able', sans-serif;
 
     /*line-height*/
     --line-height-default: 1.5;
@@ -72,12 +72,15 @@
     /*transition*/
     --transition-duration: 0.3s;
     --transition-timing-function: ease;
+
+    transition: all .5s ease-in-out;
 }
 
 /* Global styles */
 body {
     background-color: var(--primary-clr);
     color: var(--text-clr);
+    scroll-behavior: smooth;
 }
 
 .d-none {
@@ -139,6 +142,36 @@ button {
         background-color: var(--primary-clr);
         color: var(--accent-clr);
         border: 1px solid var(--accent-clr);
+    }
+}
+
+
+/*ANIMATION*/
+
+.scroll__bar {
+    position: fixed;
+    top: 104px;
+    left: 0;
+    width: 0px;
+    height: 3px;
+    background: transparent;
+    z-index: 1;
+}
+
+.scroll__animation {
+    animation: progress__bar both;
+    animation-timeline: scroll(nearest);
+}
+
+@keyframes progress__bar {
+    from {
+        width: 0%;
+        background: var(--gradient-blue);
+    }
+
+    to {
+        width: 100%;
+        background: var(--gradient-blue);
     }
 }
 
@@ -389,7 +422,6 @@ button {
                 padding: var(--spacing-sm);
                 font-size: var(--font-md);
                 line-height: 1.8;
-                letter-spacing: 1.5px;
                 max-width: 550px;
             }
 
@@ -412,6 +444,7 @@ button {
                         max-width: 140px;
                         text-wrap: wrap;
                         text-transform: capitalize;
+                        font-size: var(--font-sm);
                         cursor: pointer;
                         padding: var(--spacing-md);
                         background-color: var(--primary-clr-light);

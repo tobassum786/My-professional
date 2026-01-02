@@ -19,7 +19,7 @@
 
 :root {
     /* Neutrals */
-    --primary-clr: rgb(36, 41, 46);      /* Deep grey-black */
+    --primary-clr: hsl(210 12.2% 16.1%);      /* Deep grey-black */
     --primary-clr-light: rgb(43, 49, 55);      /* Slightly lighter dark */
     --text-clr: rgb(250, 251, 252);  /* Almost pure white */
     --tertiary-clr:   rgb(255, 255, 255);  /* White */

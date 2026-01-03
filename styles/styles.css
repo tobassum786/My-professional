@@ -596,3 +596,111 @@ button {
         }
     }
 }
+
+/*Testinomial*/
+
+.testinomials {
+    position: relative;
+
+    & .testinomials__slides {
+        display: flex;
+        justify-content: center;
+        gap: var(--spacing-xxl);
+        width: 1024px;
+        border-radius: var(--border-radius-md);
+        background: var(--primary-clr-light);
+        padding: var(--spacing-xxl);
+        cursor: pointer;
+
+        & .swiper-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xxl);
+
+            & .swiper-slide {
+                border: 1px dashed var(--accent-clr);
+                padding: var(--spacing-md);
+                border-radius: var(--border-radius-md);
+                text-align: center;
+
+                & .bi-quote {
+                    font-size: var(--font-xl);
+                    color: var(--accent-clr);
+                }
+
+                & .client__fb {
+                    font-size: var(--font-md);
+                    margin-bottom: var(--spacing-md);
+                }
+
+                & .client__detail {
+                    padding: var(--spacing-md);
+
+                    & .client__name {
+                        font-size: var(--font-lg);
+                        color: var(--accent-clr);
+                        font-weight: var(--font-hard);
+                        text-transform: capitalize;
+                    }
+
+                    & .client__origin {
+                        font-size: var(--font-sm);
+                        text-transform: capitalize;
+                        color: hsl(from var(--text-clr) h s 60%);
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+/*Actions*/
+
+.actions {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    & .action {
+        position: relative;
+        text-wrap: wrap;
+        width: 60%;
+        & .side__divder {
+            width: 100%;
+            height: 2px;
+            background: var(--accent-clr);
+            margin-bottom: var(--spacing-md);
+        }
+
+        & .text__data {
+            font-size: var(--font-xl);
+            text-transform: uppercase;
+            color: hsl(from var(--text-clr) h s 50%);
+        }
+
+    }
+}
+
+/*FAQs*/
+
+.faqs {
+    position: relative;
+    & .faqs__clients {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: var(--spacing-xl);
+
+        & .heading {
+            font-weight: var(--font-normal);
+            max-width: 600px;
+            text-align: left;
+        }
+
+        & .faqs__list {
+            max-width: 600px;
+        }
+
+    }
+}

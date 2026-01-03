@@ -23,6 +23,9 @@
         <script type="module">
         import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
         const swiper = new Swiper('.swiper', {
+        autoplay: {
+        delay: 1000,
+        },
         slidesPerView: 1,
         navigation: {
         nextEl: '.swiper-button-next',
@@ -103,6 +106,7 @@
         </script>
     </head>
     <body>
+        <div class="scroll__bar scroll__animation"></div>
         <!--Navigation--->
         <nav class="nav__bar">
             <a href="#" class="logo">
@@ -116,13 +120,13 @@
                 <li><a href="#" class="nav__links">Blog</a></li>
             </ul>
             <div class="toggle__theme">
-                <button class="items-center toggle__icons" id="theme__toggle__btn">
+                <button class="toggle__icons" id="theme__toggle__btn">
                 <i class="bi bi-moon-fill dark__icon"></i>
                 <i class="bi bi-sun-fill light__icon"></i>
                 </button>
             </div>
             <div class="toggle__menu d-md-none">
-                <button class="items-center toggle__icons" id="toggle__btn">
+                <button class="toggle__icons" id="toggle__btn">
                 <i class="bi bi-list open__menu"></i>
                 <i class="bi bi-x close__menu"></i>
                 </button>
@@ -220,9 +224,7 @@
         </section>
         <!--Services--->
         <section class="offers__container" id="services">
-            <div class="heading__data">
-                <h1 class="heading">Services</h1>
-            </div>
+            <h1 class="heading">Services</h1>
             <!-- Offers container-->
             <div class="offers__wrapper">
                 <div class="offer__card">
@@ -235,7 +237,8 @@
                             <li>Simple landing page with 3 - 4 sections</li>
                             <li>1 Prototype file to HTML</li>
                             <li>3 Revision</li>
-                            <li>Without animations</li>
+                            <li>Simple Animations & Transitions</li>
+                            <li>Basic JavaScript</li>
                             <li>On-time delivery</li>
                         </ul>
                     </div>
@@ -269,7 +272,7 @@
                     <span>250$</span>
                     <div class="card__content">
                         <ul class="card__text">
-                            <li>Landing page with 12 sections</li>
+                            <li>High converting Landing page</li>
                             <li>5x Prototype to HTML</li>
                             <li>Unlimited Revision</li>
                             <li>CSS animations / JS effects</li>
@@ -278,56 +281,54 @@
                         </ul>
                     </div>
                     <div class="card__btn">
-                        <button class="btn btn--secondary">Buy Now</button>
+                        <button class="btn btn__secondary">Buy Now</button>
                     </div>
                 </div>
             </div>
         </section>
         <!--Projeects--->
         <section class="projects" id="work">
-            <div class="heading">
-                <h1 class="gradient__heading">My work</h1>
-            </div>
+            <h1 class="heading">My work</h1>
             <div class="projects__container container items-center">
                 <!---Project card start--->
-                <div class="project__card-body fancy__border">
-                    <div class="pp__img">
+                <div class="project__card">
+                    <div class="project__img">
                         <img src="./Images/projects/ablton%20landing%20page.png" alt="Ablton landing page">
                     </div>
-                    <div class="pp__content">
+                    <div class="project__text">
                         <p>Ablton Landing Page</p>
                         <a href="#">view source</a>
                     </div>
                 </div>
                 <!--card end--->
                 <!---Project card start--->
-                <div class="project__card-body fancy__border">
-                    <div class="pp__img">
+                <div class="project__card">
+                    <div class="project__img">
                         <img src="./Images/projects/Nfative%20landing%20page.png" alt="Nftive landing page">
                     </div>
-                    <div class="pp__content">
+                    <div class="project__text">
                         <p>NFT Landing Page</p>
                         <a href="#">view source</a>
                     </div>
                 </div>
                 <!--card end--->
                 <!---Project card start--->
-                <div class="project__card-body fancy__border">
-                    <div class="pp__img">
+                <div class="project__card">
+                    <div class="project__img">
                         <img src="./Images/projects/Oh-studio%20landing%20page.png" alt="Oh studio landing page">
                     </div>
-                    <div class="pp__content">
+                    <div class="project__text">
                         <p>Oh-Studio Landing Page</p>
                         <a href="#">view source</a>
                     </div>
                 </div>
                 <!--card end--->
                 <!---Project card start--->
-                <div class="project__card-body fancy__border">
-                    <div class="pp__img">
+                <div class="project__card">
+                    <div class="project__img">
                         <img src="./Images/projects/treedialog%20blog.png" alt="Treedailog blog post listing landing page">
                     </div>
-                    <div class="pp__content">
+                    <div class="project__text">
                         <p>Treedailog blog</p>
                         <a href="#">view source</a>
                     </div>
@@ -337,6 +338,7 @@
         </section>
         <!--Testimonials-->
         <section class="testinomials">
+            <h1 class="heading">what client says</h1>
             <div class="testinomials__slides swiper">
                 <div class="swiper-wrapper">
                     <!---Swiper Slides--->
@@ -345,10 +347,9 @@
                         <span class="client__fb">I am very appreciate for your work. <br> I am very satisfied with the
                         results and I working with you again next week.</span>
                         <div class="client__detail">
-                            <i class="bi bi-person-circle"></i>
-                            <span>Arian acruenzy</span>
+                            <span class="client__name">Arian acruenzy</span>
                             <br>
-                            <span class="gradient__heading">from USA on Fiverr</span>
+                            <span class="client__origin">from USA on Fiverr</span>
                         </div>
                     </div>
                     <div class="swiper-slide slide__width">
@@ -356,10 +357,9 @@
                         <span class="client__fb">The work was done in time, after small fixes, <br>the work was received
                         perfectly.</span>
                         <div class="client__detail">
-                            <i class="bi bi-person-circle"></i>
-                            <span>abramovalex0</span>
+                            <span class="client__name">abramovalex0</span>
                             <br>
-                            <span class="gradient__heading">from Israel on Kwork</span>
+                            <span class="client__origin">from Israel on Kwork</span>
                         </div>
                     </div>
                     <div class="swiper-slide slide__width">
@@ -368,10 +368,9 @@
                             right until delivery. <br>Also flexible in making adjustments that were required post delivery.
                         Very good experience.</span>
                         <div class="client__detail">
-                            <i class="bi bi-person-circle"></i>
-                            <span>Vinitadur Bhatkar</span>
+                            <span class="client__name">Vinitadur Bhatkar</span>
                             <br>
-                            <span class="gradient__heading">from India on Kwork</span>
+                            <span class="client__origin">from India on Kwork</span>
                         </div>
                     </div>
                 </div>
@@ -393,9 +392,9 @@
         <!----FAQs---->
         <section class="faqs">
             <div class="faqs__clients">
-                <p class="heading__data">
+                <h1 class="heading">
                     Before sending me a message, here are some things you should know:
-                </p>
+                </h1>
                 <div class="faqs__list">
                     <!--               FAQ01-->
                     <div class="faqs__dropdown">
@@ -505,6 +504,6 @@
             </div>
         </footer>
         <!------------Optimized JavaScript---------->
-        <script src="./dist/js/main.min.js"></script>
+        <script src="./js/main.js"></script>
     </body>
 </html>

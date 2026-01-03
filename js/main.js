@@ -29,23 +29,23 @@ faqBtn.forEach(toggle => {
 });
 ///Intersection animation
 // Light/Dark theme toggle
-const themeToggleBtn = document.querySelectorAll('#toggle__btn');
+const themeToggleBtn = document.querySelectorAll('#theme__toggle__btn');
 const body = document.body;
 
 // Function to set theme
 function setTheme(theme) {
     if (theme === 'dark') {
-        body.classList.add('dark-theme');
+        body.classList.add('dark');
         localStorage.setItem('theme', 'dark');
     } else {
-        body.classList.remove('dark-theme');
+        body.classList.remove('dark');
         localStorage.setItem('theme', 'light');
     }
     // toggle icon classes
-    document.querySelectorAll('.moon__icon').forEach(icon => {
+    document.querySelectorAll('.dark__icon').forEach(icon => {
         icon.style.display = theme === 'dark' ? 'none' : 'inline-block';
     });
-    document.querySelectorAll('.sun__icon').forEach(icon => {
+    document.querySelectorAll('.light__icon').forEach(icon => {
         icon.style.display = theme === 'dark' ? 'inline-block' : 'none';
     });
 }
@@ -64,7 +64,7 @@ function setTheme(theme) {
 themeToggleBtn.forEach(btn => {
     btn.addEventListener('click', function(e) {
         e.stopPropagation();
-        if (body.classList.contains('dark-theme')) {
+        if (body.classList.contains('dark')) {
             setTheme('light');
         } else {
             setTheme('dark');

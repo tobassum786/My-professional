@@ -118,6 +118,10 @@ button {
     all: unset;
 }
 
+h1, h2, h3, h4 {
+    text-box-trim: trim-both;
+}
+
 .heading {
     text-align: center;
     text-transform: uppercase;
@@ -480,6 +484,7 @@ button {
 
                     & p {
                         padding-block-end: var(--spacing-md);
+                        color: hsl(from var(--text-clr) h s 75%);
                     }
                 }
             }
@@ -611,6 +616,7 @@ button {
         background: var(--primary-clr-light);
         padding: var(--spacing-xxl);
         cursor: pointer;
+        z-index: -1;
 
         & .swiper-wrapper {
             position: relative;
@@ -689,18 +695,83 @@ button {
     & .faqs__clients {
         display: flex;
         justify-content: center;
+        flex-direction: column;
         align-items: center;
+        padding: var(--spacing-sm);
         gap: var(--spacing-xl);
 
         & .heading {
             font-weight: var(--font-normal);
-            max-width: 600px;
+            max-width: 550px;
             text-align: left;
         }
 
         & .faqs__list {
-            max-width: 600px;
-        }
+            max-width: 650px;
 
+            & .faqs__dropdown {
+                position: relative;
+                border-bottom: 1px solid hsl(from var(--text-clr) h s 20%);
+                padding-block: var(--spacing-xs);
+
+                & .faq__menu {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-direction: row-reverse;
+                    width: 550px;
+                    padding: var(--spacing-sm);
+
+                    & .faq__toggle {
+                        position: relative;
+                        cursor: pointer;
+                        display: inline-flex;
+                        align-items: center;
+                        gap: var(--spacing-xxs);
+                        color: var(--accent-clr);
+
+                        & .add__btn,
+                        & .minimize__btn {
+                            font-size: var(--font-lg);
+                            color: var(--accent-clr);
+                        }
+
+                        & .minimize__btn {
+                            display: none;
+                        }
+                    }
+
+                    & h4 {
+                        color: var(--text-clr);
+                        text-transform: capitalize;
+                        margin-bottom: var(--spacing-sm);
+                        text-box-trim: trim-both;
+                    }
+                }
+
+                & .faq__items {
+                    font-size: var(--font-md);
+                    width: 540px;
+                    padding: 0 var(--spacing-sm) var(--spacing-sm);
+                    display: none;
+                    
+                }
+
+                /* Open state */
+                &.open .faq__items {
+                    display: block;
+                    color: hsl(from var(--text-clr) h s 55%);
+                }
+
+                &.open .faq__toggle .add__btn {
+                    display: none;
+                }
+
+                &.open .faq__toggle .minimize__btn {
+                    display: inline-block;
+                }
+            }
+
+        }
     }
 }

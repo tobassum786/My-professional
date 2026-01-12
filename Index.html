@@ -24,7 +24,7 @@
         import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
         const swiper = new Swiper('.swiper', {
         autoplay: {
-        delay: 1000,
+        delay: 2500,
         },
         slidesPerView: 1,
         navigation: {
@@ -120,13 +120,13 @@
                 <li><a href="#" class="nav__links">Blog</a></li>
             </ul>
             <div class="toggle__theme">
-                <button class="toggle__icons" id="theme__toggle__btn">
+                <button class="toggle__icons toggle__btn" id="theme__toggle__btn">
                 <i class="bi bi-moon-fill dark__icon"></i>
                 <i class="bi bi-sun-fill light__icon"></i>
                 </button>
             </div>
             <div class="toggle__menu d-md-none">
-                <button class="toggle__icons" id="toggle__btn">
+                <button class="toggle__icons toggle__btn" id="toggle__btn">
                 <i class="bi bi-list open__menu"></i>
                 <i class="bi bi-x close__menu"></i>
                 </button>
@@ -399,12 +399,13 @@
                     <!--               FAQ01-->
                     <div class="faqs__dropdown">
                         <div class="faq__menu">
-                            <button class="items-center faq__toggle">
+                            <button class="faq__toggle" id="faq__btn">
                             <i class="bi bi-plus add__btn"></i>
                             <i class="bi bi-dash minimize__btn"></i>
                             </button>
+                            <h4>what timezone are you in?</h4>
                         </div>
-                        <h4>what timezone are you in?</h4>
+                        
                         <div class="faq__items">
                             <p>However, I can access and process information from all over the world, regardless of the time
                             zone. So, I can help you with your projects no matter where you are located.</p>
@@ -413,12 +414,13 @@
                     <!--FAQ02---->
                     <div class="faqs__dropdown">
                         <div class="faq__menu">
-                            <button class="items-center faq__toggle">
+                            <button class="faq__toggle" id="faq__btn">
                             <i class="bi bi-plus add__btn"></i>
                             <i class="bi bi-dash minimize__btn"></i>
                             </button>
+                            <h4>How much do you charge for a website?</h4>
                         </div>
-                        <h4>How much do you charge for a website?</h4>
+                        
                         <div class="faq__items">
                             <p>The cost of a website varies depending on the size, complexity, and features of the website.
                             Contact me for discussing your project cost and deadline. </p>
@@ -427,12 +429,13 @@
                     <!--FAQ03---->
                     <div class="faqs__dropdown">
                         <div class="faq__menu">
-                            <button class="items-center faq__toggle">
+                            <button class="faq__toggle" id="faq__btn">
                             <i class="bi bi-plus add__btn"></i>
                             <i class="bi bi-dash minimize__btn"></i>
                             </button>
+                            <h4>Do you charge by the hour?</h4>
                         </div>
-                        <h4>Do you charge by the hour?</h4>
+                        
                         <div class="faq__items">
                             <p>Yes, I can charge by the hour. For complex or time-consuming tasks, this may be the most
                             efficient billing structure. My hourly rate is <strong>$50</strong> per hour,</p>
@@ -441,12 +444,13 @@
                     <!--FAQ04---->
                     <div class="faqs__dropdown">
                         <div class="faq__menu">
-                            <button class="items-center faq__toggle">
+                            <button class="faq__toggle" id="faq__btn">
                             <i class="bi bi-plus add__btn"></i>
                             <i class="bi bi-dash minimize__btn"></i>
                             </button>
+                            <h4>Are you working with a team?</h4>
                         </div>
-                        <h4>Are you working with a team?</h4>
+                        
                         <div class="faq__items">
                             <p>Yes, The team is responsible for my creation and ongoing development. They are constantly
                             working to improve my abilities and make me more helpful to users.</p>

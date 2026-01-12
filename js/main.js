@@ -4,6 +4,12 @@ const selectElement = selector => {
     throw new Error(`Something went wrong, please check ${element} typed correctly`)
 };
 
+const selectElementAll = selector => {
+    const element = document.querySelectorAll(selector)
+    if (element) return element;
+    throw new Error(`Something went wrong, please check ${element} typed correctly`)
+};
+
 
 //Responsive toggle menu
 const menuToggleIcon = selectElement('#toggle__btn');
@@ -18,13 +24,16 @@ menuToggleIcon.addEventListener('click', toggleMenu);
 
 ////Model popup
 
-//FAQs sections
-const faqBtn = document.querySelectorAll('.faq__menu');
+// FAQs toggle
+const faqToggles = document.querySelectorAll('.faq__toggle');
 
-faqBtn.forEach(toggle => {
-    toggle.addEventListener('click', () => {
-        toggle.parentNode.classList.toggle('show')
-        toggle.classList.toggle('show')
+faqToggles.forEach((toggle) => {
+    toggle.addEventListener('click', (event) => {
+        const dropdown = event.currentTarget.closest('.faqs__dropdown');
+        const isOpen = dropdown.classList.toggle('open');
+
+        // update accessible state
+        event.currentTarget.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
 });
 ///Intersection animation

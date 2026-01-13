@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <title>Tobassum Munir | Front-end developer</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Front-end website development, Responsive web designs solutions">
-        <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, React Js">
+        <meta name="description" content="Front-end developer specializing in responsive, SEO-friendly, and fast-loading websites using HTML5, CSS3, JavaScript, Bootstrap, Tailwind CSS, and modern UI patterns.">
+        <!-- Optional: meta keywords are ignored by Google but valid HTML -->
+        <meta name="keywords" content="front-end developer, responsive web design, HTML5, CSS3, JavaScript, Bootstrap, Tailwind CSS, landing pages">
         <meta name="author" content="Tobassum Munir">
+        <!-- Open Graph (optional but good for SEO/social) -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Tobassum Munir | Front-End Developer">
+        <meta property="og:description" content="Front-end developer creating optimized, responsive, and SEO-friendly websites.">
+        <meta property="og:url" content="https://tmweb2.netlify.app/">
+        <meta property="og:image" content="https://tmweb2.netlify.app/Images/web__assest/front-end%20developer.jpg">
         <!--    Favicon-->
         <link rel="icon" type="image/png" href="/Images/favicon/favicon.png" />
         <!--    Optimized CSS-->
@@ -19,23 +23,6 @@
         <meta name="p:domain_verify" content="4b90ffbd9131536983711d9fa7e663a9" />
         <!--Dev Icons-->
         <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-        <!-----SwiperJs CDN script----->
-        <script type="module">
-        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
-        const swiper = new Swiper('.swiper', {
-        autoplay: {
-        delay: 2500,
-        },
-        slidesPerView: 1,
-        navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-        },
-        pagination: {
-        el: '.swiper-pagination'
-        }
-        });
-        </script>
         <!--     google scheema -->
         <script type="application/ld+json">
         {
@@ -43,7 +30,7 @@
         "@type": "Person",
         "name": "Tobassum Munir",
         "url": "https://tmweb2.netlify.app/",
-        "image": "",
+        "image": "https://tmweb2.netlify.app/Images/web__assest/front-end%20developer.jpg",
         "sameAs": [
         "https://www.facebook.com/tobassum",
         "https://www.x.com/code4mind",
@@ -55,8 +42,8 @@
         ],
         "jobTitle": "Front-end web developer and designer",
         "worksFor": {
-        "@type": "freelancer",
-        "name": "front-end website development"
+        "@type": "Organization",
+        "name": "Code4Mind"
         }
         }
         </script>
@@ -393,7 +380,7 @@
         <section class="faqs">
             <div class="faqs__clients">
                 <h1 class="heading">
-                    Before sending me a message, here are some things you should know:
+                Before sending me a message, here are some things you should know:
                 </h1>
                 <div class="faqs__list">
                     <!--               FAQ01-->
@@ -462,7 +449,8 @@
         <!---Contact Me---->
         <section class="contact__me container" id="do__it">
             <div class="text__data">
-                <p>Got a project in mind? Use the form to give me as much detail as possible and I'll get back to you as
+                <p class="heading">Got a project in mind<span>?</span></p>
+                <p class="sub__heading">Use the form to give me as much detail as possible and I'll get back to you as
                 soon as I can.</p>
             </div>
             <form action="#">
@@ -472,8 +460,10 @@
                 placeholder="Project Details"></textarea>
                 <input type="text" placeholder="Budget range">
                 <input type="text" placeholder="Timeline">
+                <div class="form__btn">
+                    <button class="btn">Let's do it</button>
+                </div>
             </form>
-            <button class="btn">Let's do it</button>
         </section>
         <!--Footer--->
         <footer>
@@ -481,7 +471,7 @@
                 <div class="logo">
                     <img src="./Images/web__assest/logo.png" alt="logo__svg">
                 </div>
-                <ul class="ft__nav">
+                <ul class="ft__row">
                     <p class="ft__heading">content</p>
                     <li><a href="#home" class="ft__links">Home</a></li>
                     <li><a href="#services" class="ft__links">Services</a></li>
@@ -489,25 +479,50 @@
                     <li><a href="#about__me" class="ft__links">About Me</a></li>
                     <li><a href="#" class="ft__links">Blog</a></li>
                 </ul>
-                <div class="ft-social__link">
+                <div class="ft__row">
                     <p class="ft__heading">Social Links</p>
-                    <div class="ft-links">
-                        <a href="https://github.com/tobassum786"><i class="bi bi-github"></i></a>
-                        <a href="https://www.facebook.com/tobassum"><i class="bi bi-facebook"></i></a>
-                        <a href="https://www.x.com/code4mind"><i class="bi bi-twitter"></i></a>
-                        <a href="https://www.linkedin.com/in/tobassum-munir-86106229/?trk=opento_sprofile_topcard"><i class="bi bi-linkedin"></i></a>
-                        <a href="https://wa.me/966538975722"><i class="bi bi-whatsapp"></i></a>
-                        <a href="https://www.instagram.com/tobassum07"><i class="bi bi-instagram"></i></a>
+                    <div class="ft__social">
+                        <a href="https://github.com/tobassum786" class="bi bi-github"></a>
+                        <a href="https://www.facebook.com/tobassum" class="bi bi-facebook"></a>
+                        <a href="https://www.x.com/code4mind" class="bi bi-twitter"></a>
+                        <a href="https://www.linkedin.com/in/tobassum-munir-86106229/?trk=opento_sprofile_topcard" class="bi bi-linkedin"></a>
+                        <a href="https://wa.me/966538975722" class="bi bi-whatsapp"></a>
+                        <a href="https://www.instagram.com/tobassum07" class="bi bi-instagram"></a>
                     </div>
-                    <p class="tel"><i class="bi bi-phone"></i>+966-538975722</p>
-                    <p class="email"><i class="bi bi-envelope"></i>tobassum@msn.com</p>
+                    <div class="ft__info">
+                        <span>
+                            <i class="bi bi-phone"></i>
+                            +966-53-897-5722
+                        </span>
+                        <span>
+                            <i class="bi bi-envelope"></i>
+                            +966-53-897-5722
+                        </span>
+                    </div>
                 </div>
             </div>
             <div class="copyrights">
-                <p>&copy; All rights reserved @ Code4Mind.</p>
+                <p>&copy; All rights reserved at Code4Mind.</p>
             </div>
         </footer>
         <!------------Optimized JavaScript---------->
         <script src="./js/main.js"></script>
+        <!-----SwiperJs CDN script----->
+        <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
+        const swiper = new Swiper('.swiper', {
+        autoplay: {
+        delay: 2500,
+        },
+        slidesPerView: 1,
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+        },
+        pagination: {
+        el: '.swiper-pagination'
+        }
+        });
+        </script>
     </body>
 </html>

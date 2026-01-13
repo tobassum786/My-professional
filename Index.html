@@ -23,6 +23,7 @@
         <meta name="p:domain_verify" content="4b90ffbd9131536983711d9fa7e663a9" />
         <!--Dev Icons-->
         <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+        <title>Tobassum Munir | Front-end developer and designer</title>
         <!--     google scheema -->
         <script type="application/ld+json">
         {
@@ -97,7 +98,7 @@
         <!--Navigation--->
         <nav class="nav__bar">
             <a href="#" class="logo">
-                <img src="./Images/web__assest/logo.png" alt="Logo">
+                <img src="./Images/web__assest/logo.png" alt="Logo" loading="lazy">
             </a>
             <ul class="nav__items" id="menu">
                 <li><a href="#home" class="nav__links">Home</a></li>
@@ -107,15 +108,15 @@
                 <li><a href="#" class="nav__links">Blog</a></li>
             </ul>
             <div class="toggle__theme">
-                <button class="toggle__icons toggle__btn" id="theme__toggle__btn">
-                <i class="bi bi-moon-fill dark__icon"></i>
-                <i class="bi bi-sun-fill light__icon"></i>
+                <button class="toggle__icons toggle__btn" id="theme__toggle__btn" aria-label="Toggle light and dark theme">
+                <i class="bi bi-moon-fill dark__icon" aria-hidden="true"></i>
+                <i class="bi bi-sun-fill light__icon" aria-hidden="true"></i>
                 </button>
             </div>
             <div class="toggle__menu d-md-none">
-                <button class="toggle__icons toggle__btn" id="toggle__btn">
-                <i class="bi bi-list open__menu"></i>
-                <i class="bi bi-x close__menu"></i>
+                <button class="toggle__icons toggle__btn" id="toggle__btn" aria-label="Open main navigation" aria-expanded="false" aria-controls="menu">
+                <i class="bi bi-list open__menu" aria-hidden="true"></i>
+                <i class="bi bi-x close__menu" aria-hidden="true"></i>
                 </button>
             </div>
         </nav>
@@ -123,7 +124,7 @@
         <section class="banner" id="home">
             <div class="banner__container">
                 <div class="dev__img">
-                    <img src="./Images/web__assest/front-end%20developer.jpg" alt="front-end developer">
+                    <img src="./Images/web__assest/front-end%20developer.jpg" alt="front-end developer" loading="lazy">
                 </div>
                 <div class="content__desc">
                     <p class="b__heading">Tobassum Munir</p>
@@ -230,7 +231,7 @@
                         </ul>
                     </div>
                     <div class="card__btn">
-                        <button class="btn btn--secondary">Buy Now</button>
+                        <button class="btn btn--secondary" type="button">Buy Now</button>
                     </div>
                 </div>
                 <div class="offer__card">
@@ -249,7 +250,7 @@
                         </ul>
                     </div>
                     <div class="card__btn">
-                        <button class="btn btn--secondary">Buy Now</button>
+                        <button class="btn btn--secondary" type="button">Buy Now</button>
                     </div>
                 </div>
                 <div class="offer__card">
@@ -268,7 +269,7 @@
                         </ul>
                     </div>
                     <div class="card__btn">
-                        <button class="btn btn__secondary">Buy Now</button>
+                        <button class="btn btn__secondary" type="button">Buy Now</button>
                     </div>
                 </div>
             </div>
@@ -280,7 +281,7 @@
                 <!---Project card start--->
                 <div class="project__card">
                     <div class="project__img">
-                        <img src="./Images/projects/ablton%20landing%20page.png" alt="Ablton landing page">
+                        <img src="./Images/projects/ablton%20landing%20page.png" alt="Ablton landing page" loading="lazy">
                     </div>
                     <div class="project__text">
                         <p>Ablton Landing Page</p>
@@ -291,7 +292,7 @@
                 <!---Project card start--->
                 <div class="project__card">
                     <div class="project__img">
-                        <img src="./Images/projects/Nfative%20landing%20page.png" alt="Nftive landing page">
+                        <img src="./Images/projects/Nfative%20landing%20page.png" alt="Nftive landing page" loading="lazy">
                     </div>
                     <div class="project__text">
                         <p>NFT Landing Page</p>
@@ -302,7 +303,7 @@
                 <!---Project card start--->
                 <div class="project__card">
                     <div class="project__img">
-                        <img src="./Images/projects/Oh-studio%20landing%20page.png" alt="Oh studio landing page">
+                        <img src="./Images/projects/Oh-studio%20landing%20page.png" alt="Oh studio landing page" loading="lazy">
                     </div>
                     <div class="project__text">
                         <p>Oh-Studio Landing Page</p>
@@ -313,7 +314,7 @@
                 <!---Project card start--->
                 <div class="project__card">
                     <div class="project__img">
-                        <img src="./Images/projects/treedialog%20blog.png" alt="Treedailog blog post listing landing page">
+                        <img src="./Images/projects/treedialog%20blog.png" alt="Treedailog blog post listing landing page" loading="lazy">
                     </div>
                     <div class="project__text">
                         <p>Treedailog blog</p>
@@ -386,9 +387,13 @@
                     <!--               FAQ01-->
                     <div class="faqs__dropdown">
                         <div class="faq__menu">
-                            <button class="faq__toggle" id="faq__btn">
-                            <i class="bi bi-plus add__btn"></i>
-                            <i class="bi bi-dash minimize__btn"></i>
+                            <button class="faq__toggle" id="faq__btn"
+                            type="button"
+                            aria-expanded="false"
+                            aria-controls="faq-panel-1"
+                            aria-label="Toggle answer: what timezone are you in?">
+                            <i class="bi bi-plus add__btn" aria-hidden="true"></i>
+                            <i class="bi bi-dash minimize__btn" aria-hidden="true"></i>
                             </button>
                             <h4>what timezone are you in?</h4>
                         </div>
@@ -401,14 +406,18 @@
                     <!--FAQ02---->
                     <div class="faqs__dropdown">
                         <div class="faq__menu">
-                            <button class="faq__toggle" id="faq__btn">
-                            <i class="bi bi-plus add__btn"></i>
-                            <i class="bi bi-dash minimize__btn"></i>
+                            <button class="faq__toggle" id="faq__btn"
+                            type="button"
+                            aria-expanded="false"
+                            aria-controls="faq-panel-2"
+                            aria-label="Toggle answer: How much do you charge for a website?">
+                            <i class="bi bi-plus add__btn" aria-hidden="true"></i>
+                            <i class="bi bi-dash minimize__btn" aria-hidden="true"></i>
                             </button>
-                            <h4>How much do you charge for a website?</h4>
+                            <h4 id="faq-panel-2">How much do you charge for a website?</h4>
                         </div>
                         
-                        <div class="faq__items">
+                        <div class="faq__items" id="faq-panel-2" role="region" aria-labelledby="faq-heading-4" hidden>
                             <p>The cost of a website varies depending on the size, complexity, and features of the website.
                             Contact me for discussing your project cost and deadline. </p>
                         </div>
@@ -416,14 +425,18 @@
                     <!--FAQ03---->
                     <div class="faqs__dropdown">
                         <div class="faq__menu">
-                            <button class="faq__toggle" id="faq__btn">
-                            <i class="bi bi-plus add__btn"></i>
-                            <i class="bi bi-dash minimize__btn"></i>
+                            <button class="faq__toggle" id="faq__btn"
+                            type="button"
+                            aria-expanded="false"
+                            aria-controls="faq-panel-3"
+                            aria-label="Toggle answer: Do you charge by the hour?">
+                            <i class="bi bi-plus add__btn" aria-hidden="true"></i>
+                            <i class="bi bi-dash minimize__btn" aria-hidden="true"></i>
                             </button>
-                            <h4>Do you charge by the hour?</h4>
+                            <h4 id="faq-panel-3">Do you charge by the hour?</h4>
                         </div>
                         
-                        <div class="faq__items">
+                        <div class="faq__items" id="faq-panel-3" role="region" aria-labelledby="faq-heading-4" hidden>
                             <p>Yes, I can charge by the hour. For complex or time-consuming tasks, this may be the most
                             efficient billing structure. My hourly rate is <strong>$50</strong> per hour,</p>
                         </div>
@@ -431,14 +444,18 @@
                     <!--FAQ04---->
                     <div class="faqs__dropdown">
                         <div class="faq__menu">
-                            <button class="faq__toggle" id="faq__btn">
-                            <i class="bi bi-plus add__btn"></i>
-                            <i class="bi bi-dash minimize__btn"></i>
+                            <button class="faq__toggle" id="faq__btn"
+                            type="button"
+                            aria-expanded="false"
+                            aria-controls="faq-panel-4"
+                            aria-label="Toggle answer: Are you working with a team?">
+                            <i class="bi bi-plus add__btn" aria-hidden="true"></i>
+                            <i class="bi bi-dash minimize__btn" aria-hidden="true"></i>
                             </button>
-                            <h4>Are you working with a team?</h4>
+                            <h4 id="faq-panel-4">Are you working with a team?</h4>
                         </div>
                         
-                        <div class="faq__items">
+                        <div class="faq__items" id="faq-panel-4" role="region" aria-labelledby="faq-heading-4" hidden>
                             <p>Yes, The team is responsible for my creation and ongoing development. They are constantly
                             working to improve my abilities and make me more helpful to users.</p>
                         </div>
@@ -461,7 +478,7 @@
                 <input type="text" placeholder="Budget range">
                 <input type="text" placeholder="Timeline">
                 <div class="form__btn">
-                    <button class="btn">Let's do it</button>
+                    <button class="btn" type="submit">Let's do it</button>
                 </div>
             </form>
         </section>
@@ -469,7 +486,7 @@
         <footer>
             <div class="ft__main">
                 <div class="logo">
-                    <img src="./Images/web__assest/logo.png" alt="logo__svg">
+                    <img src="./Images/web__assest/logo.png" alt="logo__svg" loading="lazy">
                 </div>
                 <ul class="ft__row">
                     <p class="ft__heading">content</p>

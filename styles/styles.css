@@ -247,6 +247,7 @@ h1, h2, h3, h4 {
         & .toggle__icons {
             padding: var(--spacing-sm);
             font-size: var(--font-xl);
+            transition: all .3s;
 
             & .light__icon {
                 display: none;
@@ -697,8 +698,8 @@ h1, h2, h3, h4 {
         width: 700px;
         height: 200px;
         background: var(--gradient-blue);
-        bottom: 0;
-        right: 0;
+        top: 0;
+        right: 550px;
         /*translate: 85%;*/
         z-index: -1;
         border-radius: 0 0 100% 100%;

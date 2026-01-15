@@ -2,11 +2,10 @@
 <html lang="en">
     <head>
         <!-- Resource hints: critical third‑party origins -->
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
-  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
-
-  <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+        <link rel="preconnect" href="https://cdn.jsdelivr.net">
+        <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+        <link rel="preconnect" href="https://www.googletagmanager.com">
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com">
         <meta name="description" content="Front-end developer specializing in responsive, SEO-friendly, and fast-loading websites using HTML5, CSS3, JavaScript, Bootstrap, Tailwind CSS, and modern UI patterns.">
         <!-- Optional: meta keywords are ignored by Google but valid HTML -->
         <meta name="keywords" content="front-end developer, responsive web design, HTML5, CSS3, JavaScript, Bootstrap, Tailwind CSS, landing pages">
@@ -114,7 +113,7 @@
                 <li><a href="#" class="nav__links">Blog</a></li>
             </ul>
             <div class="toggle__theme">
-                <button class="toggle__icons toggle__btn" id="theme__toggle__btn" aria-label="Toggle light and dark theme">
+                <button class="toggle__icons toggle__btn" id="theme__toggle__btn" aria-label="Toggle light and dark theme" role="button">
                 <i class="bi bi-moon-fill dark__icon" aria-hidden="true"></i>
                 <i class="bi bi-sun-fill light__icon" aria-hidden="true"></i>
                 </button>
@@ -137,12 +136,12 @@
                     <p class="tag__line"><span class="text-gradient">front-end Web developer</span></p>
                     <p class="sub-heading">⚡Optimized & Future-Ready Frontend Solutions</p>
                     <div class="b__social-icons">
-                        <a href="https://github.com/tobassum786"><i class="bi bi-github"></i></a>
-                        <a href="https://www.facebook.com/tobassum"><i class="bi bi-facebook"></i></a>
-                        <a href="https://www.x.com/code4mind"><i class="bi bi-twitter"></i></a>
-                        <a href="https://www.linkedin.com/in/tobassum-munir-86106229/?trk=opento_sprofile_topcard"><i class="bi bi-linkedin"></i></a>
-                        <a href="https://wa.me/966538975722"><i class="bi bi-whatsapp"></i></a>
-                        <a href="https://www.instagram.com/tobassum07"><i class="bi bi-instagram"></i></a>
+                        <a href="https://github.com/tobassum786" aria-label="icons of the social media apps"><i class="bi bi-github"></i></a>
+                        <a href="https://www.facebook.com/tobassum" aria-label="icons of the social media apps"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.x.com/code4mind"><i class="bi bi-twitter" aria-label="icons of the social media apps"></i></a>
+                        <a href="https://www.linkedin.com/in/tobassum-munir-86106229/?trk=opento_sprofile_topcard" aria-label="icons of the social media apps"><i class="icons of the social media apps"></i></a>
+                        <a href="https://wa.me/966538975722" aria-label="Icon of Whatsapp"><i class="icons of the social media apps"></i></a>
+                        <a href="https://www.instagram.com/tobassum07" aria-label="Icon of Instagram"><i class="icons of the social media apps"></i></a>
                     </div>
                     <!--skills icoc-->
                 </div>
@@ -203,15 +202,15 @@
                     </div>
                     <div class="about__me-cta">
                         <h1>Regardless of project size, you will always get:</h1>
-                        <ul class="points">
-                            <h4>On-time delivery</h4>
+                        <span class="points">
+                            <h2>On-time delivery</h2>
                             <p>I know time is money so I don't want to waste yours. Or mine. So I guarantee that I will
                             always deliver what you pay for as promised.</p>
                             
-                            <h4>quality</h4>
+                            <h2>quality</h2>
                             <p>I don't want to put my name on something subpar so my first concern is always quality. No
                             matter what, you will love the end result.</p>
-                        </ul>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -237,7 +236,7 @@
                         </ul>
                     </div>
                     <div class="card__btn">
-                        <button class="btn btn--secondary" type="button">Buy Now</button>
+                        <button class="btn btn--secondary" type="button" role="button" aria-label="Buy Now" onclick="window.open(href='https://www.fiverr.com/s/8z3jQar', '__blank');">Buy Now</button>
                     </div>
                 </div>
                 <div class="offer__card">
@@ -256,7 +255,7 @@
                         </ul>
                     </div>
                     <div class="card__btn">
-                        <button class="btn btn--secondary" type="button">Buy Now</button>
+                        <button class="btn btn--secondary" role="button" type="button" aria-label="Buy Now" onclick="window.open(href='https://www.fiverr.com/s/qDYoL7X', '__blank');"">Buy Now</button>
                     </div>
                 </div>
                 <div class="offer__card">
@@ -275,7 +274,7 @@
                         </ul>
                     </div>
                     <div class="card__btn">
-                        <button class="btn btn__secondary" type="button">Buy Now</button>
+                        <button class="btn btn__secondary" role="button" type="button" aria-label="Buy Now" onclick="window.open(href='https://kwork.com/html-services/24424584/i-will-convert-psd-figma-and-xd-designs-into-responsive-html?ref=14306922', '__blank');">Buy Now</button>
                     </div>
                 </div>
             </div>
@@ -291,7 +290,7 @@
                     </div>
                     <div class="project__text">
                         <p>Ablton Landing Page</p>
-                        <a href="#">view source</a>
+                        <a href="#" aria-label="link for open repo on github for view code">view source</a>
                     </div>
                 </div>
                 <!--card end--->
@@ -302,7 +301,7 @@
                     </div>
                     <div class="project__text">
                         <p>NFT Landing Page</p>
-                        <a href="#">view source</a>
+                        <a href="#" aria-label="link for open repo on github for view code">view source</a>
                     </div>
                 </div>
                 <!--card end--->
@@ -313,7 +312,7 @@
                     </div>
                     <div class="project__text">
                         <p>Oh-Studio Landing Page</p>
-                        <a href="#">view source</a>
+                        <a href="#" aria-label="link for open repo on github for view code">view source</a>
                     </div>
                 </div>
                 <!--card end--->
@@ -324,7 +323,7 @@
                     </div>
                     <div class="project__text">
                         <p>Treedailog blog</p>
-                        <a href="#">view source</a>
+                        <a href="#" aria-label="link for open repo on github for view code">view source</a>
                     </div>
                 </div>
                 <!--card end--->
@@ -401,10 +400,10 @@
                             <i class="bi bi-plus add__btn" aria-hidden="true"></i>
                             <i class="bi bi-dash minimize__btn" aria-hidden="true"></i>
                             </button>
-                            <h4>what timezone are you in?</h4>
+                            <h2 id="question1">what timezone are you in?</h2>
                         </div>
                         
-                        <div class="faq__items">
+                        <div class="faq__items" id="question1" role="region" aria-labelledby="faq-heading-4" hidden>
                             <p>However, I can access and process information from all over the world, regardless of the time
                             zone. So, I can help you with your projects no matter where you are located.</p>
                         </div>
@@ -420,10 +419,10 @@
                             <i class="bi bi-plus add__btn" aria-hidden="true"></i>
                             <i class="bi bi-dash minimize__btn" aria-hidden="true"></i>
                             </button>
-                            <h4 id="faq-panel-2">How much do you charge for a website?</h4>
+                            <h2 id="question2">How much do you charge for a website?</h2>
                         </div>
                         
-                        <div class="faq__items" id="faq-panel-2" role="region" aria-labelledby="faq-heading-4" hidden>
+                        <div class="faq__items" id="question2" role="region" aria-labelledby="faq-heading-4" hidden>
                             <p>The cost of a website varies depending on the size, complexity, and features of the website.
                             Contact me for discussing your project cost and deadline. </p>
                         </div>
@@ -439,10 +438,10 @@
                             <i class="bi bi-plus add__btn" aria-hidden="true"></i>
                             <i class="bi bi-dash minimize__btn" aria-hidden="true"></i>
                             </button>
-                            <h4 id="faq-panel-3">Do you charge by the hour?</h4>
+                            <h2 id="question3">Do you charge by the hour?</h2>
                         </div>
                         
-                        <div class="faq__items" id="faq-panel-3" role="region" aria-labelledby="faq-heading-4" hidden>
+                        <div class="faq__items" id="question3" role="region" aria-labelledby="faq-heading-4" hidden>
                             <p>Yes, I can charge by the hour. For complex or time-consuming tasks, this may be the most
                             efficient billing structure. My hourly rate is <strong>$50</strong> per hour,</p>
                         </div>
@@ -458,10 +457,10 @@
                             <i class="bi bi-plus add__btn" aria-hidden="true"></i>
                             <i class="bi bi-dash minimize__btn" aria-hidden="true"></i>
                             </button>
-                            <h4 id="faq-panel-4">Are you working with a team?</h4>
+                            <h2 id="question4">Are you working with a team?</h2>
                         </div>
                         
-                        <div class="faq__items" id="faq-panel-4" role="region" aria-labelledby="faq-heading-4" hidden>
+                        <div class="faq__items" id="question4" role="region" aria-labelledby="faq-heading-4" hidden>
                             <p>Yes, The team is responsible for my creation and ongoing development. They are constantly
                             working to improve my abilities and make me more helpful to users.</p>
                         </div>
@@ -495,7 +494,7 @@
                     <img src="./Images/web__assest/logo.png" alt="logo__svg" loading="lazy">
                 </div>
                 <ul class="ft__row">
-                    <p class="ft__heading">content</p>
+                    <li class="ft__heading">content</li>
                     <li><a href="#home" class="ft__links">Home</a></li>
                     <li><a href="#services" class="ft__links">Services</a></li>
                     <li><a href="#work" class="ft__links">My Work</a></li>
@@ -505,12 +504,12 @@
                 <div class="ft__row">
                     <p class="ft__heading">Social Links</p>
                     <div class="ft__social">
-                        <a href="https://github.com/tobassum786" class="bi bi-github"></a>
-                        <a href="https://www.facebook.com/tobassum" class="bi bi-facebook"></a>
-                        <a href="https://www.x.com/code4mind" class="bi bi-twitter"></a>
-                        <a href="https://www.linkedin.com/in/tobassum-munir-86106229/?trk=opento_sprofile_topcard" class="bi bi-linkedin"></a>
-                        <a href="https://wa.me/966538975722" class="bi bi-whatsapp"></a>
-                        <a href="https://www.instagram.com/tobassum07" class="bi bi-instagram"></a>
+                        <a href="https://github.com/tobassum786" class="bi bi-github" aria-label="icons of the social media apps"></a>
+                        <a href="https://www.facebook.com/tobassum" class="bi bi-facebook" aria-label="icons of the social media apps"></a>
+                        <a href="https://www.x.com/code4mind" class="bi bi-twitter" aria-label="icons of the social media apps"></a>
+                        <a href="https://www.linkedin.com/in/tobassum-munir-86106229/?trk=opento_sprofile_topcard" class="bi bi-linkedin" aria-label="icons of the social media apps"></a>
+                        <a href="https://wa.me/966538975722" class="bi bi-whatsapp" aria-label="icons of the social media apps"></a>
+                        <a href="https://www.instagram.com/tobassum07" class="bi bi-instagram" aria-label="icons of the social media apps"></a>
                     </div>
                     <div class="ft__info">
                         <span>
@@ -525,7 +524,7 @@
                 </div>
             </div>
             <div class="copyrights">
-                <p>&copy; All rights reserved at Code4Mind.</p>
+                <p>&copy; 2026 All rights reserved at Code4Mind.</p>
             </div>
         </footer>
         <!------------Optimized JavaScript---------->

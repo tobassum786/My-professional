@@ -195,29 +195,21 @@ h1, h2, h3, h4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     height: 90px;
-    top: 0;
-    left: 0;
-    right: 0;
     z-index: 1000;
 
     & .nav__items {
-        background: transparent;
         display: flex;
         gap: var(--spacing-lg);
         justify-content: center;
         align-items: center;
         transition: all var(--transition-duration) var(--transition-timing-function);
-        
-        & li {
-            background: transparent;
-        }
 
         & .nav__links {
             position: relative;
             font-weight: var(--font-bold);
-            background: transparent;
             letter-spacing: 2px;
             font-size: var(--font-sm);
             text-transform: uppercase;
@@ -270,7 +262,6 @@ h1, h2, h3, h4 {
 
 .banner {
     position: relative;
-    max-width: 100%;
     min-height: 100vh;
 
     &::before {
@@ -308,6 +299,7 @@ h1, h2, h3, h4 {
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        min-height: 70vh;
 
         & .dev__img {
             width: 150px;
@@ -358,7 +350,7 @@ h1, h2, h3, h4 {
 
             & .b__social-icons {
                 position: absolute;
-                bottom: 100px;
+                bottom: 0px;
                 left: 0;
                 left: var(--spacing-xxl);
                 display: inline-flex;
@@ -429,7 +421,7 @@ h1, h2, h3, h4 {
 /*ABOUT ME*/
 .about__me {
     position: relative;
-    width: 100%;
+
     & .about__me-wrapper {
         gap: var(--spacing-xl);
         display: flex;
@@ -1001,6 +993,10 @@ footer {
         padding: 50px 100px;
     }
 
+    .toggle__theme {
+        display: none;
+    }
+
     .nav__bar {
         
         height: 90px;
@@ -1042,18 +1038,40 @@ footer {
         padding: var(--spacing-md);
         background: var(--primary-clr-light);
         padding-block: var(--spacing-xxl);
+        border-radius: 0 0 var(--border-radius-md) var(--border-radius-md);
+        border-bottom: 5px solid var(--accent-clr);
+        transition: display .3s ease-in-out;
 
         & li .nav__links {
-            margin-bottom: 40px;
+            color: red;
+            font-size: var(--font-xl);
+
         }
 
         &.activated {
             display: inline-block;
         }
     }
-}
 
+    .banner {
+        min-height: 0;
+    }
 
-.banner {
-    height: 80vh;
+    .banner .banner__container .content__desc .b__social-icons {
+        transform: translateX(200%);
+    }
+
+    .banner .banner__container {
+        min-height: 30vh;
+    }
+
+    .offers__container .offers__wrapper .offer__card {
+        width: 350px;
+    }
+
+    .contact__me .text__data .heading {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    } 
 }

@@ -163,12 +163,7 @@ h1, h2, h3, h4 {
     font-weight: var(--font-bold);
     cursor: pointer;
     transition: all var(--transition-duration) var(--transition-timing-function);
-    cursor: pointer;
-    &:hover {
-        background-color: var(--primary-clr);
-        color: var(--accent-clr);
-        border: 1px solid var(--accent-clr);
-    }
+    cursor: pointer
 }
 
 
@@ -404,10 +399,6 @@ h1, h2, h3, h4 {
                 cursor: pointer;
                 transition: border-left var(--transition-duration) var(--transition-timing-function);
 
-                &:hover {
-                    border-left: 1.5px solid var(--accent-clr);
-                }
-
                 & i {
                     width: 50%;
                     font-size: var(--font-md);
@@ -478,12 +469,7 @@ h1, h2, h3, h4 {
                         padding: var(--spacing-md);
                         background-color: var(--primary-clr-light);
                         border-radius: var(--border-radius-md);
-                        transition: all .3s;
-                        
-                        &:hover{
-                            margin-top: -5px;
-                            border-bottom: 1px solid var(--accent-clr);
-                        }
+                        transition: all .3s
                     }
                 }
             }
@@ -563,13 +549,7 @@ h1, h2, h3, h4 {
                     list-style-position: inside;
                     list-style-image: url("../images/web__assest/icons/check-square.svg");
                 }
-            }
-
-            &:hover {
-                margin-top: -8px;
-                scale: 1.05;
-                border-bottom: 1px solid var(--accent-clr);
-            }  
+            } 
         }
     }
 }
@@ -621,11 +601,7 @@ h1, h2, h3, h4 {
                 }
 
                 & a {
-                    text-transform: capitalize;
-                    &:hover {
-                        scale: 1.03;
-                        color: var(--accent-clr);
-                    }
+                    text-transform: capitalize
                 }
             }
         }

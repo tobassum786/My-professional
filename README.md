@@ -25,8 +25,8 @@ A modern, responsive portfolio website showcasing front-end development skills a
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd My-professional
+git clone https://github.com/tobassum786/Portfolio_website.git
+cd Portfolio_website
 ```
 
 2. Install dependencies:
@@ -57,6 +57,8 @@ This will:
 #### Lint CSS
 ```bash
 npm run lint:css
+# Alias:
+npm run csslint
 ```
 
 #### Lint JavaScript
@@ -73,11 +75,18 @@ npm run format
 ```bash
 npm run optimize-images
 ```
+Optimized copies are written to `Images/optimized/` without altering the originals.
+
+### One-Command Setup
+```bash
+npm run setup
+```
+Runs CSS linting and generates optimized image assets to speed up first-time setup.
 
 ## 📁 Project Structure
 
 ```
-My-professional/
+Portfolio_website/
 ├── Images/                 # Image assets
 │   ├── blog images/       # Blog related images
 │   ├── favicon/          # Favicon files
